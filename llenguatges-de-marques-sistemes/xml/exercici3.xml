@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cursos>
+   <curs>
+      <nom>Desenvolupament Web</nom>
+      <duració>120 hores</duració>
+   </curs>
+   <curs>
+      <nom>Programació en Python</nom>
+      <duració>60 hores</duració> <!-- duració no es duración, l'etiqueta está tancada amb un altre nom-->
+   </curs>
+</cursos> 

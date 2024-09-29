@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<llibres>
+   <llibre>
+      <títol>El Quixot</títol>
+      <autor> Miguel de Cervantes</autor>
+      <editorial>Anaya</editorial> <!-- Faltava tancar la etiqeta amb el ">" -->
+   </llibre>
+   <llibre>
+      <títol>1984</títol>
+      <autor>George Orwell</autor>
+   </llibre>
+</llibres>
+  

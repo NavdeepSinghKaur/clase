@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agendaContactes>
+   <contacte>
+      <nom>Joan Pérez</nom>
+      <telèfon>654123456</telèfon>
+      <correu_electrònic>joanperez@gmail.com</correu_electrònic> <!-- electronic no esta connectat amb un _ i al tancar tampoc esta-->
+      <adreça>
+         <carrer>Carrer Major, 21</carrer>
+         <ciutat>Barcelona</ciutat> <!-- falta / al tancar la etiqeuta ciutat-->
+         <codiPostal>08001</codiPostal> <!-- falta / al tancar la etiqeuta codiopstal-->
+      </adreça>
+   </contacte>
+   <contacte>
+      <nom>Maria López</nom>
+      <telèfon>678987654</telèfon>
+      <correu_electrònic>marialopez@outlook.com</correu_electrònic> <!-- Electronic no esta connectat amb _-->
+      <adreça>
+         <carrer>Carrer Nou, 15</carrer>
+         <ciutat>Madrid</ciutat>
+         <codiPostal>28001</codiPostal>
+      </adreça>
+    </contacte> <!-- etiqueta contacte no tancada-->
+   <contacte>
+      <nom>Anna Garcia</nom>
+      <telèfon>612345678</telèfon>
+      <correu_electrònic>annagarcia@yahoo.com</correu_electrònic> <!-- Electronic no esta connectat amb _-->
+      <adreça>
+         <carrer>Gran Via, 48</carrer>
+         <ciutat>València</ciutat>
+         <codiPostal></codiPostal>
+      </adreça>
+   </contacte>
+</agendaContactes> 

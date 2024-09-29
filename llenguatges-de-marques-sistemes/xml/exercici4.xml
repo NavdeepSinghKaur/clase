@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menjar>
+   <plat>
+      <nom>Paella</nom>
+      <ingredients>
+         <ingredient>Arròs</ingredient>
+         <ingredient>Pollastre</ingredient>
+      </ingredients>
+      </plat> <!-- Etiqueta plat no tancada -->
+   <plat>
+      <nom>Pizza</nom>
+      <ingredients>
+         <ingredient>Mozzarella</ingredient>
+         <ingredient>Tomàquet</ingredient>
+      </ingredients>
+   </plat>
+</menjar> 

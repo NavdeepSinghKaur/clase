@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+   <secció>
+      <categoria>Novel·la</categoria>
+      <llibre>
+         <títol>Cien años de soledad</títol>
+         <autor>Gabriel Garcia Marquez</autor>
+         <any_publicació>1967</any_publicació> <!-- etiqueta any_publicació tancada incorrectamente falta "/" -->
+         <isbn>978-84-376-0494-7</isbn> <!-- Etiqueta isbn tancada incorrectament com a ISBN -->
+      </llibre>
+      <llibre>
+         <títol>1984</títol>
+         <autor>George Orwell</autor>
+         <any_publicació>1949</any_publicació>
+         <isbn>978-0451524935</isbn>
+      </llibre>
+   </secció>
+   <secció>
+      <categoria>Ficció</categoria>
+      <llibre>
+         <títol>El senyor dels anells</títol>
+         <autor>J.R.R. Tolkien</autor>
+         <any_publicació>1954</any_publicació> <!-- Etiqueta any_publicacio tancada incorrectamentt falta _publicació-->
+         <isbn>978-0618640157</isbn> <!-- etiqueta no tancada -->
+      </llibre>
+   </secció> <!--Etieta tancada incorrectament falta >-->
+</biblioteca>

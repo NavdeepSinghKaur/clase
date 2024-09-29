@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animals>
+   <mamifer>
+      <nom>Lleó</nom>
+      <habitat>Sabana</habitat>
+    </mamifer> <!-- Faltava aquesta etiqueta -->
+   <mamifer>
+      <nom>Tigre</nom>
+      <habitat>Selva</habitat>
+   </mamifer>
+</animals>

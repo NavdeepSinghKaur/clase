@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cotxes>
+   <cotxe marca="Toyota">
+      <model>Corolla</model>
+      <any>2020</any>
+   </cotxe>
+   <cotxe marca="Ford"> <!-- Marca Ford no comentada amb "" -->
+      <model>Mustang</model>
+      <any>1969</any>
+   </cotxe>
+</cotxes>
+  
