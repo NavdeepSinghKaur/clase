@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curs>
+    <info>
+        <nom>Programació Web</nom>
+        <horesSetmanals>5 hores semanals</horesSetmanals>
+        <caracter>Caràcter del curs: Optatiu</caracter>
+        <dataInici>Inicia al: 2022-01-20</dataInici>
+        <dataFi>Acaba al: 2022-06-10</dataFi>
+    </info>
+
+    <alumnat>
+        <alumne id="001">
+            <nom>Maria López Garcia</nom>
+            <nif>12345678Z</nif>
+            <contacte>
+                <telefon>654321987</telefon>
+                <email>maria.lopez@example.com</email>
+                <adreca>C/ Major, 25, 08001 Barcelona</adreca>
+            </contacte>
+            <nota>Excel·lent</nota>
+            <faltesAssistencia>0</faltesAssistencia>
+        </alumne>
+
+        <alumne id="002">
+            <nom>Joan Pujol Vidal</nom>
+            <nif>87654321X</nif>
+            <contacte>
+                <telefon>654987321</telefon>
+                <email>joan.pujol@example.com</email>
+                <adreca>Av. Catalunya, 10, 08192 Sant Cugat</adreca>
+            </contacte>
+            <nota>Notable</nota>
+            <faltesAssistencia>2</faltesAssistencia>
+        </alumne>
+
+        <alumne id="003">
+            <nom>Laura Blasco Ruiz</nom>
+            <nif>56781234Q</nif>
+            <contacte>
+                <telefon>659876543</telefon>
+                <email>laura.blasco@example.com</email>
+                <adreca>C/ Marina, 45, 08018 Barcelona</adreca>
+            </contacte>
+            <nota>Aprovat</nota>
+            <faltesAssistencia>0</faltesAssistencia>
+        </alumne>
+    </alumnat>
+</curs>

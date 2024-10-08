@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuracio>
+    <arxiuConfig>
+        <nomArxiu><![CDATA[ config.xml]]></nomArxiu>
+        <directori><![CDATA[/etc/configuracio/]]></directori>
+    </arxiuConfig>
+    <arxiuConfig>
+        <nomArxiu><![CDATA[base_dades.xml]]></nomArxiu>
+        <directori><![CDATA[/var/data/]]></directori>
+    </arxiuConfig>
+</configuracio>
+
+<!-- No hi havia cap error extrany, però ho he inclòs tot dins de CDATA per evitar qualsevol error-->

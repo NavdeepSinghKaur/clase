@@ -11,7 +11,7 @@ public class Activitat_1_1 {
         String nom = scanner.nextLine();
 
         System.out.println("\nEntra la edat : "); 
-        int edat = scanner.nextInt(); /
+        int edat = scanner.nextInt();
 
         final int anyNaixement = 2024 - edat;
 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cataleg>
+    <producte id="001">
+        <nom>Ferrari 275</nom>
+        <preu>£3,500,000</preu>
+        <categoria>Classic cars</categoria>
+        <desc>
+            What do we look for in a classic motor car? Rarity? Condition? History? Elegance? Style? Period design? Provenance? Usability?, The Ferrari 275 GTB will certainly tick most of those boxes, the GTB 4 cam will tick the rarity box with just 330 being built. Launched in 1966 the updated 275 GTB/4 with longer wings and developed nose from the design drawing-board of Scaglietti gives this Ferrari the style and elegance which is pure 1960’s Italian., So how many more boxes do we need to tick? We are presenting to you this beautiful piece of 1960’s automobile design in this 1967 275 GTB/4, dressed in its preserved, original, Rosso Chiaro coachwork, with equally original and un-restored interior. Showing just 43,423 km (26,982 miles) our 275 has enjoyed several periods of long-term ownership. Its history and ownership can be traced from delivery to its first custodian in Rome in 1968. It then left Italy for the USA in 1972 and returned to Europe in the 90’s. Spending time in Germany, Italy, the UK and Switzerland., In 2006 chassis number 10643 was granted its ‘Certificate of Authenticity’ by the factory. This along, with an extensive history file and its tool kit will be included with the car. , This Ferrari 275 GTB/4 has been seen at a number of Classic Ferrari Cavalcades and we are very proud that this important motor car is now gracing our showroom here at Dick Lovett Ferrari in the UK. , Part service history, Excellent bodywork, Black Full leather interior - Excellent Condition, Tyre condition Excellent, Left-hand drive, Solid Rosso Chiaro, For more information on this vehicle please call one of our sales team, £3,500,000, This is an imported vehicle
+            
+            Vehicle registered: 01/01/1967
+        </desc>
+    </producte>
+    <producte id="002">
+        <nom>NVIDIA® H200 NVL Module 141GB HBM3e ECC Passive</nom>
+        <preu>27704.65 €</preu>
+        <categoria>Tarjeta de centros de datos</categoria>
+        <desc>
+            Factor de Forma: PCIe
+            Arquitectura Hopper.
+            FP64: 34TFLOPS
+            Tensor Core de FP64: 67 TFLOPS
+            Memoria : HBM3e DE 141 GB.
+            Decoders 7 NVDEC / 7 JPEG.
+            Confidential Computing Supported
+            Multi-Instance GPUs: Up to 7 MIGs @16.5GB each
+            Max Thermal Design Power (TDP) Up to 600W (configurable).
+            Ancho de banda de memoria de la GPU 4.8TB/s.
+            Interconnect 2- or 4-way NVIDIA NVLink bridge:900GB/s; PCIe Gen5: 128GB/s.
+            NVlink Support with 3x opt. Bridges.
+            One 5-year subscription of NVIDIA AI Enterprise is included.
+        
+        </desc>
+    </producte>
+    <producte id="003">
+        <nom>Microsoft 365 Personal - 1 persona - Para PC/Mac/tabletas/teléfonos móviles - Suscripción de 12 meses </nom>
+        <preu>42,99€</preu>
+        <categoria>Ofimática</categoria>
+        <desc>
+            Haz tu vida más creativa, organizada y segura con Microsoft 365. Sé muy productivo con una suscripción conveniente. Para PC/Mac/tabletas/móviles. Incluye aplicaciones premium: Word, Excel, PowerPoint, Outlook, Defender, Climpchamp. Suscripción de 12 meses. 1 TB de almacenamiento de OneDrive. Con OneDrive tus archivos y fotos protegidos contra el ransomware. Almacena archivos y edítalos sobre la marcha y en tiempo real desde cualquier dispositivo. Accede a funciones de asistencia inteligente, además de cientos de plantillas premium, fotos, iconos y fuentes en aplicaciones premium de Office. Gestiona fácilmente tu seguridad digital y ve un paso por delante de las amenazas online con Microsoft Defender. Siempre al día a través de Outlook; ahora puedes tener todas tus cuentas de correo electrónico en un único buzón de correo electrónico organizado. Asistencia avanzada de escritura, gramática y ortografía con Microsoft Editor. Editor de videos Clipchamp con efectos y filtros premium. Disfruta de videollamadas durante todo el día y reúnete, chatea y planifica en una misma aplicación con Microsoft Teams. 
+        </desc>
+    </producte>
+</cataleg>

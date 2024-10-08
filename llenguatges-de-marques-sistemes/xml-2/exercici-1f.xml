@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <comentari><![CDATA[ Aquest és un comentari amb símbols especials, com <div>, que no cal escapar. ]]> 
+    </comentari> <!-- CDADA està tancat incorrectament, després de test hi han dos "]"-->
+    <nota><![CDATA[ Aquí es pot escriure qualsevol text sense preocupació pels símbols especials. ]]></nota>
+</document>

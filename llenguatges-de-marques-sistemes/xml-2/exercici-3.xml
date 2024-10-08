@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<receptes>
+   <recepta id="001">
+        <nom>Pizza de formatge (4 persones)</nom>
+        <ingredients>
+            <p>500 g. de massa de pizza.</p>
+            <p>200 g. de mozzarella.</p>
+            <p>150 g. de formatge cheddar.</p>
+            <p>50 g. de formatge parmesà ratllat.</p>
+            <p>Salsa de tomàquet.</p>  
+            <p>Orenga.</p>
+        </ingredients>
+        <proces>
+            <p>Estén la massa i posa-hi salsa de tomàquet.</p>
+            <p>Afegeix la mozzarella i la resta de formatges.</p>
+            <p>Espolvoreja orenga per sobre.</p>
+            <p>Cou al forn a 200°C durant 15 minuts.</p>
+        </proces>
+   </recepta> 
+</receptes>

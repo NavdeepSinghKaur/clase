@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<botiga>
+    <producte>
+        <nom>Ordinador portàtil</nom>
+        <preu>999.99</preu>
+    </producte>
+    <producte>
+        <nom>Teclat mecànic</nom>
+        <preu>49.99</preu>
+    </producte>
+</botiga> <!-- Etiqeuta tancada on no corresponía-->

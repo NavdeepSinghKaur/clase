@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dispositius>
+    <dispositiu>
+        <tipus>Monitor</tipus>
+        <marca>LG</marca>
+        <resolucio>1920x1080</resolucio>
+    </dispositiu>
+    <dispositiu>
+        <tipus>Ratolí</tipus>
+        <marca>Logitech</marca>
+        <connexio>Bluetooth</connexio>
+    </dispositiu> <!-- Etiqueta tancada en majúscules-->
+</dispositius>

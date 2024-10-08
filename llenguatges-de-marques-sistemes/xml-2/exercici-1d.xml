@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comparacions>
+    <comparacio>
+        <descripcio>Comprovació numèrica</descripcio>
+        <valor>3 &gt; 2 &amp; 5 &lt; 10</valor> <!-- símbols no inclosos correctament >,&,< -->
+    </comparacio>
+    <comparacio>
+        <descripcio>Comprovació de text</descripcio>
+        <valor>abc != xyz</valor>
+    </comparacio>
+</comparacions>

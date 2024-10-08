@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <paragraf>
+        Aquest és un <bold><italic>exemple</italic></bold> amb text en negreta i cursiva.
+    </paragraf>
+    <paragraf>
+        Un altre exemple amb <bold>text en negreta</bold> i <italic>text en cursiva</italic>.
+    </paragraf>
+</document>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<noticia>
+    <titular>Notícia del dia</titular>
+    <cos>
+        El text principal de la notícia és el següent: <enfasis>Aquesta notícia és molt important.</enfasis> <!-- Falta / al tancar etiqueta -->
+    </cos>
+    <autor>Redactor</autor>
+</noticia>
