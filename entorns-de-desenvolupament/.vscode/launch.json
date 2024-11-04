@@ -1,0 +1,62 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Java Program",
+            "request": "launch",
+            "mainClass": ""
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.navdeepsingh.Main",
+            "projectName": "a2_2_maven"
+        },
+        {
+            "type": "java",
+            "name": "NavdeepSingh",
+            "request": "launch",
+            "mainClass": "A2_2_basic.src.NavdeepSingh",
+            "projectName": "entorns-de-desenvolupament_69a07c60"
+        },
+        {
+            "type": "java",
+            "name": "Activitat_1_1",
+            "request": "launch",
+            "mainClass": "Activitat_1_1",
+            "projectName": "entorns-de-desenvolupament_69a07c60"
+        },
+        {
+            "type": "java",
+            "name": "JavaBucle",
+            "request": "launch",
+            "mainClass": "JavaBucle",
+            "projectName": "entorns-de-desenvolupament_69a07c60"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "entorns-de-desenvolupament_69a07c60"
+        },
+        {
+            "type": "java",
+            "name": "Main(2)",
+            "request": "launch",
+            "mainClass": "a2_2_maven.src.main.java.com.navdeepsingh.Main",
+            "projectName": "entorns-de-desenvolupament_69a07c60"
+        }
+    ]
+}
