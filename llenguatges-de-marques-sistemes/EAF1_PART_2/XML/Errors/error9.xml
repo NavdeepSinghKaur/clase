@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- NAVDEEP SINGH -->
+ 
+<tenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../dades.xsd">
+    <comanda id="FGSFGS" data="63546">
+        <dades_client>
+            <nom>NSK</nom>
+            <adreca>Carrer 1, 25999</adreca>
+            <tel>+34-123-456-789</tel>
+        </dades_client>
+
+        <dades_comanda>
+            <codi>ABCD1234AB</codi>
+            <data>2024-11-27</data>
+            <tipus_lliurament>RÀPID</tipus_lliurament>
+            <termini_entrega>14</termini_entrega>
+            <import_total>99</import_total>
+        </dades_comanda>
+
+        <productes_comanda>
+            <producte codi="">
+                <codi_producte>ABC</codi_producte>
+                <quantitat_comprada>100</quantitat_comprada>
+                <preu_unitari>0.99</preu_unitari>
+                <descripcio_producte>lorem, Ipsum.</descripcio_producte>
+                <categoria>ALTRES</categoria>
+            </producte>
+        </productes_comanda>
+    </comanda>
+</tenda>

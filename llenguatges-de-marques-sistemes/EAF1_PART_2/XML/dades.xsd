@@ -1,0 +1,142 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="tenda">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="comanda" >
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="dades_client">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nom">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:maxLength value="30"></xs:maxLength>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="adreca">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:maxLength value="100"></xs:maxLength>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="tel">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="\+\d{2}-\d{3}-\d{3}-\d{3}"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="dades_comanda">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="codi">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:minLength value="6"></xs:minLength>
+                                                    <xs:maxLength value="10"></xs:maxLength>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="data">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:date">
+                                                    <xs:minInclusive value="2020-01-01"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="tipus_lliurament">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="RÀPID" />
+                                                    <xs:enumeration value="NORMAL" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="termini_entrega">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="1" />
+                                                    <xs:maxInclusive value="14" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+
+                                        </xs:element>
+                                        <xs:element name="import_total">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:decimal">
+                                                    <xs:minInclusive value="0.01"/>
+                                                    <xs:fractionDigits value="2"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="productes_comanda">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="producte" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="codi_producte">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:pattern value="[A-Z]{3}\d{4}"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="quantitat_comprada">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:integer">
+                                                                <xs:minInclusive value="1" />
+                                                                <xs:maxInclusive value="100" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="preu_unitari">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:decimal">
+                                                                <xs:minInclusive value="0.01"/>
+                                                                <xs:fractionDigits value="2"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="descripcio_producte">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="100"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="categoria">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="ORDINADOR" />
+                                                                <xs:enumeration value="PERIFÈRIC" />
+                                                                <xs:enumeration value="COMPONENT" />
+                                                                <xs:enumeration value="ALTRES" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="codi" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string"></xs:attribute>
+                        <xs:attribute name="data" type="xs:int"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
