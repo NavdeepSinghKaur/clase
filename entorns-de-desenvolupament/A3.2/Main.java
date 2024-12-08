@@ -2,7 +2,8 @@ public class Main {
     public static int comptarLletres(String txt, char lletra){
        
         int i, comptar;
-
+        txt = txt.toLowerCase();
+        lletra = Character.toLowerCase(lletra);
 
         i = 0;
         comptar = 0;
@@ -15,6 +16,6 @@ public class Main {
     }
 
     public static void main (String args[]) {
-        System.out.println(comptarLletres("Els alumnes de la classe", 'e'));
+        System.out.println(comptarLletres("Els alumnes de la classe", 'E'));
     }
 }
