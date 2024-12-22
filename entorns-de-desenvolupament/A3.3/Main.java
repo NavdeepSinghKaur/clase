@@ -27,5 +27,7 @@ public class Main {
         return posicio;
     }
 
-
+    public static void main(String[] args) {
+        System.out.println(cercaSubcadena("Hola, Hola, Hola", "Hola"));
+    }
 }
