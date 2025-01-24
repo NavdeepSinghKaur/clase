@@ -1,0 +1,33 @@
+a {
+    color: #F00;
+}
+.especial {
+    color: #ad3997;
+}
+.destacado {
+    color: #ffb62e;
+}
+#titulo {
+    color: #008484;
+}
+#subtitulo {
+    color: #00F;
+}
+#especial {
+    color: #ff27ff;
+}
+#adicional a {
+    color: #0F0;
+}
+#adicional p {
+    color: #908809;
+}
+p > strong {
+    color: red;
+}
+a > em {
+    color: #00F;
+}
+th, td {
+    outline: 1px solid black ;
+}
