@@ -1,0 +1,11 @@
+DELIMITER //
+CREATE FUNCTION notaMedia()
+RETURNS DECIMAL(5, 2)
+READS SQL DATA
+BEGIN
+	DECLARE nota_media DECIMAL(5, 2) DEFAULT 0;
+	SELECT AVG(nota) INTO nota_media FROM estudiantes;
+	RETURN nota_media;
+	
+END //
+DELIMITER ;

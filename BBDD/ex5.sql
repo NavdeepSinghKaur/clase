@@ -1,0 +1,10 @@
+DELIMITER //
+CREATE FUNCTION genere_nota_mes_alta()
+RETURNS VARCHAR(1)
+READS SQL DATA
+BEGIN
+	DECLARE genere VARCHAR(1) DEFAULT '';
+	SELECT genero INTO genere FROM estudiantes ORDER BY nota DESC LIMIT 1;
+	RETURN genere;
+END //
+DELIMITER ;
