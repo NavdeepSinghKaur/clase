@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        var openWeatherAppId = 'cff7355f451b3f00ef03845c3b2717e1',
+          openWeatherUrl = 'http://api.openweathermap.org/data/2.5/forecast'
+
+        var prepararDades = function(unitats) {
+            var nomCiutat = $('#nom-ciutat').val()
+            if (nomCiutat && nomCiutat != ''){
+                nomCiutat = nomCiutat.trim()
+                getData(openWeatherUrl, nomCiutat, openWeatherAppId, unitats)
+            }
+            else {
+                alert('Si us plau entra el nom de la ciutat')
+            }
+        }
+
+        $(document).ready(function(){
+            $('.btn-metric').click(function() {
+                prepararDades('metric')
+            })
+            $('.btn-imperial').click(function() {
+                prepararDades('imperial')
+            })
+        })
+
+        function getData (url, nomCiutat, appId, unitats) {
+            var request = $.ajax({
+                url: url,
+                dataType: 'jsonp',
+                data: {
+                    q: nomCiutat,
+                    appid: appId,
+                    units: unitats
+                },
+                jsonpCallback: 'cercarDades',
+                type: 'GET'
+            }).fail(function(error){
+                console.error(error)
+                alert('Error enviant la peticio')
+            })
+        }
+
+        function cercarDades (previsio) {
+            console.log(previsio)
+            var html = '',
+              nomCiutat = previsio.city.name,
+                country = previsio.city.country
+                icon = previsio.list[0].weather['icon']
+
+            html += '<h3> Previsió de temps per a '
+              + nomCiutat
+                + ', '
+                + country
+                + '</h3>'
+            html += '<div class="container">'
+            previsio.list.forEach(function(previsioEntry, index, list){
+                html += '<p>'
+                    + previsioEntry.dt_txt
+                    + ': '
+                    + previsioEntry.main.temp
+                    + ' '
+                    + '</p>'
+                    + '<img src="https://openweathermap.org/img/wn/' + previsioEntry.weather[0].icon + '@2x.png" />'
+            })
+            html += '<div>'
+
+            $('#log').html(html)
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row-mt-100">
+            <div class="span4 offset 3">
+                <h2>Aplicació del temps</h2>
+                <p>Entra el nom d'una ciutat per consultar la previsió del temps</p>
+            </div>
+            <div class="span6 offset1"><input type="text" style="margin-top:4rem;  border-radius: 0.5rem;" placeholder="Entra el nom de la ciutat" id="nom-ciutat" value=""/>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="span6 offset1"><input type="button" style="margin-top: 4rem; border-radius: 1rem;" class="btn-primary btn btn-metric" value="Previsió en graus celsius"/>
+            <div class="span6 offset1"><input type="button" style="margin-top: 4rem; border-radius: 1rem;" class="btn-secondary btn btn-imperial" value="Previsió amb fahrenheit"/>
+            </div>
+            <div class="span3">
+                <p id="info"></p>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 4rem;">
+            <div class="span6 offset1">
+                <div id="log">Res que mostrar encara</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <hr/>
+            <p></p>
+        </div>
+
+    </div>
+
+</body>
+</html>
