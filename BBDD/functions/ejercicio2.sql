@@ -1,13 +1,18 @@
+DROP FUNCTION idioma_por_paises;
+
 DELIMITER //
 
-CREATE FUNCTION idioma_por_paises(idioma VARCHAR(10)) RETURNS VARCHAR (1000)
+CREATE FUNCTION idioma_por_paises(idioma VARCHAR(10)) RETURNS INT
 DETERMINISTIC
 READS SQL DATA
 BEGIN
-	DECLARE paises VARCHAR(1000);
-	SELECT GROUP_CONCAT(pais.paisescodigo SEPARATOR ', ') INTO paises FROM paisesidioma pais WHERE pais.idioma LIKE (idioma);
+	DECLARE num_paises INT;
+	SELECT COUNT(pais.paisescodigo) 
+	INTO num_paises 
+	FROM paisesidioma pais 
+	WHERE pais.idioma LIKE (idioma);
 	
-	RETURN paises;
+	RETURN num_paises;
 	
 END //
 

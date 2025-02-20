@@ -1,11 +1,15 @@
+DROP FUNCTION IF EXISTS ciudades_poblacion;
+
 DELIMITER //
 
-CREATE FUNCTION ciudades_poblacion(poblacion_entrada INT) RETURNS VARCHAR(10000)
+CREATE FUNCTION ciudades_poblacion(poblacion_entrada INT) RETURNS INT
 DETERMINISTIC
 READS SQL DATA
 BEGIN
-	DECLARE ciudades_variable VARCHAR(10000);
-	SELECT GROUP_CONCAT(nombre SEPARATOR ", ") INTO ciudades_variable FROM ciudades  WHERE ciudades.poblacion > poblacion_entrada;
+	DECLARE ciudades_variable INT;
+	SELECT COUNT(nombre) INTO ciudades_variable 
+	FROM ciudades 
+	WHERE ciudades.poblacion > poblacion_entrada;
 	
 	RETURN ciudades_variable;
 	
@@ -13,4 +17,4 @@ END //
 
 DELIMITER ;
 
-SELECT ciudades_poblacion(100000);
+SELECT ciudades_poblacion(1000000);
