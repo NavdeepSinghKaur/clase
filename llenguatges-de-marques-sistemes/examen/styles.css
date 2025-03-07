@@ -1,0 +1,113 @@
+body {
+    background-color: #95c7e2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contenidor {
+    margin: 2rem;
+}
+
+header {
+    background-color: rgb(184, 184, 184);
+    border: 2px solid black;
+    border-radius: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+header p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#titol {
+    color: #f00;
+}
+
+.navegació ul {
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.navegació li {
+    margin: 1rem;
+    background-color: #000;
+    padding: 1rem 2rem;
+    border: 1px solid #000;
+    &:hover{
+        background-color: #fff;
+    }
+}
+
+.navegació a {
+    font-size: 1.35rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navegació li:hover a {
+    color: green;
+}
+
+#menu {
+    width: 15vw;
+}
+
+#menu p {
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: #000 1px solid;
+}
+
+#menu li {
+    color: #00f;
+    margin-top: 1rem;
+}
+
+#contenidor #menu, #partcentral, #columnadreta {
+    border: 2px solid rgb(17, 126, 22);
+    border-radius: 1.25rem;
+    vertical-align: top;
+    background-color: rgb(184, 184, 184);
+    display: inline-block;
+    min-height: 50vh;
+}
+
+#partcentral {
+    margin-left: 2.5rem;
+    width: 55vw;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+}
+
+.noticia {
+    height: 20vh;
+    width: 50vw;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    background: url('paper.gif');
+    border: 2px solid rgb(17, 126, 22);
+}
+
+#columnadreta {
+    width: 15vw;
+    margin-left: 2vw;
+}
+
+footer {
+    background-color: rgb(20, 92, 193);
+    display: block;
+    margin: 1rem;
+    padding: 0.25rem 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer p {
+    color: #fff;
+}
