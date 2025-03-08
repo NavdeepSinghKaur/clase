@@ -3,8 +3,6 @@ package main.java.inscaparrella.model;
 import main.java.inscaparrella.utils.CellType;
 import main.java.inscaparrella.utils.InhabitantType;
 
-import java.util.Objects;
-
 public class NormalCell extends Cell{
     private InhabitantType iType;
 
