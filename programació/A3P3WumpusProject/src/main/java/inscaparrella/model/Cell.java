@@ -1,6 +1,7 @@
 package main.java.inscaparrella.model;
 
 import main.java.inscaparrella.utils.CellType;
+import main.java.inscaparrella.utils.InhabitantType;
 
 import java.util.Objects;
 

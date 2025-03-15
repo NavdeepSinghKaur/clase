@@ -11,7 +11,7 @@ public class NormalCell extends Cell{
         iType = InhabitantType.NONE;
     }
 
-    public NormalCell(CellType ctype, int row, int col) {
+    public NormalCell(int row, int col) {
         super(row, col);
         super.ctype = CellType.NORMAL;
         iType = InhabitantType.NONE;
@@ -20,6 +20,14 @@ public class NormalCell extends Cell{
     public NormalCell(NormalCell nc) {
         super(nc);
         iType = nc.iType;
+    }
+
+    public void setInhabitantType(InhabitantType iType) {
+        this.iType = iType;
+    }
+
+    public InhabitantType getInhabitantType() {
+        return this.iType;
     }
 
     @Override
@@ -36,7 +44,7 @@ public class NormalCell extends Cell{
 
     @Override
     public boolean isDangerous() {
-        return (iType != InhabitantType.NONE);
+        return (iType == InhabitantType.NONE);
     }
 
     @Override

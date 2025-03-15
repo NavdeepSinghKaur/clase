@@ -1,5 +1,6 @@
 package main.java.inscaparrella.model;
 
+import main.java.inscaparrella.utils.CellType;
 import main.java.inscaparrella.utils.PowerUp;
 
 import java.util.Arrays;
@@ -11,18 +12,21 @@ public class PowerUpCell extends Cell{
 
     public PowerUpCell() {
         super();
+        super.ctype = CellType.POWERUP;
         int randomOption = random.nextInt(PowerUp.values().length);
         this.power = PowerUp.values()[randomOption];
     }
 
     public PowerUpCell(int row, int col) {
         super(row, col);
+        super.ctype = CellType.POWERUP;
         int randomOption = random.nextInt(PowerUp.values().length);
         this.power = PowerUp.values()[randomOption];
     }
 
     public PowerUpCell(PowerUpCell power) { // Is this a more correct way to create a copy constructor (deep copying)
         super(power);
+        super.ctype = CellType.POWERUP;
         this.power = power.power;
     }
 
