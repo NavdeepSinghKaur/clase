@@ -2,7 +2,7 @@ package main.java.inscaparrella.model;
 
 import main.java.inscaparrella.utils.*;
 
-import java.lang.reflect.Array;
+import java.text.ParsePosition;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -41,26 +41,29 @@ public class WumpusLaberynth {
         return cell;
     }
 
-    public void setLaberynth(ArrayList<ArrayList<Cell>> laberynth) { // CHECK <-----
-        Random random = new Random();
-        this.laberynth = new ArrayList<>();
-        this.wumpuspos = new int[2];
-        this.batspos = new int[laberynth.size()];
-
-        for (ArrayList<Cell> row : laberynth) {
-            ArrayList<Cell> tempArray = new ArrayList<>();
-            for (Cell cell : row) {
-                if (cell instanceof NormalCell) {
-                    tempArray.add(new NormalCell((NormalCell) cell));
-                } else if (cell instanceof PowerUpCell) {
-                    tempArray.add(new PowerUpCell((PowerUpCell) cell));
-                } else if (cell instanceof WellCell) {
-                    tempArray.add(new WellCell((WellCell) cell));
-                }
-            }
-            this.laberynth.add(tempArray);
-        }
-    }
+//    public void setLaberynth(ArrayList<ArrayList<Cell>> laberynth) { // CHECK <-----
+//        Random random = new Random();
+//        int normalCellCounter = 0;
+//        this.generatedLaberynth = new ArrayList<>();
+//        wumpuspos = new int[2];
+//
+//        for (ArrayList<Cell> row : laberynth) {
+//            ArrayList<Cell> tempArray = new ArrayList<>();
+//            for (Cell cell : row) {
+//                if (cell instanceof NormalCell) {
+//                    tempArray.add(new NormalCell((NormalCell) cell));
+//                    normalCellCounter++;
+//                } else if (cell instanceof PowerUpCell) {
+//                    tempArray.add(new PowerUpCell((PowerUpCell) cell));
+//                } else if (cell instanceof WellCell) {
+//                    tempArray.add(new WellCell((WellCell) cell));
+//                }
+//            }
+//            this.generatedLaberynth.add(tempArray);
+//        }
+//
+//        batspos = new int[random.nextInt(4, normalCellCounter*2)];
+//    }
 
     public void createNewLaberynth() { // Check for errors later
         Random random = new Random();
@@ -68,51 +71,62 @@ public class WumpusLaberynth {
         // cell dimensions
         int tableX = random.nextInt(5, 16);
         int tableY = random.nextInt(5, 16);
-        int cellTypeCounter = 0;
 
-        // Initialize arrayLists
-        ArrayList<ArrayList<Cell>> generatedLaberynth = new ArrayList<>();
-        ArrayList<Cell> generatedCells = new ArrayList<>();
+        int numberOfWellCells = random.nextInt(2, tableX*tableY);
+        int numberOfPowerUpCells = random.nextInt(2, tableX*tableY);
 
-        int numberOfWellCells = random.nextInt(2, (int) (laberynth.toArray().length*0.05));
-        int numberOfPowerUpCells = random.nextInt(2, (int) (laberynth.toArray().length*0.1));
-
-        // Number of normal cells variable used to calculate number of bats
         int normalCellNum = 0;
 
-        // initialize
         for (int i = 0; i < tableX; i++) {
-            for (int i1 = 0; i1 < tableY; i1++) {
+            ArrayList<Cell> generatedCells = new ArrayList<>();
+            for (int j = 0; j < tableY; j++) {
                 if (random.nextBoolean() && numberOfWellCells > 0) {
-                    generatedCells.add(new WellCell(i, i1));
+                    generatedCells.add(new WellCell(i, j));
                     numberOfWellCells--;
                 } else if (random.nextBoolean() && numberOfPowerUpCells > 0) {
-                    generatedCells.add(new PowerUpCell(i, i1));
+                    generatedCells.add(new PowerUpCell(i, j));
                     numberOfPowerUpCells--;
                 } else {
-                    generatedCells.add(new NormalCell(i, i1));
+                    generatedCells.add(new NormalCell(i, j));
                     normalCellNum++;
                 }
             }
-            generatedLaberynth.add(generatedCells);
+            laberynth.add(generatedCells);
         }
-        setLaberynth(generatedLaberynth);
 
-        // Calculate number of bats
-        int numberOfBats = random.nextInt(2, (int) (normalCellNum*0.1));
-        int numberOfWumpus = numberOfBats;
-        // initialize positions of wumpuspus & bats
+        // initialize positions of wumpuspus & batspos
+        int numberOfBats = random.nextInt(4, normalCellNum*2);
+        int generatedBats = 0;
+        int numberOfWumpus = 1;
+        for (ArrayList<Cell> cells : laberynth) {
+            for (Cell cell : cells) {
+                if (random.nextBoolean() && numberOfBats > 0) {
+                    NormalCell habitatnt = (NormalCell) cell;
+                    habitatnt.setInhabitantType(InhabitantType.BAT);
+                    numberOfBats--;
+                    generatedBats++;
+                } else if (random.nextBoolean() && numberOfWumpus > 0) {
+                    NormalCell habitatnt = (NormalCell) cell;
+                    habitatnt.setInhabitantType(InhabitantType.WUMPUS);
+                    numberOfWumpus--;
+                }
+            }
+        }
+
+        int batsposXCounter = 0;
+        batspos = new int[generatedBats];
+
         for (int i = 0; i < laberynth.size(); i++) {
-            for (int j = 0; j < laberynth.get(i).size(); j++) {
-                if (laberynth.get(i).get(j).getCtype() == CellType.NORMAL && !(laberynth.get(i).get(j).isDangerous())) {
-                    if (random.nextBoolean() && numberOfBats > 0) {
-                        NormalCell habitatnt = (NormalCell) this.laberynth.get(i).get(j);
-                        habitatnt.setInhabitantType(InhabitantType.BAT);
-                        numberOfBats--;
-                    } else if (random.nextBoolean() && numberOfWumpus > 0) {
-                        NormalCell habitatnt = (NormalCell) this.laberynth.get(i).get(j);
-                        habitatnt.setInhabitantType(InhabitantType.WUMPUS);
-                        numberOfWumpus--;
+            for (int j = 0; j < laberynth.getFirst().size(); j++) {
+                if (laberynth.get(i).get(j) instanceof NormalCell) {
+                    NormalCell nc = ((NormalCell) laberynth.get(i).get(j));
+                    if (nc.getInhabitantType() == InhabitantType.BAT) {
+                        batspos[batsposXCounter] = i;
+                        batspos[batsposXCounter+1] = j;
+                        batsposXCounter++;
+                    } else if (nc.getInhabitantType() == InhabitantType.WUMPUS) {
+                        wumpuspos[0] = i;
+                        wumpuspos[1] = j;
                     }
                 }
             }
@@ -122,23 +136,22 @@ public class WumpusLaberynth {
     public int[] getInitialCell() {
         Random random = new Random();
         ppos = null;
-        boolean popsCalculated = false;
+        boolean pposCalculated = false;
 
         if (!this.laberynth.isEmpty()) {
             for (int i = 0; i < this.laberynth.size(); i++) {
-                for (int j = 0; j < this.laberynth.get(i).size(); j++) {
+                for (int j = 0; j < this.laberynth.getFirst().size(); j++) {
                     if (laberynth.get(i).get(j).getCtype() == CellType.NORMAL) {
                         NormalCell nc = (NormalCell) laberynth.get(i).get(j);
-                        if (nc.getInhabitantType() == InhabitantType.NONE && random.nextBoolean() && !popsCalculated) {
+                        if (nc.getInhabitantType() == InhabitantType.NONE && random.nextBoolean() && !pposCalculated) {
                             nc.openCell();
                             ppos = new int[]{i, j};
-                            popsCalculated = true;
+                            pposCalculated = true;
                         }
                     }
                 }
             }
         }
-
         return ppos;
     }
 
@@ -239,12 +252,69 @@ public class WumpusLaberynth {
     }
 
     public boolean startleWumpus() {
+        boolean validPosition = false;
         if (laberynth != null && ppos != null) {
             Random random = new Random();
             if (random.nextInt() % 2 == 0) {
-                
+                while (!validPosition) {
+                    int[] coordinates = new int[]{random.nextInt(laberynth.size()), random.nextInt(laberynth.getFirst().size())};
+                    Cell newWumpusPosition = laberynth.get(coordinates[0]).get(coordinates[1]);
+                    if (newWumpusPosition instanceof NormalCell
+                            && (coordinates[0] != ppos[0] && coordinates[1] != ppos[1]))
+                    {
+                        if (((NormalCell) newWumpusPosition).getInhabitantType() == InhabitantType.NONE) {
+                            ((NormalCell) laberynth.get(wumpuspos[0]).get(wumpuspos[1])).setInhabitantType(InhabitantType.NONE);
+                            wumpuspos = coordinates;
+                            validPosition = true;
+                            ((NormalCell) newWumpusPosition).setInhabitantType(InhabitantType.WUMPUS);
+                        }
+                    }
+                }
             }
         }
+
+        return validPosition;
+    }
+
+    public void moveBats() {
+        Random random = new Random();
+        int batsposCounter = 0;
+        int batsLength = batspos.length/2;
+        int i = 0;
+        if (!laberynth.isEmpty()) {
+            while (i < batsLength) {
+                int xPosition = random.nextInt(0, laberynth.size());
+                int yPosition = random.nextInt(0, laberynth.getFirst().size());
+                if (laberynth.get(xPosition).get(yPosition).getCtype() == CellType.NORMAL && !(xPosition == ppos[0] && yPosition == ppos[1])) {
+                    NormalCell cell = (NormalCell) laberynth.get(xPosition).get(yPosition);
+                    if (cell.getInhabitantType() == InhabitantType.NONE) {
+                        NormalCell batsCell = (NormalCell) laberynth.get(batspos[batsposCounter]).get(batsposCounter + 1);
+                        batsCell.setInhabitantType(InhabitantType.NONE);
+                        batspos[batsposCounter] = xPosition;
+                        batspos[batsposCounter + 1] = yPosition;
+                        batsCell = (NormalCell) laberynth.get(batspos[batsposCounter]).get(batsposCounter + 1);
+                        batsCell.setInhabitantType(InhabitantType.BAT);
+                        i++;
+                    }
+                }
+            }
+        }
+    }
+
+    public String emitEchoes() {
+        String echoes = "";
+
+        for (int i = ppos[0]-1; i <= ppos[0]+1; i++) {
+            for (int j = ppos[1]-1; j <= ppos[1]+1; j++) {
+                if (i <= laberynth.size()-1 && j <= laberynth.getFirst().size() && i >= 0 && j >= 0) {
+                    if (!(i == ppos[0] && j == ppos[1])) {
+                        echoes += "\n" + laberynth.get(i).get(j).emitEcho();
+                    }
+                }
+            }
+        }
+
+        return echoes;
     }
 
 }
