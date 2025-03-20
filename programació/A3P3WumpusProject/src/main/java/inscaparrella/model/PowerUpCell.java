@@ -24,7 +24,7 @@ public class PowerUpCell extends Cell{
         this.power = PowerUp.values()[randomOption];
     }
 
-    public PowerUpCell(PowerUpCell power) { // Is this a more correct way to create a copy constructor (deep copying)
+    public PowerUpCell(PowerUpCell power) { // Is this a better way to create a copy constructor (deep copying)?
         super(power);
         super.ctype = CellType.POWERUP;
         this.power = power.power;
