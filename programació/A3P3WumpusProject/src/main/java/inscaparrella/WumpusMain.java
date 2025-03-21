@@ -2,6 +2,7 @@ package main.java.inscaparrella;
 
 import main.java.inscaparrella.controller.WumpusController;
 import main.java.inscaparrella.utils.MovementDirection;
+import main.java.inscaparrella.utils.ShootDirection;
 
 import java.util.Scanner;
 
@@ -52,14 +53,22 @@ public class WumpusMain {
                             controller.movePlayer(MovementDirection.DOWN);
                         } else if (movement.equals("d")) {
                             controller.movePlayer(MovementDirection.RIGHT);
+                        } else if (movement.equals("W")) {
+                            controller.huntTheWumpus(ShootDirection.UP);
+                        } else if (movement.equals("A")) {
+                            controller.huntTheWumpus(ShootDirection.LEFT);
+                        } else if (movement.equals("S")) {
+                            controller.huntTheWumpus(ShootDirection.DOWN);
+                        } else if (movement.equals("D")) {
+                            controller.huntTheWumpus(ShootDirection.RIGHT);
                         } else {
                             System.out.println("ERROR.");
                         }
                     }
                     if (controller.isGameEnded() && controller.isGameWon()) {
-                        System.out.println("Yuo won. :)");
+                        System.out.println("Yuo won");
                     } else {
-                        System.out.println("you lost. :(");
+                        System.out.println("you lost");
                     }
                     break;
                 default:
