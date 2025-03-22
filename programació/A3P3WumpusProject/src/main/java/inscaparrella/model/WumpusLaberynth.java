@@ -21,8 +21,6 @@ public class WumpusLaberynth {
 
 
     //GETTERS & SETTERS
-
-
     public ArrayList<ArrayList<Cell>> getLaberynth() {
         ArrayList<ArrayList<Cell>> cells = new ArrayList<>();
         for(ArrayList<Cell> row : laberynth) {
@@ -106,8 +104,8 @@ public class WumpusLaberynth {
 
         for (int i = 0; i < laberynth.size(); i++) {
             for (int j = 0; j < laberynth.getFirst().size(); j++) {
-                if (laberynth.get(i).get(j) instanceof NormalCell) {
-                    NormalCell nc = ((NormalCell) laberynth.get(i).get(j));
+                if (laberynth.get(i).get(j) instanceof NormalCell nc) {
+                    nc = ((NormalCell) laberynth.get(i).get(j));
                     if (nc.getInhabitantType() == InhabitantType.BAT) {
                         if (batsposXCounter % 2 == 0) {
                             batspos[batsposXCounter] = i;
@@ -227,21 +225,17 @@ public class WumpusLaberynth {
                 case LEFT:
                     returnValue = ((!(ppos[1] == 0)) && (wumpuspos[0] == ppos[0] && wumpuspos[1] == ppos[1] - 1));
                     break;
-
                 case RIGHT:
                     returnValue = (!(ppos[1] == laberynth.getFirst().size()) && (wumpuspos[0] == ppos[0] && wumpuspos[1] == ppos[1]+1));
                     break;
-
                 case UP:
                     returnValue = (!(ppos[0] == 0) && (wumpuspos[0] == ppos[0]-1 && wumpuspos[1] == ppos[1]));
                     break;
-
                 case DOWN:
                     returnValue = (!(ppos[0] == laberynth.size()) && (wumpuspos[0] == ppos[0]+1 && wumpuspos[1] == ppos[1]));
                     break;
             }
         }
-
         return returnValue;
     }
 
@@ -251,16 +245,17 @@ public class WumpusLaberynth {
             Random random = new Random();
             if (random.nextInt() % 2 == 0) {
                 while (!validPosition) {
-                    int[] coordinates = new int[]{random.nextInt(laberynth.size()), random.nextInt(laberynth.getFirst().size())};
-                    Cell newWumpusPosition = laberynth.get(coordinates[0]).get(coordinates[1]);
+                    int xPosition = random.nextInt(0, laberynth.size());
+                    int yPosition = random.nextInt(0, laberynth.getFirst().size());
+                    Cell newWumpusPosition = laberynth.get(xPosition).get(yPosition);
                     if (newWumpusPosition instanceof NormalCell
-                            && (coordinates[0] != ppos[0] && coordinates[1] != ppos[1])) {
-                        if (((NormalCell) newWumpusPosition).getInhabitantType() == InhabitantType.NONE) {
+                            && (xPosition != ppos[0] && yPosition != ppos[1])
+                            && ((NormalCell) newWumpusPosition).getInhabitantType() == InhabitantType.NONE)
+                    {
                             ((NormalCell) laberynth.get(wumpuspos[0]).get(wumpuspos[1])).setInhabitantType(InhabitantType.NONE);
-                            wumpuspos = coordinates;
-                            validPosition = true;
+                            wumpuspos = new int[]{xPosition, yPosition};
                             ((NormalCell) newWumpusPosition).setInhabitantType(InhabitantType.WUMPUS);
-                        }
+                            validPosition = true;
                     }
                 }
             }

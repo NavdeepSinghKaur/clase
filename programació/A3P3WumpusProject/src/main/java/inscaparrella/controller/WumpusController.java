@@ -62,6 +62,12 @@ public class WumpusController {
             if (laberynth.shootArrow(dir)){
                 won = true;
                 gameEnded = true;
+            } else {
+                if (laberynth.startleWumpus()){
+                    System.out.println("Wumpus s'ha espantat bro. wumpus controller class message");
+                } else {
+                    System.out.println("el wumpus no s'ha espantat, wumpus controller class message");
+                }
             }
         }
     }
