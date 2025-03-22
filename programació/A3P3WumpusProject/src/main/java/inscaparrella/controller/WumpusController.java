@@ -71,6 +71,7 @@ public class WumpusController {
     }
 
     public String getLastEchoes() {
+        echoes = laberynth.emitEchoes();
         return echoes;
     }
 
@@ -84,6 +85,10 @@ public class WumpusController {
 
     @Override
     public String toString() {
-        return laberynth.toString();
+        String returnText = "";
+        returnText += getLastEchoes() + "\n";
+        returnText += laberynth.toString();
+
+        return returnText;
     }
 }

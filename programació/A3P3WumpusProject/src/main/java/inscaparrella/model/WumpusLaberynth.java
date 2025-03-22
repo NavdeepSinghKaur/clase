@@ -254,8 +254,7 @@ public class WumpusLaberynth {
                     int[] coordinates = new int[]{random.nextInt(laberynth.size()), random.nextInt(laberynth.getFirst().size())};
                     Cell newWumpusPosition = laberynth.get(coordinates[0]).get(coordinates[1]);
                     if (newWumpusPosition instanceof NormalCell
-                            && (coordinates[0] != ppos[0] && coordinates[1] != ppos[1]))
-                    {
+                            && (coordinates[0] != ppos[0] && coordinates[1] != ppos[1])) {
                         if (((NormalCell) newWumpusPosition).getInhabitantType() == InhabitantType.NONE) {
                             ((NormalCell) laberynth.get(wumpuspos[0]).get(wumpuspos[1])).setInhabitantType(InhabitantType.NONE);
                             wumpuspos = coordinates;
