@@ -42,7 +42,7 @@ public class Player {
         return powerQty;
     }
 
-    public boolean userPower(PowerUp power) {
+    public boolean usePower(PowerUp power) {
         boolean bPowerUsed = false;
         if (power.equals(PowerUp.ARROW) && powers[0] > 0) {
             powers[0]--;

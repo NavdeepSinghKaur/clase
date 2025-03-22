@@ -173,8 +173,7 @@ public class WumpusLaberynth {
         Danger dangerType = Danger.NONE;
         if (!laberynth.isEmpty() && ppos != null) {
             Cell cellPosition = laberynth.get(ppos[0]).get(ppos[1]);
-            if (cellPosition instanceof NormalCell) {
-                NormalCell nc = (NormalCell) cellPosition;
+            if (cellPosition instanceof NormalCell nc) {
                 InhabitantType htype = nc.getInhabitantType();
                 if (htype.equals(InhabitantType.BAT)) {
                     dangerType = Danger.BAT;
@@ -290,6 +289,12 @@ public class WumpusLaberynth {
     }
 
     public String emitEchoes() {
+        /*
+        * ERROR WHEN PLAYER GETS TO A BORDER, THE FUNCTION SEES WHAT'S IN THE LEFT AND RIGHT BORDER.
+        * AND WHEN FOR EXAMPLE A BRODER IS NOT THERE THE FUNCTION GETS INTO AN INDEX OUT OF BONDS
+        * SEE THE NEXT PART FOR EXAMPLE: int j = ppos[1] - 1; j <= ppos[1] + 1; j++
+        * * WHERE ppos[1] -1 IS THE PREVIOUS CELL AND ppos[1] + 1 DOESN'T EXIST WHEN THE PLAYER IS IN THE RIGHT BORDER.
+        * **/
         String echoes = "";
 
         if (!laberynth.isEmpty() && ppos != null) {

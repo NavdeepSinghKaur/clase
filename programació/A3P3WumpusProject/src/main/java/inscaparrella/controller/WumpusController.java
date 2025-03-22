@@ -3,6 +3,7 @@ package main.java.inscaparrella.controller;
 import main.java.inscaparrella.model.Cell;
 import main.java.inscaparrella.model.Player;
 import main.java.inscaparrella.model.WumpusLaberynth;
+import main.java.inscaparrella.utils.Danger;
 import main.java.inscaparrella.utils.MovementDirection;
 import main.java.inscaparrella.utils.PowerUp;
 import main.java.inscaparrella.utils.ShootDirection;
@@ -49,8 +50,13 @@ public class WumpusController {
     }
 
     public void movePlayer(MovementDirection dir) {
+        int[] playerPositions;
         if (!gameEnded) {
-            laberynth.movePlayer(dir);
+            traverseMessage = "";
+            playerPositions = laberynth.movePlayer(dir);
+            player.move(playerPositions[0], playerPositions[1]);
+            echoes = laberynth.emitEchoes();
+            traverseCell();
             if (!gameEnded) {
                 laberynth.moveBats();
             }
@@ -59,6 +65,9 @@ public class WumpusController {
 
     public void huntTheWumpus(ShootDirection dir) {
         if (!gameEnded && player.getPowerUpQuantity(PowerUp.ARROW) > 0) {
+            if (player.usePower(PowerUp.ARROW)) {
+                System.out.println("Arrows restants: " + player.getPowerUpQuantity(PowerUp.ARROW));
+            }
             if (laberynth.shootArrow(dir)){
                 won = true;
                 gameEnded = true;
@@ -77,7 +86,6 @@ public class WumpusController {
     }
 
     public String getLastEchoes() {
-        echoes = laberynth.emitEchoes();
         return echoes;
     }
 
@@ -92,9 +100,34 @@ public class WumpusController {
     @Override
     public String toString() {
         String returnText = "";
+        returnText += player.toString();
+        returnText += getLastTraverseMessage();
         returnText += getLastEchoes() + "\n";
         returnText += laberynth.toString();
 
         return returnText;
+    }
+
+    private void traverseCell() {
+        if (laberynth.getDanger() == Danger.WUMPUS) {
+            won = false;
+            gameEnded = true;
+            traverseMessage += "El Wumpus ha atacat i malferit al jugador!";
+        }
+        if (laberynth.getDanger() == Danger.WELL) {
+            if ( player.getPowerUpQuantity(PowerUp.JUMPER_BOOTS) < 1) {
+                won = false;
+                gameEnded = true;
+                traverseMessage += "El jugador ha caigut en un pou i ha quedat malferit!";
+            } else {
+                player.usePower(PowerUp.JUMPER_BOOTS);
+                traverseMessage += "El jugador ha estat a punt de caure en un pou, però, per sort, portava les JUMPER BOOTS";
+            }
+        }
+        if (laberynth.getDanger() == Danger.BAT) {
+            laberynth.batKidnapping();
+            traverseMessage += "Un ratpenat s’enduu el jugador!";
+            traverseCell();
+        }
     }
 }
