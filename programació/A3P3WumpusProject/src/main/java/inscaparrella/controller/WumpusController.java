@@ -8,7 +8,11 @@ import main.java.inscaparrella.utils.MovementDirection;
 import main.java.inscaparrella.utils.PowerUp;
 import main.java.inscaparrella.utils.ShootDirection;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class WumpusController {
     private WumpusLaberynth laberynth;
@@ -26,18 +30,19 @@ public class WumpusController {
         won = false;
     }
 
-    public void loadLaberynth(String filename) {
-
+    public void loadLaberynth(String filename) throws FileNotFoundException {
+        FileReader fr = new FileReader(filename);
+        BufferedReader br = new BufferedReader(fr);
+        Scanner sr = new Scanner(br);
     }
 
     public void saveLaberynth() {
-
+        
     }
 
     public boolean startGame() {
         int[] playerPosition;
         boolean bGameStarted = false;
-        // TEMPORATY INSTALL
         gameEnded = false;
         laberynth.createNewLaberynth();
         playerPosition = laberynth.getInitialCell();
@@ -66,6 +71,9 @@ public class WumpusController {
         }
     }
 
+    /*
+    * WRONG IMPLEMENTATION OF THE METHOD - TO FIX
+    * **/
     public void huntTheWumpus(ShootDirection dir) {
         if (!gameEnded && player.getPowerUpQuantity(PowerUp.ARROW) > 0) {
             if (player.usePower(PowerUp.ARROW)) {
@@ -131,6 +139,15 @@ public class WumpusController {
             laberynth.batKidnapping();
             traverseMessage += "Un ratpenat s’enduu el jugador!";
             traverseCell();
+        }
+        PowerUp powerType = laberynth.getPowerUp();
+        if (powerType != PowerUp.NONE) {
+            player.addPower(powerType);
+            if (powerType.equals(PowerUp.ARROW)) {
+                traverseMessage += "El jugador ha trobat una unitat del poder ARROW";
+            } else {
+                traverseMessage += "El jugador ha trobat una unitat del poder JUMPER_BOOTS";
+            }
         }
     }
 }

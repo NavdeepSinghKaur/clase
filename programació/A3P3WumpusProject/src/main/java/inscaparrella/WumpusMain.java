@@ -45,24 +45,33 @@ public class WumpusMain {
                         System.out.println(controller.toString());
                         System.out.println("Indica el moviment que faràs WASD: ");
                         String movement = scanner.nextLine();
-                        if (movement.equals("w")) {
-                            controller.movePlayer(MovementDirection.UP);
-                        } else if (movement.equals("a")) {
-                            controller.movePlayer(MovementDirection.LEFT);
-                        } else if (movement.equals("s")) {
-                            controller.movePlayer(MovementDirection.DOWN);
-                        } else if (movement.equals("d")) {
-                            controller.movePlayer(MovementDirection.RIGHT);
-                        } else if (movement.equals("W")) {
-                            controller.huntTheWumpus(ShootDirection.UP);
-                        } else if (movement.equals("A")) {
-                            controller.huntTheWumpus(ShootDirection.LEFT);
-                        } else if (movement.equals("S")) {
-                            controller.huntTheWumpus(ShootDirection.DOWN);
-                        } else if (movement.equals("D")) {
-                            controller.huntTheWumpus(ShootDirection.RIGHT);
-                        } else {
-                            System.out.println("ERROR.");
+                        switch (movement) {
+                            case "w":
+                                controller.movePlayer(MovementDirection.UP);
+                                break;
+                            case "a":
+                                controller.movePlayer(MovementDirection.LEFT);
+                                break;
+                            case "s":
+                                controller.movePlayer(MovementDirection.DOWN);
+                                break;
+                            case "d":
+                                controller.movePlayer(MovementDirection.RIGHT);
+                                break;
+                            case "W":
+                                controller.huntTheWumpus(ShootDirection.UP);
+                                break;
+                            case "A":
+                                controller.huntTheWumpus(ShootDirection.LEFT);
+                                break;
+                            case "S":
+                                controller.huntTheWumpus(ShootDirection.DOWN);
+                                break;
+                            case "D":
+                                controller.huntTheWumpus(ShootDirection.RIGHT);
+                                break;
+                            default:
+                                System.out.println("ERROR. No has introduït una opció correcta.\nTorna a intentar-ho.");
                         }
                     }
                     if (controller.isGameEnded() && controller.isGameWon()) {
