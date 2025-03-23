@@ -35,13 +35,16 @@ public class WumpusController {
     }
 
     public boolean startGame() {
+        int[] playerPosition;
         boolean bGameStarted = false;
         // TEMPORATY INSTALL
         gameEnded = false;
         laberynth.createNewLaberynth();
-        if (laberynth.getInitialCell() != null) {
+        playerPosition = laberynth.getInitialCell();
+        traverseCell();
+        if (playerPosition != null) {
             won = false;
-            player.setStartingCell(0, 0);
+            player.setStartingCell(playerPosition[0], playerPosition[1]);
             echoes = getLastEchoes();
             traverseMessage = "";
             bGameStarted = true;

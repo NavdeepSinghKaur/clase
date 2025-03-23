@@ -273,8 +273,8 @@ public class WumpusLaberynth {
                 int yPosition = random.nextInt(0, laberynth.getFirst().size());
                 if (laberynth.get(xPosition).get(yPosition).getCtype().equals(CellType.NORMAL) && !(xPosition == ppos[0] && yPosition == ppos[1])) {
                     NormalCell cell = (NormalCell) laberynth.get(xPosition).get(yPosition);
-                    if (cell.getInhabitantType() == InhabitantType.NONE) {
-                        NormalCell batsCell = (NormalCell) laberynth.get(batspos[batsposCounter]).get(batspos[batsposCounter + 1]);
+                    if (cell.getInhabitantType() == InhabitantType.NONE && cell.getCtype() == CellType.NORMAL) {
+                        NormalCell batsCell = ((NormalCell) laberynth.get(batspos[batsposCounter]).get(batspos[batsposCounter + 1]));
                         batsCell.setInhabitantType(InhabitantType.NONE);
                         batspos[batsposCounter] = xPosition;
                         batspos[batsposCounter + 1] = yPosition;
@@ -336,6 +336,8 @@ public class WumpusLaberynth {
                         stringOutput += " W ";
                     } else if (laberynth.get(i).get(j).isOpen()) {
                         stringOutput += "   ";
+                    } else if (laberynth.get(i).get(j).ctype == CellType.POWERUP) {
+                        stringOutput += " ↑ ";
                     } else {
                         stringOutput += " # ";
                     }
@@ -346,25 +348,4 @@ public class WumpusLaberynth {
 
         return stringOutput;
     }
-//    @Override
-//    public String toString() {
-//        String stringOutput = "";
-//
-//        for (int i = 0; i < laberynth.size(); i++) {
-//            for (int j = 0; j < laberynth.getFirst().size(); j++) {
-//                if (i == ppos[0] && j == ppos[j]) {
-//                    stringOutput += "P";
-//                } else if (!laberynth.get(i).get(j).isOpen()) {
-//                    stringOutput += "#";
-//                } else if (laberynth.get(i).get(j).ctype == CellType.WELL) {
-//                    stringOutput += "O";
-//                } else {
-//                    stringOutput += " ";
-//                }
-//            }
-//            stringOutput += "\n";
-//        }
-//
-//        return stringOutput;
-//    }
 }
