@@ -4,6 +4,7 @@ import main.java.inscaparrella.controller.WumpusController;
 import main.java.inscaparrella.utils.MovementDirection;
 import main.java.inscaparrella.utils.ShootDirection;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /**
@@ -13,6 +14,7 @@ import java.util.Scanner;
 
 public class WumpusMain {
     public static void main(String[] args) {
+        WumpusController controller;
         Scanner scanner = new Scanner(System.in);
         boolean exitGame = false;
 
@@ -26,7 +28,7 @@ public class WumpusMain {
                     Entrada:
                     """);
             int option = scanner.nextInt();
-
+            scanner.nextLine();
             switch (option) {
                 case 0:
                     System.out.println("Ok.");
@@ -34,11 +36,21 @@ public class WumpusMain {
                     exitGame = true;
                     break;
                 case 1:
+                    controller = new WumpusController();
+                    System.out.println("Indica la ubicació del arxiu: ");
+                    String location = "";
+                    location = scanner.nextLine();
+                    try {
+                        System.out.println(location);
+                        controller.loadLaberynth(location);
+                    } catch (FileNotFoundException e) {
+                        throw new RuntimeException(e);
+                    }
                     break;
                 case 2:
                     System.out.println("Indica el nom del fitxer a on es guardarà la partida: ");
                     String fileName = scanner.nextLine();
-                    WumpusController controller = new WumpusController();
+                    controller = new WumpusController();
                     controller.startGame();
                     while (!controller.isGameEnded()) {
                         System.out.println();

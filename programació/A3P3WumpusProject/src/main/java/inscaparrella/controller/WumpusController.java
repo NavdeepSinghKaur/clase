@@ -34,6 +34,16 @@ public class WumpusController {
         FileReader fr = new FileReader(filename);
         BufferedReader br = new BufferedReader(fr);
         Scanner sr = new Scanner(br);
+        while (sr.hasNextLine()) {
+            String line = sr.nextLine();
+            if (line.endsWith("N ") || line.endsWith("P ") || line.endsWith("W ")) {
+                System.out.println("Board: " + line);
+            } else {
+                System.out.println("wumpus: " + line);
+                line = sr.nextLine();
+                System.out.println("Bats: " + line);
+            }
+        }
     }
 
     public void saveLaberynth() {
@@ -111,7 +121,7 @@ public class WumpusController {
     @Override
     public String toString() {
         String returnText = "";
-        returnText += player.toString();
+        returnText += player.toString() + "\n";
         returnText += getLastTraverseMessage();
         returnText += getLastEchoes() + "\n";
         returnText += laberynth.toString();

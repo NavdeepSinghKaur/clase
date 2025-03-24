@@ -1,0 +1,6 @@
+DROP TRIGGER IF EXISTS precio_comision;
+
+DELIMITER //
+CREATE TRIGGER BEFORE INSERT ON comision(
+
+)

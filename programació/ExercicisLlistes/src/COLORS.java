@@ -1,0 +1,3 @@
+public enum COLORS {
+    GROC, VERD, VERMELL, NEGRE, BLANC, BLAU;
+}
