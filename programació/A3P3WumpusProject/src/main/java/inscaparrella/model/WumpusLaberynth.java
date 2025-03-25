@@ -39,6 +39,14 @@ public class WumpusLaberynth {
         return cells;
     }
 
+    public void setLaberynth(ArrayList<ArrayList<Cell>> laberynth, int[] wumpuspos, int[] batspos) {
+        for (int i = 0; i < laberynth.size(); i++) {
+            for (int j = 0; j < laberynth.get(i).size(); j++) {
+
+            }
+        }
+    }
+
     public void createNewLaberynth() { // Check for errors later
         Random random = new Random();
 

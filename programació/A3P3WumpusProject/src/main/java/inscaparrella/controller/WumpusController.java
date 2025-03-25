@@ -1,8 +1,6 @@
 package main.java.inscaparrella.controller;
 
-import main.java.inscaparrella.model.Cell;
-import main.java.inscaparrella.model.Player;
-import main.java.inscaparrella.model.WumpusLaberynth;
+import main.java.inscaparrella.model.*;
 import main.java.inscaparrella.utils.Danger;
 import main.java.inscaparrella.utils.MovementDirection;
 import main.java.inscaparrella.utils.PowerUp;
@@ -12,6 +10,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class WumpusController {
@@ -31,18 +30,37 @@ public class WumpusController {
     }
 
     public void loadLaberynth(String filename) throws FileNotFoundException {
+        ArrayList<ArrayList<Cell>> inputLaberynth = new ArrayList<>();
+        ArrayList<Cell> inputLaberynthRows = new ArrayList<>();
         FileReader fr = new FileReader(filename);
         BufferedReader br = new BufferedReader(fr);
         Scanner sr = new Scanner(br);
         while (sr.hasNextLine()) {
             String line = sr.nextLine();
+            String[] lineElements = line.split(" ");
             if (line.endsWith("N ") || line.endsWith("P ") || line.endsWith("W ")) {
-                System.out.println("Board: " + line);
+                for (int i = 0; i < lineElements.length; i++) {
+                    if (lineElements[i].equals("N")) {
+                        inputLaberynthRows.add(new NormalCell());
+                    } else if (lineElements[i].equals("P")) {
+                        inputLaberynthRows.add(new PowerUpCell());
+                    } else if (lineElements[i].equals("W")) {
+                        inputLaberynthRows.add(new WellCell());
+                    }
+                }
+                inputLaberynth.add(inputLaberynthRows);
+                inputLaberynthRows = new ArrayList<>();
             } else {
                 System.out.println("wumpus: " + line);
                 line = sr.nextLine();
                 System.out.println("Bats: " + line);
             }
+        }
+        for (ArrayList<Cell> cells : inputLaberynth) {
+            for (Cell cell : cells) {
+                System.out.print(cell);
+            }
+            System.out.println();
         }
     }
 
