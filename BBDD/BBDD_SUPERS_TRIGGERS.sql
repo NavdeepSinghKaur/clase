@@ -43,6 +43,20 @@ CREATE TABLE comision (
 	PRIMARY KEY (id_cajero, mes);
 )
 
+-- tabla nueva
+-- insertar ticket donde va todo id cajero, fecha, ..., y el precio total
+-- en la tabla comision he de insertar la comision al cajero ese mes
+-- si la venta es del marzo y el cajero es el 1
+-- mirar lo en la comision y sumar un 1 porciento del total
+
+DROP TRIGGER IF EXISTS insretar_comision;
+CREATE TRIGGER insertar_comision AFTER INSERT ON comision
+FOR EACH ROW
+BEGIN
+	
+END//
+DELIMITER ;
+
 insert into tiendas values(1,'Carrefive','Lleida');
 insert into tiendas values(2,'Comsom','Girona');
 insert into tiendas values(3,'Semana','Girona');

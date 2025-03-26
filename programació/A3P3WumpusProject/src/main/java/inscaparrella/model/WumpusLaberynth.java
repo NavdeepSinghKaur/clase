@@ -19,7 +19,6 @@ public class WumpusLaberynth {
         batspos = null;
     }
 
-
     //GETTERS & SETTERS
     public ArrayList<ArrayList<Cell>> getLaberynth() {
         ArrayList<ArrayList<Cell>> cells = new ArrayList<>();
@@ -40,13 +39,26 @@ public class WumpusLaberynth {
     }
 
     public void setLaberynth(ArrayList<ArrayList<Cell>> laberynth, int[] wumpuspos, int[] batspos) {
-        for (int i = 0; i < laberynth.size(); i++) {
-            for (int j = 0; j < laberynth.get(i).size(); j++) {
+        this.wumpuspos = wumpuspos;
+        this.batspos = batspos;
 
+        for (int i = 0; i < laberynth.size(); i++) {
+            ArrayList<Cell> laberynthRow = new ArrayList<>();
+            for (int j = 0; j < laberynth.get(i).size(); j++) {
+                Cell cell = laberynth.get(i).get(j);
+                if (cell instanceof NormalCell nc) {
+                    laberynthRow.add(new NormalCell(nc));
+                } else if (cell instanceof PowerUpCell pc) {
+                    laberynthRow.add(new PowerUpCell(pc));
+                } else if (cell instanceof WellCell wc) {
+                    laberynthRow.add(new WellCell(wc));
+                }
             }
+            this.laberynth.add(laberynthRow);
         }
     }
 
+    // Game handler methods
     public void createNewLaberynth() { // Check for errors later
         Random random = new Random();
 
@@ -54,20 +66,11 @@ public class WumpusLaberynth {
         int tableX = random.nextInt(5, 16);
         int tableY = random.nextInt(5, 16);
 
-
-        // DO IT LATER - TO FIX
-        int numberOfWellCells = 0;
-        int numberOfPowerUpCells = 0;
-        int numberOfBats = 0;
-        if (tableX*tableY*0.05 < 3) {
-            numberOfWellCells = 2;
-        } else {
+        int numberOfWellCells = 2;
+        int numberOfPowerUpCells = 2;
+        int numberOfBats = 4;
+        if (tableX*tableY*0.05 > 3) {
             numberOfWellCells = random.nextInt(2, (int)(tableX * tableY * 0.05));
-        }
-        if (tableX*tableY*0.1 < 3) {
-            numberOfPowerUpCells = 2;
-            numberOfBats = 4;
-        } else {
             numberOfPowerUpCells = random.nextInt(2, (int)(tableX * tableY * 0.1));
             numberOfBats = random.nextInt(2, (int)(tableX * tableY * 0.1))*2;
         }
@@ -136,9 +139,9 @@ public class WumpusLaberynth {
         ppos = null;
         boolean pposCalculated = false;
 
-        if (!this.laberynth.isEmpty()) {
-            for (int i = 0; i < this.laberynth.size(); i++) {
-                for (int j = 0; j < this.laberynth.getFirst().size(); j++) {
+        if (!laberynth.isEmpty()) {
+            for (int i = 0; i < laberynth.size(); i++) {
+                for (int j = 0; j < laberynth.getFirst().size(); j++) {
                     if (laberynth.get(i).get(j).getCtype() == CellType.NORMAL) {
                         NormalCell nc = (NormalCell) laberynth.get(i).get(j);
                         if (nc.getInhabitantType() == InhabitantType.NONE && random.nextBoolean() && !pposCalculated) {
@@ -154,25 +157,22 @@ public class WumpusLaberynth {
     }
 
     public int[] movePlayer(MovementDirection dir) {
-        int[] newPosition = null;
-        if (!this.laberynth.isEmpty() && this.ppos != null) {
-            if (dir == MovementDirection.LEFT && !(this.ppos[1] == 0)) {
-                this.ppos[1]--;
+        int[] newPosition = ppos;
+        if (!laberynth.isEmpty() && ppos != null) {
+            if (dir == MovementDirection.LEFT && ppos[1] > 0) {
+                ppos[1]--;
                 laberynth.get(ppos[0]).get(ppos[1]).openCell();
-                newPosition = ppos;
-            } else if (dir == MovementDirection.UP && !(this.ppos[0] == 0)) {
-                this.ppos[0]--;
+            } else if (dir == MovementDirection.UP && ppos[0] > 0) {
+                ppos[0]--;
                 laberynth.get(ppos[0]).get(ppos[1]).openCell();
-                newPosition = ppos;
-            }else if (dir == MovementDirection.DOWN && !(this.ppos[0] == laberynth.size())) {
-                this.ppos[0]++;
+            }else if (dir == MovementDirection.DOWN && ppos[0] < laberynth.size()-1) {
+                ppos[0]++;
                 laberynth.get(ppos[0]).get(ppos[1]).openCell();
-                newPosition = ppos;
-            } else if (dir == MovementDirection.RIGHT && !(this.ppos[1] == laberynth.getFirst().size())) {
-                this.ppos[1]++;
+            } else if (dir == MovementDirection.RIGHT && ppos[1] < laberynth.getFirst().size()-1) {
+                ppos[1]++;
                 laberynth.get(ppos[0]).get(ppos[1]).openCell();
-                newPosition = ppos;
             }
+            newPosition = ppos;
         }
         return newPosition;
     }
@@ -205,22 +205,21 @@ public class WumpusLaberynth {
         return cellPowerUp;
     }
 
+    // REQUIRES MORE OPTIMIZATION
     public int[] batKidnapping() {
         Random random = new Random();
-        int[] newPosition = null;
+        int[] newPosition = new int[2];
+        int[] oldPpos = ppos;
         if (!laberynth.isEmpty() && ppos != null) {
-            Cell cellType = laberynth.get(ppos[0]).get(ppos[1]);
-            if (cellType instanceof NormalCell) {
-                NormalCell nc = (NormalCell) cellType;
+            do {
                 newPosition = new int[]{random.nextInt(laberynth.size()), random.nextInt(laberynth.getFirst().size())};
-                while (newPosition[0] != ppos[0] && newPosition[1] != ppos[1]) {
-                    newPosition = new int[]{random.nextInt(laberynth.size()), random.nextInt(laberynth.getFirst().size())};
+                Cell cellType = laberynth.get(newPosition[0]).get(newPosition[1]);
+                if (cellType instanceof NormalCell nc && nc.getInhabitantType() == InhabitantType.NONE) {
+                    ppos[0] = newPosition[0];
+                    ppos[1] = newPosition[1];
                 }
-                ppos[0] = newPosition[0];
-                ppos[1] = newPosition[1];
-            }
+            } while (oldPpos[0] != ppos[0] && oldPpos[1] != ppos[1]);
         }
-
         return newPosition;
     }
 
