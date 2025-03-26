@@ -6,10 +6,7 @@ import main.java.inscaparrella.utils.MovementDirection;
 import main.java.inscaparrella.utils.PowerUp;
 import main.java.inscaparrella.utils.ShootDirection;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -75,7 +72,21 @@ public class WumpusController {
         fr.close();
     }
 
-    public void saveLaberynth() {
+    public void saveLaberynth(String filename) throws IOException {
+        ArrayList<ArrayList<Cell>> outputLaberynth = laberynth.getLaberynth();
+        FileWriter fw = new FileWriter("files/ " + File.separator + filename);
+        BufferedWriter bw = new BufferedWriter(fw);
+        for (int i = 0; i < outputLaberynth.size(); i++) {
+            for (int j = 0; j < outputLaberynth.get(i).size(); j++) {
+                if (outputLaberynth.get(i).get(j) instanceof NormalCell) {
+                    bw.write("N");
+                } else if (outputLaberynth.get(i).get(j) instanceof WellCell) {
+                    bw.write("W");
+                } else if (outputLaberynth.get(i).get(j) instanceof PowerUpCell) {
+                    bw.write("P");
+                }
+            }
+        }
 
     }
 // CALL createNewLaberynth from startGame when loadLaberynth method has noot been called. Avoid Calling it when loadLaberynth is not called
