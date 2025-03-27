@@ -74,20 +74,24 @@ public class WumpusController {
 
     public void saveLaberynth(String filename) throws IOException {
         ArrayList<ArrayList<Cell>> outputLaberynth = laberynth.getLaberynth();
-        FileWriter fw = new FileWriter("files/ " + File.separator + filename);
+        FileWriter fw = new FileWriter("files" + File.separator + filename + ".txt");
         BufferedWriter bw = new BufferedWriter(fw);
         for (int i = 0; i < outputLaberynth.size(); i++) {
+            String line = "";
             for (int j = 0; j < outputLaberynth.get(i).size(); j++) {
                 if (outputLaberynth.get(i).get(j) instanceof NormalCell) {
-                    bw.write("N");
+                    line += "N ";
                 } else if (outputLaberynth.get(i).get(j) instanceof WellCell) {
-                    bw.write("W");
+                    line += "W ";
                 } else if (outputLaberynth.get(i).get(j) instanceof PowerUpCell) {
-                    bw.write("P");
+                    line += "P ";
                 }
             }
-        }
+            bw.write(line + "\n");
 
+        }
+        bw.close();
+        fw.close();
     }
 // CALL createNewLaberynth from startGame when loadLaberynth method has noot been called. Avoid Calling it when loadLaberynth is not called
     public boolean startGame() {

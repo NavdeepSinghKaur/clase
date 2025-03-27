@@ -58,7 +58,7 @@ public class WumpusLaberynth {
         }
     }
 
-    // Game handler methods
+    // Create new laberynth if player doesn't enter one
     public void createNewLaberynth() { // Check for errors later
         Random random = new Random();
 
