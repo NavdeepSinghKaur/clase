@@ -1,9 +1,6 @@
 package main.java.inscaparrella.model;
 
 import main.java.inscaparrella.utils.CellType;
-import main.java.inscaparrella.utils.InhabitantType;
-
-import java.util.Objects;
 
 public abstract class Cell {
     private int row;
@@ -25,7 +22,7 @@ public abstract class Cell {
         this.open = false;
     }
 
-    public Cell (Cell cell) { // how to get row & col (they don't have getters) & should I do a deep copy?
+    public Cell (Cell cell) {
         this.row = cell.row;
         this.col = cell.col;
         this.ctype = cell.ctype;

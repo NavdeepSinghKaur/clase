@@ -27,16 +27,16 @@ public class NormalCell extends Cell{
     }
 
     public InhabitantType getInhabitantType() {
-        return this.iType;
+        return iType;
     }
 
     @Override
     public String emitEcho() {
         String strEmitEcho = "";
         if (iType == InhabitantType.WUMPUS) {
-            strEmitEcho = "gggrrr... gggGGGGGRRRRRrrr...";
+            strEmitEcho = "\t" + "gggrrr... gggGGGGGRRRRRrrr..."  + "\n";
         } else if (iType == InhabitantType.BAT) {
-            strEmitEcho = "Flap, flap, flap";
+            strEmitEcho = "\t" + "Flap, flap, flap" + "\n";
         }
 
         return strEmitEcho;
@@ -52,12 +52,12 @@ public class NormalCell extends Cell{
         String toStringReturnText = super.toString();
 
         if (iType == InhabitantType.NONE) {
-            toStringReturnText += "Tipus: NORMAL.";
+            toStringReturnText += " - Tipus: NORMAL.";
         }
         else if (iType == InhabitantType.WUMPUS) {
-            toStringReturnText += "NORMAL (habitada pel Wumpus).";
+            toStringReturnText += " - Tipus NORMAL (habitada pel Wumpus).";
         } else {
-            toStringReturnText += "Tipus NORMAL (habitada per un ratpenat).";
+            toStringReturnText += " - Tipus NORMAL (habitada per un ratpenat).";
         }
 
         return toStringReturnText;

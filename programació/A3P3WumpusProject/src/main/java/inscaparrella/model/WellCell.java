@@ -20,7 +20,7 @@ public class WellCell extends Cell{
 
     @Override
     public String emitEcho() {
-        return "FFFFfffff...";
+        return "\t" + "FFFFfffff..." + "\n";
     }
 
     @Override

@@ -3,12 +3,11 @@ package main.java.inscaparrella.model;
 import main.java.inscaparrella.utils.CellType;
 import main.java.inscaparrella.utils.PowerUp;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class PowerUpCell extends Cell{
     private PowerUp power;
-    private Random random = new Random();
+    private final Random random = new Random();
 
     public PowerUpCell() {
         super();
@@ -20,25 +19,24 @@ public class PowerUpCell extends Cell{
     public PowerUpCell(int row, int col) {
         super(row, col);
         super.ctype = CellType.POWERUP;
-        int randomOption = random.nextInt(PowerUp.values().length);
-        this.power = PowerUp.values()[randomOption];
+        createPowerUp();
     }
 
-    public PowerUpCell(PowerUpCell power) { // Is this a better way to create a copy constructor (deep copying)?
+    public PowerUpCell(PowerUpCell power) {
         super(power);
         super.ctype = CellType.POWERUP;
         this.power = power.power;
     }
 
     private void createPowerUp() {
-        this.power = PowerUp.values()[random.nextInt(1, 3)];
+        power = PowerUp.values()[random.nextInt(1, 3)];
     }
 
     public PowerUp consumePowerUp() {
         PowerUp powerUpToReturn = PowerUp.NONE;
         if (super.isOpen()) {
-            powerUpToReturn = this.power;
-            this.power = PowerUp.NONE;
+            powerUpToReturn = power;
+            power = PowerUp.NONE;
         }
 
         return powerUpToReturn;
@@ -47,8 +45,8 @@ public class PowerUpCell extends Cell{
     @Override
     public String emitEcho() {
         String echo = "";
-        if (this.power != PowerUp.NONE ) {
-            echo = "Clic, clic...";
+        if (power != PowerUp.NONE ) {
+            echo = "\t" + "Clic, clic..." + "\n";
         }
 
         return echo;
@@ -63,9 +61,9 @@ public class PowerUpCell extends Cell{
     public String toString() {
         String returnString = super.toString();
 
-        if (this.power == PowerUp.NONE) {
+        if (power == PowerUp.NONE) {
             returnString += " - Tipus POWERUP";
-        } else if (this.power == PowerUp.ARROW) {
+        } else if (power == PowerUp.ARROW) {
             returnString += " - Tipus POWERUP (concedeix el poder ARROW)";
         } else {
             returnString += " - Tipus POWERUP (concedeix el poder JUMPER BOOTS)";
@@ -79,7 +77,7 @@ public class PowerUpCell extends Cell{
         boolean bEquals = false;
 
         if (obj instanceof PowerUpCell puc) {
-           bEquals = super.equals(puc) && this.power == puc.power;
+           bEquals = super.equals(puc) && power == puc.power;
         }
 
         return bEquals;

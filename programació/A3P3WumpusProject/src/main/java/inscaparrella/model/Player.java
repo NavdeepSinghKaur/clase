@@ -5,7 +5,7 @@ import main.java.inscaparrella.utils.PowerUp;
 public class Player {
     private int row;
     private int col;
-    private int powers[];
+    private int[] powers;
 
     public Player() {
         row = -1;
@@ -67,11 +67,11 @@ public class Player {
     public String toString() {
         String returnText = "";
 
-        returnText += "Posició del jugador (x, y) = (";
+        returnText += "Posició del jugador (";
         returnText += row + ", " + col + ")" + "\n";
         returnText += "\t" + "ARROW: " + powers[0] + "\n";
         returnText += "\t" + "JUMPER_BOOTS: " + powers[1];
 
-        return returnText;
+        return returnText + "\n";
     }
 }
