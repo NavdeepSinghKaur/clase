@@ -1,0 +1,4 @@
+Codi,Nom,Pagament
+1234,Maria,150€
+5478,Joan,850€
+9012,Laia,230€
