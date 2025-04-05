@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<cartelera last-mod="04/04/2025 - 04:51">
+    <recinto id="1" value="CINES LYS">
+        <address>Pso. Ruzafa, 3</address>
+        <postcode>46002</postcode>
+        <city>Valencia</city>
+        <evento>
+            <titulo value="CITA A CIEGAS CON EL CINE" id="5609" uid="30913"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdcita-a-ciegas-con-el-cine/5609/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00cwq.jpg</caratula>
+            <calificacion></calificacion>
+            <genero></genero>
+            <duracion>100</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="362871" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdcita-a-ciegas-con-el-cine/362871/" sala="13" version="Versión Original Extranjera" formato="HD" hora="19:30"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="ANORA" id="6371" uid="41696"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdanora/6371/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00lsy.jpg</caratula>
+            <calificacion>No rec. a menores de 16 años</calificacion>
+            <genero>DRAMA</genero>
+            <duracion>139</duracion>
+            <sinopsis>Anora, una joven prostituta de Brooklyn, tiene la oportunidad de vivir una historia de Cenicienta cuando conoce e impulsivamente se casa con el hijo de un oligarca ruso. Cuando la noticia llega a Rusia, su cuento de hadas se ve amenazado, ya que los padres parten hacia Nueva York para intentar conseguir la anulación del matrimonio.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=xV7jnVhBD2E</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="363017" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdanora/363017/" sala="14" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="363019" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdanora/363019/" sala="14" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="363021" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdanora/363021/" sala="14" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363071" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdanora/363071/" sala="14" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="CÓNCLAVE" id="6445" uid="41963"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdconclave/6445/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00m18.jpg</caratula>
+            <calificacion>No rec. a menores de 7 años</calificacion>
+            <genero>THRILLER</genero>
+            <duracion>120</duracion>
+            <sinopsis>Tras la inesperada muerte del Sumo Pontífice, el cardenal Lawrence es designado como responsable para liderar uno de los rituales más secretos y antiguos del mundo: la elección de un nuevo Papa. Cuando los líderes más poderosos de la Iglesia Católica se reúnen en los salones del Vaticano, Lawrence se ve atrapado dentro de una compleja conspiración a la vez que descubre un secreto que podría sacudir los cimientos de la Iglesia.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=J0E78tL6CxY</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362978" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdconclave/362978/" sala="10" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362979" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdconclave/362979/" sala="10" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362980" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdconclave/362980/" sala="10" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363124" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdconclave/363124/" sala="10" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363125" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdconclave/363125/" sala="10" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363057" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdconclave/363057/" sala="10" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363164" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdconclave/363164/" sala="10" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="TURANDOT (ÓPERA REPOSICIÓN DIRECTO 06-04-25)" id="6482" uid="42897"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdturandot-opera-reposicion-directo-06-04-25/6482/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00mr8.jpg</caratula>
+            <calificacion></calificacion>
+            <genero>THRILLER ESPIONAJE</genero>
+            <duracion>205</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="359413" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdturandot-opera-reposicion-directo-06-04-25/359413/" sala="14" version="Versión Original Extranjera" formato="HD" hora="16:00"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="MACBETH (TEATRO DIFERIDO 10-04-25)" id="6483" uid="42898"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdmacbeth-teatro-diferido-10-04-25/6483/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00mr9.jpg</caratula>
+            <calificacion></calificacion>
+            <genero>THRILLER ESPIONAJE</genero>
+            <duracion>114</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="359414" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdmacbeth-teatro-diferido-10-04-25/359414/" sala="14" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="AIDA (ÓPERA DIFERIDO 17-04-25)" id="6484" uid="42899"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdaida-opera-diferido-17-04-25/6484/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00mra.jpg</caratula>
+            <calificacion></calificacion>
+            <genero>THRILLER ESPIONAJE</genero>
+            <duracion>153</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="17/04/2025">
+                    <sesiones>
+                        <sesion id="359415" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdaida-opera-diferido-17-04-25/359415/" sala="14" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="LA VALQUIRIA (2025)" id="6485" uid="40529"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdla-valquiria-2025/6485/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00ley.jpg</caratula>
+            <calificacion>Para todos los públicos</calificacion>
+            <genero>ÓPERA</genero>
+            <duracion>365</duracion>
+            <sinopsis>Dioses y mortales se enfrentan en el segundo capítulo del ciclo de El anillo del nibelungo de Wagner. El director musical Antonio Pappano y el director Barrie Kosky se reúnen para continuar la mítica aventura que comenzó con El oro del Rin en 2023.</sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="14/05/2025">
+                    <sesiones>
+                        <sesion id="359416" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-valquiria-2025/359416/" sala="14" version="Versión Original Extranjera" formato="HD" hora="18:15"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="LA VALQUIRIA (ÓPERA REPOSICIÓN DIRECTO 18-05-25)" id="6486" uid="42901"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdla-valquiria-opera-reposicion-directo-18-05-25/6486/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00mrc.jpg</caratula>
+            <calificacion></calificacion>
+            <genero>THRILLER ESPIONAJE</genero>
+            <duracion>365</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="18/05/2025">
+                    <sesiones>
+                        <sesion id="359417" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-valquiria-opera-reposicion-directo-18-05-25/359417/" sala="14" version="Versión Original Extranjera" formato="HD" hora="16:00"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="BALLET TO BROADWAY BALLET RBO 24-25" id="6487" uid="40940"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdballet-to-broadway-ballet-rbo-24-25/6487/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00l85.jpg</caratula>
+            <calificacion>Para todos los públicos</calificacion>
+            <genero>BALLET</genero>
+            <duracion>180</duracion>
+            <sinopsis>Cuatro estupendas obras cortas que aúnan la sensualidad del ballet contemporáneo con la vitalidad del teatro musical: Fool s Paradise, The Two of Us, Us, An American in Paris, cuatro creaciones que ponen de manifiesto la asombrosa diversidad coreográfica de Christopher Wheeldon, socio artístico de The Royal Ballet.</sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="22/05/2025">
+                    <sesiones>
+                        <sesion id="359419" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdballet-to-broadway-ballet-rbo-24-25/359419/" sala="14" version="Versión Original Extranjera" formato="HD" hora="20:15"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="BALLET TO BRODWAY (BALLET REPOSICIÓN DIRECTO 25-05-24)" id="6488" uid="42903"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdballet-to-brodway-ballet-reposicion-directo-25-05-24/6488/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00mre.jpg</caratula>
+            <calificacion></calificacion>
+            <genero>DRAMA ROMÁNTICA</genero>
+            <duracion>180</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="25/05/2025">
+                    <sesiones>
+                        <sesion id="359418" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdballet-to-brodway-ballet-reposicion-directo-25-05-24/359418/" sala="14" version="Versión Original Extranjera" formato="HD" hora="16:00"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="TOSCA (ÓPERA DIFERIDO 12-06-25)" id="6489" uid="42904"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdtosca-opera-diferido-12-06-25/6489/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00mrf.jpg</caratula>
+            <calificacion></calificacion>
+            <genero>THRILLER ESPIONAJE</genero>
+            <duracion>134</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="12/06/2025">
+                    <sesiones>
+                        <sesion id="359420" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtosca-opera-diferido-12-06-25/359420/" sala="14" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="FLOW, UN MUNDO QUE SALVAR" id="6496" uid="42521"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdflow-un-mundo-que-salvar/6496/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00mhc.jpg</caratula>
+            <calificacion>Para todos los públicos</calificacion>
+            <genero>ANIMACIÓN</genero>
+            <duracion>85</duracion>
+            <sinopsis>Un gato se despierta en un mundo cubierto de agua, donde la raza humana parece haber desaparecido. Busca refugio en un barco con un grupo de otros animales. Pero llevarse bien con ellos resulta ser un reto aún mayor que superar su miedo al agua. Todos tendrán que aprender a superar sus diferencias y adaptarse a este nuevo mundo en el que se encuentran.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=1GCU3sp29SU</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362945" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdflow-un-mundo-que-salvar/362945/" sala="7" version="Doblada al Castellano" formato="HD" hora="17:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362946" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdflow-un-mundo-que-salvar/362946/" sala="7" version="Doblada al Castellano" formato="HD" hora="17:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362947" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdflow-un-mundo-que-salvar/362947/" sala="7" version="Doblada al Castellano" formato="HD" hora="17:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363108" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdflow-un-mundo-que-salvar/363108/" sala="7" version="Doblada al Castellano" formato="HD" hora="17:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363109" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdflow-un-mundo-que-salvar/363109/" sala="7" version="Doblada al Castellano" formato="HD" hora="17:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363046" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdflow-un-mundo-que-salvar/363046/" sala="7" version="Doblada al Castellano" formato="HD" hora="17:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363157" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdflow-un-mundo-que-salvar/363157/" sala="7" version="Doblada al Castellano" formato="HD" hora="17:30"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="A COMPLETE UNKNOWN" id="6543" uid="43404"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hda-complete-unknown/6543/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00n6f.jpg</caratula>
+            <calificacion>No rec. a menores de 12 años</calificacion>
+            <genero>BIOGRÁFICA</genero>
+            <duracion>141</duracion>
+            <sinopsis>Ambientada en la influyente escena musical de Nueva York de principios de los años 60, A Complete Unknown cuenta la historia del meteórico ascenso del músico de Minnesota Bob Dylan, un cantante de folk de 19 años, hasta las salas de conciertos y lo más alto de las listas de éxitos. Sus canciones y su mística se convirtieron en un fenómeno mundial que culminó en 1965 con su rompedora actuación de rock eléctrico en el Newport Folk Festival.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=5WGNuAR__NM</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="363016" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-complete-unknown/363016/" sala="14" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="363018" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-complete-unknown/363018/" sala="14" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="363020" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-complete-unknown/363020/" sala="14" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363139" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-complete-unknown/363139/" sala="14" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363070" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-complete-unknown/363070/" sala="14" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="MICKEY 17" id="6549" uid="43452"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdmickey-17/6549/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00n7r.jpg</caratula>
+            <calificacion>No rec. a menores de 16 años</calificacion>
+            <genero>CIENCIA FICCIÓN</genero>
+            <duracion>137</duracion>
+            <sinopsis>Mickey7, un robot &apos;expendable&apos; (prescindible) enviado a un planeta helado para colonizarlo, se niega a dejar que su clon de reemplazo, Mickey8, tome su lugar... Adaptación del libro original de Edward Ashton.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=vzvAieKSWqA</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362982" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdmickey-17/362982/" sala="10" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                        <sesion id="362981" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdmickey-17/362981/" sala="10" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362984" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdmickey-17/362984/" sala="10" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                        <sesion id="362983" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdmickey-17/362983/" sala="10" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362986" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdmickey-17/362986/" sala="10" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                        <sesion id="362985" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdmickey-17/362985/" sala="10" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363126" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdmickey-17/363126/" sala="10" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363127" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdmickey-17/363127/" sala="10" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363059" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdmickey-17/363059/" sala="10" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                        <sesion id="363058" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdmickey-17/363058/" sala="10" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363165" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdmickey-17/363165/" sala="10" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="LEE MILLER" id="6550" uid="43378"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdlee-miller/6550/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00n64.jpg</caratula>
+            <calificacion>No rec. a menores de 16 años</calificacion>
+            <genero>DRAMA</genero>
+            <duracion>116</duracion>
+            <sinopsis>La historia de la fotógrafa Elizabeth &apos;Lee&apos; Miller, una modelo de moda que se convirtió en una aclamada corresponsal de guerra para la revista Vogue durante la Segunda Guerra Mundial.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=RKWITkHKIkI</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="363002" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdlee-miller/363002/" sala="12" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="363003" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdlee-miller/363003/" sala="12" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="363004" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdlee-miller/363004/" sala="12" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363134" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdlee-miller/363134/" sala="12" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363135" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdlee-miller/363135/" sala="12" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363065" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdlee-miller/363065/" sala="12" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363168" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdlee-miller/363168/" sala="12" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="WOLFGANG (EXTRAORDINARIO)" id="6559" uid="43505"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdwolfgang-extraordinario/6559/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00n9d.jpg</caratula>
+            <calificacion>No rec. a menores de 7 años</calificacion>
+            <genero>DRAMA</genero>
+            <duracion>110</duracion>
+            <sinopsis>Wolfgang, un niño de diez años con un cociente intelectual de 152 y trastorno del espectro autista, se ve obligado a vivir con su padre, Carles, a quien no ha visto nunca, tras la repentina muerte de su madre. Carles afronta el reto con ganas y voluntad, pero Wolfgang no soporta su desorden ni su desorganización y lo considera un  bajocien  por su falta de intelecto. Así que, a escondidas, Wolfgang planea conseguir su sueño: entrar en la academia de música Grimald de París, donde estudió su madre, y convertirse en el mejor pianista del mundo. Cuando Carles lo descubre, debe decidir entre su gran oportunidad como actor o convertirse en el padre que necesita un niño como Wolfgang.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=Wm9o1N69WY0</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362875" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/362875/" sala="1" version="Original en Castellano" formato="HD" hora="20:25"/>
+                        <sesion id="362874" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/362874/" sala="1" version="Original en Castellano" formato="HD" hora="18:10"/>
+                        <sesion id="362873" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/362873/" sala="1" version="Original en Castellano" formato="HD" hora="16:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362878" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/362878/" sala="1" version="Original en Castellano" formato="HD" hora="20:25"/>
+                        <sesion id="362877" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/362877/" sala="1" version="Original en Castellano" formato="HD" hora="18:10"/>
+                        <sesion id="362876" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/362876/" sala="1" version="Original en Castellano" formato="HD" hora="16:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362881" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/362881/" sala="1" version="Original en Castellano" formato="HD" hora="20:25"/>
+                        <sesion id="362880" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/362880/" sala="1" version="Original en Castellano" formato="HD" hora="18:10"/>
+                        <sesion id="362879" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/362879/" sala="1" version="Original en Castellano" formato="HD" hora="16:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363073" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/363073/" sala="1" version="Original en Castellano" formato="HD" hora="18:10"/>
+                        <sesion id="363072" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/363072/" sala="1" version="Original en Castellano" formato="HD" hora="16:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363075" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/363075/" sala="1" version="Original en Castellano" formato="HD" hora="18:10"/>
+                        <sesion id="363074" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/363074/" sala="1" version="Original en Castellano" formato="HD" hora="16:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363024" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/363024/" sala="1" version="Original en Castellano" formato="HD" hora="20:25"/>
+                        <sesion id="363023" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/363023/" sala="1" version="Original en Castellano" formato="HD" hora="18:10"/>
+                        <sesion id="363022" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/363022/" sala="1" version="Original en Castellano" formato="HD" hora="16:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363141" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/363141/" sala="1" version="Original en Castellano" formato="HD" hora="18:10"/>
+                        <sesion id="363140" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdwolfgang-extraordinario/363140/" sala="1" version="Original en Castellano" formato="HD" hora="16:00"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="CINE CLUB LYS, LA BUENA LETRA" id="6561" uid="43744"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdcine-club-lys-la-buena-letra/6561/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00ngm.jpg</caratula>
+            <calificacion>No rec. a menores de 12 años</calificacion>
+            <genero>DRAMA</genero>
+            <duracion>110</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="361923" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdcine-club-lys-la-buena-letra/361923/" sala="13" version="Original en Castellano" formato="HD" hora="16:30"/>
+                        <sesion id="361924" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdcine-club-lys-la-buena-letra/361924/" sala="13" version="Original en Castellano" formato="HD" hora="19:30"/>
+                        <sesion id="361925" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdcine-club-lys-la-buena-letra/361925/" sala="14" version="Original en Castellano" formato="HD" hora="18:00"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="GHOSTLIGHT" id="6563" uid="43737"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdghostlight/6563/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00ngo.jpg</caratula>
+            <calificacion>No rec. a menores de 12 años</calificacion>
+            <genero>DRAMA</genero>
+            <duracion>114</duracion>
+            <sinopsis>Dan (Keith Kupferer) es un peón de la construcción de mediana edad afligido por una tragedia familiar. Alejado de su abnegada mujer Sharon (Tara Mallen) y su talentosa pero problemática hija Daisy (Katherine Mallen Kupferer), Dan encuentra consuelo y comunidad en una compañía amateur de actores inadaptados. El protagonista se ve obligado a afrontar sus emociones más profundas en una representación de bajo presupuesto de la mayor tragedia de Shakespeare.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=NfD-8OhBldk</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362951" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdghostlight/362951/" sala="7" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                        <sesion id="362948" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdghostlight/362948/" sala="7" version="Doblada al Castellano" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362952" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdghostlight/362952/" sala="7" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                        <sesion id="362949" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdghostlight/362949/" sala="7" version="Doblada al Castellano" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362953" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdghostlight/362953/" sala="7" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                        <sesion id="362950" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdghostlight/362950/" sala="7" version="Doblada al Castellano" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363110" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdghostlight/363110/" sala="7" version="Doblada al Castellano" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363111" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdghostlight/363111/" sala="7" version="Doblada al Castellano" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363048" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdghostlight/363048/" sala="7" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                        <sesion id="363047" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdghostlight/363047/" sala="7" version="Doblada al Castellano" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363158" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdghostlight/363158/" sala="7" version="Doblada al Castellano" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="TERRORIFICAMENTE LYS, MADS" id="6565" uid="43821"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdterrorificamente-lys-mads/6565/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nj0.jpg</caratula>
+            <calificacion></calificacion>
+            <genero>TERROR</genero>
+            <duracion>86</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="29/05/2025">
+                    <sesiones>
+                        <sesion id="362211" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdterrorificamente-lys-mads/362211/" sala="8" version="Versión Original Extranjera" formato="HD" hora="20:30"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="TERRORIFICAMENTE LYS, THE LAST DANCE: SAINT MAUD" id="6566" uid="44008"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdterrorificamente-lys-the-last-dance-saint-maud/6566/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nop.jpg</caratula>
+            <calificacion>No rec. a menores de 16 años</calificacion>
+            <genero>TERROR</genero>
+            <duracion>84</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="362210" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdterrorificamente-lys-the-last-dance-saint-maud/362210/" sala="8" version="Versión Original Extranjera" formato="HD" hora="20:30"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="THE ALTO KNIGHTS" id="6568" uid="43676"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdthe-alto-knights/6568/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nem.jpg</caratula>
+            <calificacion>No rec. a menores de 16 años</calificacion>
+            <genero>ACCIÓN</genero>
+            <duracion>123</duracion>
+            <sinopsis>La película sigue a dos de los jefes del crimen organizado más notorios de Nueva York, Frank Costello (De Niro) y Vito Genovese (De Niro), en su pugna por el control de las calles de la ciudad. Tras haber sido los mejores amigos, unos celos mezquinos y una serie de traiciones les llevan a una colisión mortal que cambiará la forma de la Mafia (y de América) para siempre.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=60uDrJuG-zo</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362897" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdthe-alto-knights/362897/" sala="3" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362898" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdthe-alto-knights/362898/" sala="3" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362899" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdthe-alto-knights/362899/" sala="3" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363030" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdthe-alto-knights/363030/" sala="3" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="BLANCANIEVES" id="6569" uid="43622"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdblancanieves/6569/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00neg.jpg</caratula>
+            <calificacion>No rec. a menores de 7 años</calificacion>
+            <genero>AVENTURAS</genero>
+            <duracion>110</duracion>
+            <sinopsis>Una adaptación en vivo del clásico cuento de hadas sobre una hermosa joven princesa que, mientras es acosada por una reina celosa, busca refugio en la casa de siete enanos en la campiña alemana.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=Iqhf2jglRdc</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362914" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/362914/" sala="4" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362913" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/362913/" sala="4" version="Doblada al Castellano" formato="HD" hora="18:10"/>
+                        <sesion id="362912" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/362912/" sala="4" version="Doblada al Castellano" formato="HD" hora="16:00"/>
+                        <sesion id="362909" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/362909/" sala="4" version="Versión Original Extranjera" formato="HD" hora="20:25"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362915" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/362915/" sala="4" version="Doblada al Castellano" formato="HD" hora="16:00"/>
+                        <sesion id="362910" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/362910/" sala="4" version="Versión Original Extranjera" formato="HD" hora="20:25"/>
+                        <sesion id="362917" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/362917/" sala="4" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362916" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/362916/" sala="4" version="Doblada al Castellano" formato="HD" hora="18:10"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362920" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/362920/" sala="4" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362919" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/362919/" sala="4" version="Doblada al Castellano" formato="HD" hora="18:10"/>
+                        <sesion id="362918" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/362918/" sala="4" version="Doblada al Castellano" formato="HD" hora="16:00"/>
+                        <sesion id="362911" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/362911/" sala="4" version="Versión Original Extranjera" formato="HD" hora="20:25"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363093" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/363093/" sala="4" version="Doblada al Castellano" formato="HD" hora="18:10"/>
+                        <sesion id="363092" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/363092/" sala="4" version="Doblada al Castellano" formato="HD" hora="16:00"/>
+                        <sesion id="363090" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/363090/" sala="4" version="Versión Original Extranjera" formato="HD" hora="20:25"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363095" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/363095/" sala="4" version="Doblada al Castellano" formato="HD" hora="18:10"/>
+                        <sesion id="363094" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/363094/" sala="4" version="Doblada al Castellano" formato="HD" hora="16:00"/>
+                        <sesion id="363091" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/363091/" sala="4" version="Versión Original Extranjera" formato="HD" hora="20:25"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363036" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/363036/" sala="4" version="Doblada al Castellano" formato="HD" hora="18:10"/>
+                        <sesion id="363035" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/363035/" sala="4" version="Doblada al Castellano" formato="HD" hora="16:00"/>
+                        <sesion id="363034" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/363034/" sala="4" version="Versión Original Extranjera" formato="HD" hora="20:25"/>
+                        <sesion id="363037" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/363037/" sala="4" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363150" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/363150/" sala="4" version="Doblada al Castellano" formato="HD" hora="18:10"/>
+                        <sesion id="363149" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/363149/" sala="4" version="Doblada al Castellano" formato="HD" hora="16:00"/>
+                        <sesion id="363148" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdblancanieves/363148/" sala="4" version="Versión Original Extranjera" formato="HD" hora="20:25"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="LOS AITAS" id="6572" uid="43673"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdlos-aitas/6572/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nel.jpg</caratula>
+            <calificacion>No rec. a menores de 7 años</calificacion>
+            <genero>COMEDIA</genero>
+            <duracion>88</duracion>
+            <sinopsis>En la periferia obrera del Bilbao de finales de los 80, un equipo infantil de gimnasia ri tmica tiene la oportunidad de participar en una campeonato en Berli n. Ante la imposibilidad de que las madres acompan en a sus hijas, la tarea recaera  en los padres, que no parecen muy interesados en el viaje, ni en ese deporte, ni incluso en sus propias hijas.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=X2tc7Z_Rf6Q</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="363014" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdlos-aitas/363014/" sala="14" version="Doblada al Castellano" formato="HD" hora="17:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="363015" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdlos-aitas/363015/" sala="14" version="Doblada al Castellano" formato="HD" hora="17:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363138" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdlos-aitas/363138/" sala="14" version="Doblada al Castellano" formato="HD" hora="17:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363069" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdlos-aitas/363069/" sala="14" version="Doblada al Castellano" formato="HD" hora="17:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363171" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdlos-aitas/363171/" sala="14" version="Doblada al Castellano" formato="HD" hora="17:30"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="LA FURIA" id="6576" uid="43882"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdla-furia/6576/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nkv.jpg</caratula>
+            <calificacion>No rec. a menores de 16 años</calificacion>
+            <genero>DRAMA</genero>
+            <duracion>107</duracion>
+            <sinopsis>Alex, una joven actriz, es violada en una fiesta en Nochevieja y no reconoce a su agresor. Cuando acude a su hermano Adrián en busca de abrigo y compresión, éste reacciona cuestionándola y presionándola. Así, Alex se distancia de su hermano y de todo lo conocido. A lo largo de un año vive sola el asco, la vergüenza y la culpa. Adrián, consumido por la rabia, toma sus propias decisiones en un camino cada vez más oscuro, muy lejos de lo que Álex necesita. Mientras, ella interpreta al vengativo personaje de Medea y encuentra en el teatro la única forma de canalizar su dolor y su ira.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=P4BwcAil5E8</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362882" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-furia/362882/" sala="1" version="Original en Castellano" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362883" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-furia/362883/" sala="1" version="Original en Castellano" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362884" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-furia/362884/" sala="1" version="Original en Castellano" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363076" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-furia/363076/" sala="1" version="Original en Castellano" formato="HD" hora="20:25"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363077" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-furia/363077/" sala="1" version="Original en Castellano" formato="HD" hora="20:25"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363025" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-furia/363025/" sala="1" version="Original en Castellano" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="TIERRA DE NADIE" id="6578" uid="43881"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdtierra-de-nadie/6578/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nku.jpg</caratula>
+            <calificacion>No rec. a menores de 16 años</calificacion>
+            <genero>ACCIÓN</genero>
+            <duracion>101</duracion>
+            <sinopsis>Esta es la historia de tres viejos amigos. Mateo el Gallego, un heroico -a su pesar- guardia civil, Juan El Antxale, un pescador convertido en narco por la mala suerte y en el paro, y Benito el Yeye, un resignado e inteligente depositario judicial siempre a medio camino entre la ley y la delincuencia. Tres amigos separados por un lugar, Cádiz y un momento, el presente. Atrapados los tres entre el abandono de las instituciones, el violento e imparable ascenso del narco en la provincia y el peligroso aumento del descontento social. Tres amigos atrapados en un polvorín que pondrá a prueba su amistad. El traslado rutinario de un yate incautado a un peligroso cártel se convierte en una aventura entre la vida y la muerte.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=uiLrnRL4yk0</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362923" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/362923/" sala="5" version="Doblada al Castellano" formato="HD" hora="20:30"/>
+                        <sesion id="362922" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/362922/" sala="5" version="Doblada al Castellano" formato="HD" hora="18:20"/>
+                        <sesion id="362924" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/362924/" sala="5" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362921" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/362921/" sala="5" version="Doblada al Castellano" formato="HD" hora="16:10"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362928" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/362928/" sala="5" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362927" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/362927/" sala="5" version="Doblada al Castellano" formato="HD" hora="20:30"/>
+                        <sesion id="362926" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/362926/" sala="5" version="Doblada al Castellano" formato="HD" hora="18:20"/>
+                        <sesion id="362925" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/362925/" sala="5" version="Doblada al Castellano" formato="HD" hora="16:10"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362929" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/362929/" sala="5" version="Doblada al Castellano" formato="HD" hora="16:10"/>
+                        <sesion id="362932" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/362932/" sala="5" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362931" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/362931/" sala="5" version="Doblada al Castellano" formato="HD" hora="20:30"/>
+                        <sesion id="362930" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/362930/" sala="5" version="Doblada al Castellano" formato="HD" hora="18:20"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363098" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/363098/" sala="5" version="Doblada al Castellano" formato="HD" hora="20:30"/>
+                        <sesion id="363097" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/363097/" sala="5" version="Doblada al Castellano" formato="HD" hora="18:20"/>
+                        <sesion id="363096" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/363096/" sala="5" version="Doblada al Castellano" formato="HD" hora="16:10"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363101" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/363101/" sala="5" version="Doblada al Castellano" formato="HD" hora="20:30"/>
+                        <sesion id="363100" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/363100/" sala="5" version="Doblada al Castellano" formato="HD" hora="18:20"/>
+                        <sesion id="363099" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/363099/" sala="5" version="Doblada al Castellano" formato="HD" hora="16:10"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363041" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/363041/" sala="5" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="363040" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/363040/" sala="5" version="Doblada al Castellano" formato="HD" hora="20:30"/>
+                        <sesion id="363039" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/363039/" sala="5" version="Doblada al Castellano" formato="HD" hora="18:20"/>
+                        <sesion id="363038" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/363038/" sala="5" version="Doblada al Castellano" formato="HD" hora="16:10"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363153" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/363153/" sala="5" version="Doblada al Castellano" formato="HD" hora="20:30"/>
+                        <sesion id="363152" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/363152/" sala="5" version="Doblada al Castellano" formato="HD" hora="18:20"/>
+                        <sesion id="363151" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdtierra-de-nadie/363151/" sala="5" version="Doblada al Castellano" formato="HD" hora="16:10"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="POR TODO LO ALTO" id="6579" uid="43556"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdpor-todo-lo-alto/6579/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nbk.jpg</caratula>
+            <calificacion>No rec. a menores de 12 años</calificacion>
+            <genero>COMEDIA</genero>
+            <duracion>103</duracion>
+            <sinopsis>Thibaut es un director de orquesta de renombre internacional que viaja por el mundo. Cuando se entera de que es adoptado, descubre la existencia de un hermano, Jimmy, un empleado de un comedor escolar que toca el trombón en una banda de música en el norte de Francia. Al parecer todo les separa, excepto el amor por la música. Al detectar las excepcionales habilidades musicales de su hermano, Thibaut se propone reparar la injusticia del destino. Jimmy entonces comienza a soñar con otra vida...</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=rhubqWq_LFg</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362900" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/362900/" sala="3" version="Doblada al Castellano" formato="HD" hora="16:15"/>
+                        <sesion id="362902" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/362902/" sala="3" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="362901" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/362901/" sala="3" version="Doblada al Castellano" formato="HD" hora="18:25"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362905" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/362905/" sala="3" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="362904" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/362904/" sala="3" version="Doblada al Castellano" formato="HD" hora="18:25"/>
+                        <sesion id="362903" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/362903/" sala="3" version="Doblada al Castellano" formato="HD" hora="16:15"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362908" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/362908/" sala="3" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="362906" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/362906/" sala="3" version="Doblada al Castellano" formato="HD" hora="16:15"/>
+                        <sesion id="362907" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/362907/" sala="3" version="Doblada al Castellano" formato="HD" hora="18:25"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363086" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/363086/" sala="3" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="363085" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/363085/" sala="3" version="Doblada al Castellano" formato="HD" hora="18:25"/>
+                        <sesion id="363084" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/363084/" sala="3" version="Doblada al Castellano" formato="HD" hora="16:15"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363089" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/363089/" sala="3" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="363088" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/363088/" sala="3" version="Doblada al Castellano" formato="HD" hora="18:25"/>
+                        <sesion id="363087" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/363087/" sala="3" version="Doblada al Castellano" formato="HD" hora="16:15"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363032" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/363032/" sala="3" version="Doblada al Castellano" formato="HD" hora="18:25"/>
+                        <sesion id="363033" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/363033/" sala="3" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="363031" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/363031/" sala="3" version="Doblada al Castellano" formato="HD" hora="16:15"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363147" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/363147/" sala="3" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="363146" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/363146/" sala="3" version="Doblada al Castellano" formato="HD" hora="18:25"/>
+                        <sesion id="363145" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpor-todo-lo-alto/363145/" sala="3" version="Doblada al Castellano" formato="HD" hora="16:15"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="A WORKING MAN" id="6581" uid="43853"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hda-working-man/6581/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nkl.jpg</caratula>
+            <calificacion>No rec. a menores de 16 años</calificacion>
+            <genero>ACCIÓN</genero>
+            <duracion>116</duracion>
+            <sinopsis>Levon Cade ha dejado atrás su profesión para ser &quot;honrado&quot; y trabajar en la construcción. Quiere vivir una vida sencilla y ser un buen padre para su hija. Pero cuando Jenny, la hija adolescente de su jefe, desaparece, se ve obligado a volver a emplear las habilidades que le convirtieron en una figura legendaria en el oscuro mundo de las operaciones encubiertas. Su búsqueda de la universitaria desaparecida le lleva al corazón de una siniestra conspiración criminal que creará una reacción en cadena que amenazará su nueva forma de vida.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=gGOXUdcE6hk</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362971" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/362971/" sala="9" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362970" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/362970/" sala="9" version="Doblada al Castellano" formato="HD" hora="18:15"/>
+                        <sesion id="362969" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/362969/" sala="9" version="Doblada al Castellano" formato="HD" hora="16:00"/>
+                        <sesion id="362966" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/362966/" sala="9" version="Versión Original Extranjera" formato="HD" hora="20:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362974" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/362974/" sala="9" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362973" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/362973/" sala="9" version="Doblada al Castellano" formato="HD" hora="18:15"/>
+                        <sesion id="362972" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/362972/" sala="9" version="Doblada al Castellano" formato="HD" hora="16:00"/>
+                        <sesion id="362967" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/362967/" sala="9" version="Versión Original Extranjera" formato="HD" hora="20:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362977" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/362977/" sala="9" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362976" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/362976/" sala="9" version="Doblada al Castellano" formato="HD" hora="18:15"/>
+                        <sesion id="362975" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/362975/" sala="9" version="Doblada al Castellano" formato="HD" hora="16:00"/>
+                        <sesion id="362968" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/362968/" sala="9" version="Versión Original Extranjera" formato="HD" hora="20:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363121" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/363121/" sala="9" version="Doblada al Castellano" formato="HD" hora="18:15"/>
+                        <sesion id="363120" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/363120/" sala="9" version="Doblada al Castellano" formato="HD" hora="16:00"/>
+                        <sesion id="363118" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/363118/" sala="9" version="Versión Original Extranjera" formato="HD" hora="20:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363123" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/363123/" sala="9" version="Doblada al Castellano" formato="HD" hora="18:15"/>
+                        <sesion id="363122" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/363122/" sala="9" version="Doblada al Castellano" formato="HD" hora="16:00"/>
+                        <sesion id="363119" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/363119/" sala="9" version="Versión Original Extranjera" formato="HD" hora="20:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363055" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/363055/" sala="9" version="Doblada al Castellano" formato="HD" hora="18:15"/>
+                        <sesion id="363054" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/363054/" sala="9" version="Doblada al Castellano" formato="HD" hora="16:00"/>
+                        <sesion id="363053" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/363053/" sala="9" version="Versión Original Extranjera" formato="HD" hora="20:30"/>
+                        <sesion id="363056" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/363056/" sala="9" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363163" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/363163/" sala="9" version="Doblada al Castellano" formato="HD" hora="18:15"/>
+                        <sesion id="363162" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/363162/" sala="9" version="Doblada al Castellano" formato="HD" hora="16:00"/>
+                        <sesion id="363161" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-working-man/363161/" sala="9" version="Versión Original Extranjera" formato="HD" hora="20:30"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="CINE CLUB LYS, PARENOSTRE" id="6584" uid="43990"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdcine-club-lys-parenostre/6584/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00no7.jpg</caratula>
+            <calificacion>No rec. a menores de 12 años</calificacion>
+            <genero>DRAMA</genero>
+            <duracion>96</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="14/04/2025">
+                    <sesiones>
+                        <sesion id="362544" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdcine-club-lys-parenostre/362544/" sala="14" version="Versión Original Extranjera" formato="HD" hora="18:00"/>
+                        <sesion id="362543" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdcine-club-lys-parenostre/362543/" sala="13" version="Versión Original Extranjera" formato="HD" hora="19:30"/>
+                        <sesion id="362542" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdcine-club-lys-parenostre/362542/" sala="13" version="Versión Original Extranjera" formato="HD" hora="16:30"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="CINE CLUB LYS, UNA QUINTA PORTUGUESA" id="6585" uid="44009"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdcine-club-lys-una-quinta-portuguesa/6585/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00noq.jpg</caratula>
+            <calificacion>Para todos los públicos</calificacion>
+            <genero>DRAMA</genero>
+            <duracion>115</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="05/05/2025">
+                    <sesiones>
+                        <sesion id="362548" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdcine-club-lys-una-quinta-portuguesa/362548/" sala="14" version="Original en Castellano" formato="HD" hora="18:00"/>
+                        <sesion id="362547" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdcine-club-lys-una-quinta-portuguesa/362547/" sala="13" version="Original en Castellano" formato="HD" hora="19:30"/>
+                        <sesion id="362546" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdcine-club-lys-una-quinta-portuguesa/362546/" sala="13" version="Original en Castellano" formato="HD" hora="16:30"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="PROYECTO VIRIDIANA, MUY LEJOS" id="6586" uid="44063"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdproyecto-viridiana-muy-lejos/6586/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nqh.jpg</caratula>
+            <calificacion></calificacion>
+            <genero>DRAMA</genero>
+            <duracion>100</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="362863" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdproyecto-viridiana-muy-lejos/362863/" sala="11" version="Original en Castellano" formato="HD" hora="19:30"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="SORDA" id="6588" uid="43868"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdsorda/6588/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nkt.jpg</caratula>
+            <calificacion>Para todos los públicos</calificacion>
+            <genero>DRAMA</genero>
+            <duracion>99</duracion>
+            <sinopsis>Ángela, una mujer sorda, va a tener un bebé con Héctor, su pareja oyente. El embarazo hace aflorar sus miedos frente la maternidad y sobre cómo podrá comunicarse con su hija. La llegada de la niña genera una crisis en la pareja y lleva a Ángela a afrontar la crianza de su hija en un mundo que no está hecho para ella. Largometraje basado en el corto de 2021 del mismo nombre.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=K6fdaHZthfI</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362888" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/362888/" sala="2" version="Original en Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362886" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/362886/" sala="2" version="Original en Castellano" formato="HD" hora="18:35"/>
+                        <sesion id="362885" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/362885/" sala="2" version="Original en Castellano" formato="HD" hora="16:35"/>
+                        <sesion id="362887" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/362887/" sala="2" version="Original en Castellano" formato="HD" hora="20:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362892" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/362892/" sala="2" version="Original en Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362891" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/362891/" sala="2" version="Original en Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="362889" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/362889/" sala="2" version="Original en Castellano" formato="HD" hora="16:35"/>
+                        <sesion id="362890" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/362890/" sala="2" version="Original en Castellano" formato="HD" hora="18:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362896" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/362896/" sala="2" version="Original en Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362895" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/362895/" sala="2" version="Original en Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="362894" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/362894/" sala="2" version="Original en Castellano" formato="HD" hora="18:35"/>
+                        <sesion id="362893" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/362893/" sala="2" version="Original en Castellano" formato="HD" hora="16:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363080" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/363080/" sala="2" version="Original en Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="363079" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/363079/" sala="2" version="Original en Castellano" formato="HD" hora="18:35"/>
+                        <sesion id="363078" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/363078/" sala="2" version="Original en Castellano" formato="HD" hora="16:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363083" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/363083/" sala="2" version="Original en Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="363082" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/363082/" sala="2" version="Original en Castellano" formato="HD" hora="18:35"/>
+                        <sesion id="363081" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/363081/" sala="2" version="Original en Castellano" formato="HD" hora="16:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363029" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/363029/" sala="2" version="Original en Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="363028" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/363028/" sala="2" version="Original en Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="363027" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/363027/" sala="2" version="Original en Castellano" formato="HD" hora="18:35"/>
+                        <sesion id="363026" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/363026/" sala="2" version="Original en Castellano" formato="HD" hora="16:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363144" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/363144/" sala="2" version="Original en Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="363143" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/363143/" sala="2" version="Original en Castellano" formato="HD" hora="18:35"/>
+                        <sesion id="363142" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdsorda/363142/" sala="2" version="Original en Castellano" formato="HD" hora="16:35"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="LA HUELLA DEL MAL" id="6589" uid="43937"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdla-huella-del-mal/6589/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nmo.jpg</caratula>
+            <calificacion>No rec. a menores de 16 años</calificacion>
+            <genero>THRILLER</genero>
+            <duracion>106</duracion>
+            <sinopsis>Durante la visita guiada de un colegio al Centro de Arqueología Experimental (CAREX), unos chavales encuentran el cuerpo de una joven en el lugar donde debería estar la réplica de un enterramiento neandertal. La joven es Eva Santos, una chica del pueblo cercano de Atapuerca, y está muerta. Su cuerpo está desnudo y colocado en posición fetal. Un espeluznante crimen ritual que recuerda a otro ocurrido hace seis años en la misma zona. ¿Habrá regresado el  asesino del yacimiento , que consiguió escapar hace seis años?</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=B_Fk-_iWykc</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362934" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-huella-del-mal/362934/" sala="6" version="Original en Castellano" formato="HD" hora="18:30"/>
+                        <sesion id="362933" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-huella-del-mal/362933/" sala="6" version="Original en Castellano" formato="HD" hora="16:20"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362936" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-huella-del-mal/362936/" sala="6" version="Original en Castellano" formato="HD" hora="18:30"/>
+                        <sesion id="362935" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-huella-del-mal/362935/" sala="6" version="Original en Castellano" formato="HD" hora="16:20"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362938" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-huella-del-mal/362938/" sala="6" version="Original en Castellano" formato="HD" hora="18:30"/>
+                        <sesion id="362937" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-huella-del-mal/362937/" sala="6" version="Original en Castellano" formato="HD" hora="16:20"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363102" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-huella-del-mal/363102/" sala="6" version="Original en Castellano" formato="HD" hora="16:20"/>
+                        <sesion id="363103" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-huella-del-mal/363103/" sala="6" version="Original en Castellano" formato="HD" hora="18:30"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363105" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-huella-del-mal/363105/" sala="6" version="Original en Castellano" formato="HD" hora="18:30"/>
+                        <sesion id="363104" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-huella-del-mal/363104/" sala="6" version="Original en Castellano" formato="HD" hora="16:20"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363043" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-huella-del-mal/363043/" sala="6" version="Original en Castellano" formato="HD" hora="18:30"/>
+                        <sesion id="363042" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-huella-del-mal/363042/" sala="6" version="Original en Castellano" formato="HD" hora="16:20"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363155" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-huella-del-mal/363155/" sala="6" version="Original en Castellano" formato="HD" hora="18:30"/>
+                        <sesion id="363154" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdla-huella-del-mal/363154/" sala="6" version="Original en Castellano" formato="HD" hora="16:20"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="GUILLERMO TELL" id="6590" uid="43936"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdguillermo-tell/6590/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nmn.jpg</caratula>
+            <calificacion>No rec. a menores de 16 años</calificacion>
+            <genero>AVENTURAS</genero>
+            <duracion>133</duracion>
+            <sinopsis>En 1307, las fuerzas austriacas oprimen al pueblo suizo. Guillermo Tell juró no volver a usar la violencia tras su paso por las Cruzadas, pero se ve obligado a unirse a la rebelión para detener el derramamiento de sangre. Como castigo, el gobernador Gessler obliga a Tell a disparar una manzana sobre la cabeza de su hijo Walter, de lo que saldrá ileso por sus habilidades con la ballesta. Gessler hace cautivos a Tell y a la princesa Bertha de Habsburgo, que rápidamente escapan. Tell regresa para liderar una rebelión contra los invasores austriacos, buscando venganza tras el saqueo de su ciudad y la muerte de su esposa.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=cNA3r-TR070</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362988" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/362988/" sala="11" version="Doblada al Castellano" formato="HD" hora="19:35"/>
+                        <sesion id="362987" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/362987/" sala="11" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                        <sesion id="362993" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/362993/" sala="11" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362994" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/362994/" sala="11" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                        <sesion id="362990" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/362990/" sala="11" version="Doblada al Castellano" formato="HD" hora="19:35"/>
+                        <sesion id="362989" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/362989/" sala="11" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362995" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/362995/" sala="11" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                        <sesion id="362992" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/362992/" sala="11" version="Doblada al Castellano" formato="HD" hora="19:35"/>
+                        <sesion id="362991" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/362991/" sala="11" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363130" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/363130/" sala="11" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                        <sesion id="363128" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/363128/" sala="11" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363131" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/363131/" sala="11" version="Versión Original Extranjera" formato="HD" hora="19:35"/>
+                        <sesion id="363129" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/363129/" sala="11" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363062" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/363062/" sala="11" version="Versión Original Extranjera" formato="HD" hora="22:35"/>
+                        <sesion id="363061" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/363061/" sala="11" version="Doblada al Castellano" formato="HD" hora="19:35"/>
+                        <sesion id="363060" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/363060/" sala="11" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363166" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdguillermo-tell/363166/" sala="11" version="Doblada al Castellano" formato="HD" hora="17:00"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="UNA PELÍCULA DE MINECRAFT" id="6591" uid="43568"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hduna-pelicula-de-minecraft/6591/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00npw.jpg</caratula>
+            <calificacion>No rec. a menores de 7 años</calificacion>
+            <genero>COMEDIA</genero>
+            <duracion>101</duracion>
+            <sinopsis>Bienvenido al mundo de Minecraft, donde la creatividad no sólo ayuda a crear, sino que es esencial para la supervivencia. Cuatro inadaptados -Garrett &quot;El Basurero&quot; Garrison (Momoa), Henry (Hansen), Natalie (Myers) y Dawn (Brooks)- se encuentran luchando con problemas ordinarios cuando de repente se ven arrastrados a través de un misterioso portal al Mundo Exterior: un extraño país de las maravillas cúbico que se nutre de la imaginación. Para volver a casa, tendrán que dominar este mundo (y protegerlo de cosas malvadas como Piglins y Zombies, también) mientras se embarcan en una búsqueda mágica con un inesperado experto artesano, Steve (Black). Juntos, su aventura desafiará a los cinco a ser audaces y a volver a conectar con las cualidades que hacen que cada uno de ellos sea único y creativ</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=NOAmJa-dhCA</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362954" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/362954/" sala="8" version="Doblada al Castellano" formato="HD" hora="16:20"/>
+                        <sesion id="362955" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/362955/" sala="8" version="Doblada al Castellano" formato="HD" hora="18:25"/>
+                        <sesion id="363005" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363005/" sala="13" version="Versión Original Extranjera" formato="HD" hora="21:35"/>
+                        <sesion id="363008" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363008/" sala="13" version="Original en Castellano" formato="HD" hora="17:30"/>
+                        <sesion id="363009" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363009/" sala="13" version="Original en Castellano" formato="HD" hora="19:35"/>
+                        <sesion id="362956" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/362956/" sala="8" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="362957" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/362957/" sala="8" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="363011" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363011/" sala="13" version="Original en Castellano" formato="HD" hora="19:35"/>
+                        <sesion id="363006" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363006/" sala="13" version="Versión Original Extranjera" formato="HD" hora="21:35"/>
+                        <sesion id="362960" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/362960/" sala="8" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="362958" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/362958/" sala="8" version="Doblada al Castellano" formato="HD" hora="16:20"/>
+                        <sesion id="363010" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363010/" sala="13" version="Original en Castellano" formato="HD" hora="17:30"/>
+                        <sesion id="362959" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/362959/" sala="8" version="Doblada al Castellano" formato="HD" hora="18:25"/>
+                        <sesion id="362961" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/362961/" sala="8" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="363013" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363013/" sala="13" version="Original en Castellano" formato="HD" hora="19:35"/>
+                        <sesion id="363007" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363007/" sala="13" version="Versión Original Extranjera" formato="HD" hora="21:35"/>
+                        <sesion id="362965" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/362965/" sala="8" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362964" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/362964/" sala="8" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="362962" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/362962/" sala="8" version="Doblada al Castellano" formato="HD" hora="16:20"/>
+                        <sesion id="363012" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363012/" sala="13" version="Original en Castellano" formato="HD" hora="17:30"/>
+                        <sesion id="362963" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/362963/" sala="8" version="Doblada al Castellano" formato="HD" hora="18:25"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363116" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363116/" sala="8" version="Versión Original Extranjera" formato="HD" hora="20:35"/>
+                        <sesion id="363113" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363113/" sala="8" version="Doblada al Castellano" formato="HD" hora="18:25"/>
+                        <sesion id="363112" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363112/" sala="8" version="Doblada al Castellano" formato="HD" hora="16:20"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363115" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363115/" sala="8" version="Doblada al Castellano" formato="HD" hora="18:25"/>
+                        <sesion id="363114" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363114/" sala="8" version="Doblada al Castellano" formato="HD" hora="16:20"/>
+                        <sesion id="363136" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363136/" sala="13" version="Original en Castellano" formato="HD" hora="17:30"/>
+                        <sesion id="363117" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363117/" sala="8" version="Versión Original Extranjera" formato="HD" hora="20:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363068" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363068/" sala="13" version="Original en Castellano" formato="HD" hora="19:35"/>
+                        <sesion id="363067" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363067/" sala="13" version="Original en Castellano" formato="HD" hora="17:30"/>
+                        <sesion id="363066" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363066/" sala="13" version="Versión Original Extranjera" formato="HD" hora="21:35"/>
+                        <sesion id="363052" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363052/" sala="8" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="363051" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363051/" sala="8" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                        <sesion id="363049" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363049/" sala="8" version="Doblada al Castellano" formato="HD" hora="16:20"/>
+                        <sesion id="363050" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363050/" sala="8" version="Doblada al Castellano" formato="HD" hora="18:25"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363170" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363170/" sala="13" version="Original en Castellano" formato="HD" hora="19:35"/>
+                        <sesion id="363169" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363169/" sala="13" version="Original en Castellano" formato="HD" hora="17:30"/>
+                        <sesion id="363160" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363160/" sala="8" version="Doblada al Castellano" formato="HD" hora="18:25"/>
+                        <sesion id="363159" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-pelicula-de-minecraft/363159/" sala="8" version="Doblada al Castellano" formato="HD" hora="16:20"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="PETER PAN: PESADILLA EN NUNCA JAMÁS" id="6592" uid="43040"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdpeter-pan-pesadilla-en-nunca-jamas/6592/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00n4g.jpg</caratula>
+            <calificacion>No rec. a menores de 18 años</calificacion>
+            <genero>TERROR</genero>
+            <duracion>89</duracion>
+            <sinopsis>Sigue a Wendy Darling en su intento de rescatar a su hermano Michael de &quot;las garras del malvado Peter Pan&quot;. Por el camino conoce a Campanilla, que en esta retorcida versión del cuento se verá tomando heroína, convencida de que es polvo de hadas. La famosa historia de Peter Pan reinventada como un film de terror por Jagged Edge Productions, productora de &quot;Winnie the Pooh: Blood and Honey&quot;.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=CM4CRLZIz8U</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362940" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpeter-pan-pesadilla-en-nunca-jamas/362940/" sala="6" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362939" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpeter-pan-pesadilla-en-nunca-jamas/362939/" sala="6" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362942" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpeter-pan-pesadilla-en-nunca-jamas/362942/" sala="6" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362941" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpeter-pan-pesadilla-en-nunca-jamas/362941/" sala="6" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="362944" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpeter-pan-pesadilla-en-nunca-jamas/362944/" sala="6" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362943" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpeter-pan-pesadilla-en-nunca-jamas/362943/" sala="6" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363106" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpeter-pan-pesadilla-en-nunca-jamas/363106/" sala="6" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363107" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpeter-pan-pesadilla-en-nunca-jamas/363107/" sala="6" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363045" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpeter-pan-pesadilla-en-nunca-jamas/363045/" sala="6" version="Doblada al Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="363044" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpeter-pan-pesadilla-en-nunca-jamas/363044/" sala="6" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363156" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpeter-pan-pesadilla-en-nunca-jamas/363156/" sala="6" version="Doblada al Castellano" formato="HD" hora="20:35"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="UNA VIDA EN SECRETO" id="6593" uid="42023"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hduna-vida-en-secreto/6593/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00m2i.jpg</caratula>
+            <calificacion>No rec. a menores de 7 años</calificacion>
+            <genero>COMEDIA DRAMÁTICA</genero>
+            <duracion>111</duracion>
+            <sinopsis>Daniel, un rico soltero neoyorquino (Richard Gere), se ve obligado a evaluar sus elecciones de vida cuando descubre que una ex novia suya (Suzanne Clément) dio a luz a su hijo tras su separación hace 20 años.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=UI_eFZviZEI</trailer>
+            <fechas>
+                <fecha value="04/04/2025">
+                    <sesiones>
+                        <sesion id="362997" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/362997/" sala="12" version="Original en Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362996" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/362996/" sala="12" version="Original en Castellano" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="05/04/2025">
+                    <sesiones>
+                        <sesion id="362999" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/362999/" sala="12" version="Original en Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="362998" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/362998/" sala="12" version="Original en Castellano" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="06/04/2025">
+                    <sesiones>
+                        <sesion id="363001" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/363001/" sala="12" version="Original en Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="363000" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/363000/" sala="12" version="Original en Castellano" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="07/04/2025">
+                    <sesiones>
+                        <sesion id="363132" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/363132/" sala="12" version="Original en Castellano" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="08/04/2025">
+                    <sesiones>
+                        <sesion id="363133" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/363133/" sala="12" version="Original en Castellano" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="09/04/2025">
+                    <sesiones>
+                        <sesion id="363064" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/363064/" sala="12" version="Original en Castellano" formato="HD" hora="22:35"/>
+                        <sesion id="363063" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/363063/" sala="12" version="Original en Castellano" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="363167" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/363167/" sala="12" version="Original en Castellano" formato="HD" hora="19:35"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="A NUESTROS AMIGOS" id="6594" uid="44021"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hda-nuestros-amigos/6594/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00npr.jpg</caratula>
+            <calificacion>No rec. a menores de 12 años</calificacion>
+            <genero>DOCUMENTAL</genero>
+            <duracion>88</duracion>
+            <sinopsis>A Sara y Pedro, jóvenes de un barrio de clase trabajadora de Madrid, les encanta armar lío juntos. Pero durante las vacaciones de verano Sara hace nuevos amigos que la introducen en otro mundo, el del teatro.</sinopsis>
+            <trailer>https://www.youtube.com/watch?v=dO9f_WHpEQM</trailer>
+            <fechas>
+                <fecha value="10/04/2025">
+                    <sesiones>
+                        <sesion id="362872" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-nuestros-amigos/362872/" sala="1" version="Original en Castellano" formato="HD" hora="20:35"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="TERRORÍFICAMENTE LYS, EL INSTINTO" id="6595" uid="44133"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdterrorificamente-lys-el-instinto/6595/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nsb.jpg</caratula>
+            <calificacion>No rec. a menores de 16 años</calificacion>
+            <genero>THRILLER</genero>
+            <duracion>92</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="08/05/2025">
+                    <sesiones>
+                        <sesion id="363182" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdterrorificamente-lys-el-instinto/363182/" sala="8" version="Original en Castellano" formato="HD" hora="20:30"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+        <evento>
+            <titulo value="TERRORÍFICAMENTE LYS, LA COSA" id="6596" uid="44134"></titulo>
+            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdterrorificamente-lys-la-cosa/6596/</compra>
+            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nsc.jpg</caratula>
+            <calificacion>No rec. a menores de 13 años</calificacion>
+            <genero>TERROR</genero>
+            <duracion>107</duracion>
+            <sinopsis></sinopsis>
+            <trailer></trailer>
+            <fechas>
+                <fecha value="15/05/2025">
+                    <sesiones>
+                        <sesion id="363183" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdterrorificamente-lys-la-cosa/363183/" sala="8" version="Versión Original Extranjera" formato="HD" hora="20:30"/>
+                    </sesiones>
+                </fecha>
+            </fechas>
+        </evento>
+    </recinto>
+</cartelera>

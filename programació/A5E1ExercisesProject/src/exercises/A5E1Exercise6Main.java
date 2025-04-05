@@ -17,19 +17,11 @@ public class A5E1Exercise6Main {
         BufferedReader br;
 
         while (!endPorgram) {
-            System.out.println("""
-                ---- Gestió dades del camp informàtic ----
-                0. Sortir
-                1. Consultar els salaris amb més de 5 xifres en €
-                2. Consultar els salaris dels treballs relacionats amb "3D" o "Research"
-                3. Consultar els articles modificats entre el 05/11/2019 i el 27/01/2021
-                4. Comptabilitzar quants articles parlen de JAVA, C++, Python i SQL
-                
-                Opció:
-                """);
+            System.out.println(menuOptions());
             int option = scanner.nextInt();
             switch (option) {
                 case 0:
+                    endPorgram = true;
                     break;
 
                 case 1:
@@ -91,25 +83,25 @@ public class A5E1Exercise6Main {
                             String month = "";
                             try {
                                 month = dayAndMonth[1];
-                            } catch (Exception _) {}
-                            try {
                                 year = Integer.parseInt(getDate[3].trim());
                                 switch (year) {
                                     case 2019:
                                         if (months.get(month.toLowerCase()) >= 11) {
                                             if (months.get(month.toLowerCase()) == 11 && Integer.parseInt(dayAndMonth[0]) >= 5) {
-                                                System.out.println(getDate[4] + "(" + dayAndMonth[0] + "/" + dayAndMonth[1] + "/" + year + ")") ;
-                                            } else if (months.get(month.toLowerCase()) > 11){
-                                                System.out.println(getDate[4] + "(" + dayAndMonth[0] + "/" + dayAndMonth[1] + "/" + year + ")") ;
+                                                System.out.println(getDate[4] + " (" + dayAndMonth[0] + "/" + dayAndMonth[1] + "/" + year + ")");
+                                            } else if (months.get(month.toLowerCase()) > 11) {
+                                                System.out.println(getDate[4] + " (" + dayAndMonth[0] + "/" + dayAndMonth[1] + "/" + year + ")");
                                             }
                                         }
                                         break;
+
                                     case 2020:
-                                        System.out.println(getDate[4] + "(" + dayAndMonth[0] + "/" + dayAndMonth[1] + "/" + year + ")") ;
+                                        System.out.println(getDate[4] + " (" + dayAndMonth[0] + "/" + dayAndMonth[1] + "/" + year + ")");
                                         break;
+
                                     case 2021:
                                         if (months.get(month.toLowerCase()) == 1 && Integer.parseInt(dayAndMonth[0]) <= 27) {
-                                            System.out.println(getDate[4] + "(" + dayAndMonth[0] + "/" + dayAndMonth[1] + "/" + year + ")") ;
+                                            System.out.println(getDate[4] + " (" + dayAndMonth[0] + "/" + dayAndMonth[1] + "/" + year + ")");
                                         }
                                         break;
                                 }
@@ -136,7 +128,6 @@ public class A5E1Exercise6Main {
                             allArticles[0].toLowerCase().contains("sql")) {
                             System.out.println(allArticles[0]);
                         }
-
                         getArticles = br.readLine();
                     }
 
@@ -146,5 +137,17 @@ public class A5E1Exercise6Main {
                     System.out.println("Has elegit una opció invàlida. Torna a intentar-ho.");
             }
         }
+    }
+    public static String menuOptions() {
+        return """
+                ---- Gestió dades del camp informàtic ----
+                0. Sortir
+                1. Consultar els salaris amb més de 5 xifres en €
+                2. Consultar els salaris dels treballs relacionats amb "3D" o "Research"
+                3. Consultar els articles modificats entre el 05/11/2019 i el 27/01/2021
+                4. Comptabilitzar quants articles parlen de JAVA, C++, Python i SQL
+                
+                Opció:
+                """;
     }
 }
