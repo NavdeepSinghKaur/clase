@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="cartelera.xsl"?>
 <cartelera last-mod="04/04/2025 - 04:51">
     <recinto id="1" value="CINES LYS">
         <address>Pso. Ruzafa, 3</address>
@@ -7,7 +8,7 @@
         <evento>
             <titulo value="CITA A CIEGAS CON EL CINE" id="5609" uid="30913"></titulo>
             <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdcita-a-ciegas-con-el-cine/5609/</compra>
-            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00cwq.jpg</caratula>
+            <caratula></caratula>
             <calificacion></calificacion>
             <genero></genero>
             <duracion>100</duracion>
@@ -1304,108 +1305,6 @@
                 <fecha value="10/04/2025">
                     <sesiones>
                         <sesion id="363156" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdpeter-pan-pesadilla-en-nunca-jamas/363156/" sala="6" version="Doblada al Castellano" formato="HD" hora="20:35"/>
-                    </sesiones>
-                </fecha>
-            </fechas>
-        </evento>
-        <evento>
-            <titulo value="UNA VIDA EN SECRETO" id="6593" uid="42023"></titulo>
-            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hduna-vida-en-secreto/6593/</compra>
-            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00m2i.jpg</caratula>
-            <calificacion>No rec. a menores de 7 años</calificacion>
-            <genero>COMEDIA DRAMÁTICA</genero>
-            <duracion>111</duracion>
-            <sinopsis>Daniel, un rico soltero neoyorquino (Richard Gere), se ve obligado a evaluar sus elecciones de vida cuando descubre que una ex novia suya (Suzanne Clément) dio a luz a su hijo tras su separación hace 20 años.</sinopsis>
-            <trailer>https://www.youtube.com/watch?v=UI_eFZviZEI</trailer>
-            <fechas>
-                <fecha value="04/04/2025">
-                    <sesiones>
-                        <sesion id="362997" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/362997/" sala="12" version="Original en Castellano" formato="HD" hora="22:35"/>
-                        <sesion id="362996" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/362996/" sala="12" version="Original en Castellano" formato="HD" hora="19:35"/>
-                    </sesiones>
-                </fecha>
-                <fecha value="05/04/2025">
-                    <sesiones>
-                        <sesion id="362999" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/362999/" sala="12" version="Original en Castellano" formato="HD" hora="22:35"/>
-                        <sesion id="362998" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/362998/" sala="12" version="Original en Castellano" formato="HD" hora="19:35"/>
-                    </sesiones>
-                </fecha>
-                <fecha value="06/04/2025">
-                    <sesiones>
-                        <sesion id="363001" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/363001/" sala="12" version="Original en Castellano" formato="HD" hora="22:35"/>
-                        <sesion id="363000" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/363000/" sala="12" version="Original en Castellano" formato="HD" hora="19:35"/>
-                    </sesiones>
-                </fecha>
-                <fecha value="07/04/2025">
-                    <sesiones>
-                        <sesion id="363132" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/363132/" sala="12" version="Original en Castellano" formato="HD" hora="19:35"/>
-                    </sesiones>
-                </fecha>
-                <fecha value="08/04/2025">
-                    <sesiones>
-                        <sesion id="363133" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/363133/" sala="12" version="Original en Castellano" formato="HD" hora="19:35"/>
-                    </sesiones>
-                </fecha>
-                <fecha value="09/04/2025">
-                    <sesiones>
-                        <sesion id="363064" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/363064/" sala="12" version="Original en Castellano" formato="HD" hora="22:35"/>
-                        <sesion id="363063" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/363063/" sala="12" version="Original en Castellano" formato="HD" hora="19:35"/>
-                    </sesiones>
-                </fecha>
-                <fecha value="10/04/2025">
-                    <sesiones>
-                        <sesion id="363167" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hduna-vida-en-secreto/363167/" sala="12" version="Original en Castellano" formato="HD" hora="19:35"/>
-                    </sesiones>
-                </fecha>
-            </fechas>
-        </evento>
-        <evento>
-            <titulo value="A NUESTROS AMIGOS" id="6594" uid="44021"></titulo>
-            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hda-nuestros-amigos/6594/</compra>
-            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00npr.jpg</caratula>
-            <calificacion>No rec. a menores de 12 años</calificacion>
-            <genero>DOCUMENTAL</genero>
-            <duracion>88</duracion>
-            <sinopsis>A Sara y Pedro, jóvenes de un barrio de clase trabajadora de Madrid, les encanta armar lío juntos. Pero durante las vacaciones de verano Sara hace nuevos amigos que la introducen en otro mundo, el del teatro.</sinopsis>
-            <trailer>https://www.youtube.com/watch?v=dO9f_WHpEQM</trailer>
-            <fechas>
-                <fecha value="10/04/2025">
-                    <sesiones>
-                        <sesion id="362872" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hda-nuestros-amigos/362872/" sala="1" version="Original en Castellano" formato="HD" hora="20:35"/>
-                    </sesiones>
-                </fecha>
-            </fechas>
-        </evento>
-        <evento>
-            <titulo value="TERRORÍFICAMENTE LYS, EL INSTINTO" id="6595" uid="44133"></titulo>
-            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdterrorificamente-lys-el-instinto/6595/</compra>
-            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nsb.jpg</caratula>
-            <calificacion>No rec. a menores de 16 años</calificacion>
-            <genero>THRILLER</genero>
-            <duracion>92</duracion>
-            <sinopsis></sinopsis>
-            <trailer></trailer>
-            <fechas>
-                <fecha value="08/05/2025">
-                    <sesiones>
-                        <sesion id="363182" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdterrorificamente-lys-el-instinto/363182/" sala="8" version="Original en Castellano" formato="HD" hora="20:30"/>
-                    </sesiones>
-                </fecha>
-            </fechas>
-        </evento>
-        <evento>
-            <titulo value="TERRORÍFICAMENTE LYS, LA COSA" id="6596" uid="44134"></titulo>
-            <compra>https://www.reservaentradas.com/sesiones/valencia/cineslys/hdterrorificamente-lys-la-cosa/6596/</compra>
-            <caratula>http://portal.reservaentradas.com/portal/obj/ReservaEntradas_dat_dat/eventos/JPG00nsc.jpg</caratula>
-            <calificacion>No rec. a menores de 13 años</calificacion>
-            <genero>TERROR</genero>
-            <duracion>107</duracion>
-            <sinopsis></sinopsis>
-            <trailer></trailer>
-            <fechas>
-                <fecha value="15/05/2025">
-                    <sesiones>
-                        <sesion id="363183" url="https://www.reservaentradas.com/entrada/valencia/cineslys/hdterrorificamente-lys-la-cosa/363183/" sala="8" version="Versión Original Extranjera" formato="HD" hora="20:30"/>
                     </sesiones>
                 </fecha>
             </fechas>

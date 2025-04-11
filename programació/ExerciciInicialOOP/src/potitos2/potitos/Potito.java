@@ -19,8 +19,6 @@ public class Potito {
         }
     }
 
-
-
     @Override
     public String toString() {
         return "Potito{" +
