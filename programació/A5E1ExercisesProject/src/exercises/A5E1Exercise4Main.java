@@ -17,15 +17,14 @@ public class A5E1Exercise4Main {
         FileWriter fw = new FileWriter(f, true);
         BufferedWriter bw = new BufferedWriter(fw);
 
-        if (f.getParentFile().isDirectory()) {
-            if (!f.getParentFile().exists()) {
-                f.getParentFile().mkdirs();
-            }
-        }
-
+        makeFile(f);
 
         System.out.println("Inserta el text: ");
         String text = scanner.nextLine();
+        writeToNewFile(text, bw, scanner, fw);
+    }
+
+    private static void writeToNewFile(String text, BufferedWriter bw, Scanner scanner, FileWriter fw) throws IOException {
         while (!text.isEmpty()) {
             bw.append(text);
             bw.newLine();
@@ -35,5 +34,13 @@ public class A5E1Exercise4Main {
 
         bw.close();
         fw.close();
+    }
+
+    private static void makeFile(File f) {
+        if (f.getParentFile().isDirectory()) {
+            if (!f.getParentFile().exists()) {
+                f.getParentFile().mkdirs();
+            }
+        }
     }
 }

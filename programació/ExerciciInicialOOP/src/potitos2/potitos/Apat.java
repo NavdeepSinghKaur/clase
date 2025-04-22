@@ -23,11 +23,4 @@ public class Apat {
         }
     }
 
-    @Override
-    public String toString() {
-        return "Apat{" +
-                "nPotitos=" + nPotitos +
-                ", arrPotito=" + arrPotito +
-                '}';
-    }
 }

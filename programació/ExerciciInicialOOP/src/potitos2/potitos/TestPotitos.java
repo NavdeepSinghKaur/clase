@@ -20,12 +20,42 @@ public class TestPotitos {
             } catch (NumberFormatException _) {
                 Potito p = new Potito(line);
                 arrApat[iApats-1].addPotito(p);
+                //System.out.println(p);
             }
         }
 
-        for (int i = 0; i < arrApat.length; i++) {
-            if (arrApat[i] != null) {
-                System.out.println(arrApat[i].arrPotito);
+        for (Apat apat : arrApat) {
+            String[] arrPotitosLike;
+            String potitosLike = "";
+            String potitosDislike = "";
+            String[] arrPotitosDislike = new String[0];
+            if (apat != null) {
+                for (Potito potito : apat.arrPotito) {
+                    if (potito.bAgradar) {
+                        for (Ingredient ingredient : potito.rgIngredients) {
+                            potitosLike += ingredient.getName() + " ";
+                        }
+                    } else {
+                        for (Ingredient ingredient : potito.rgIngredients) {
+                            potitosDislike += ingredient.getName() + " ";
+                        }
+                        arrPotitosDislike = potitosDislike.split(" ");
+                    }
+                }
+                potitosDislike = "";
+                arrPotitosLike = potitosLike.split(" ");
+                for (String i : arrPotitosDislike) {
+                    boolean hasElement = false;
+                    for (String j : arrPotitosLike) {
+                        if (i.equals(j)) {
+                            hasElement = true;
+                        }
+                    }
+                    if (!hasElement) {
+                        potitosDislike += i + " ";
+                    }
+                }
+                System.out.println(potitosDislike);
             }
         }
     }

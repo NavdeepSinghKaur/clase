@@ -45,7 +45,8 @@ CREATE TABLE detalle_pedidos (
     subtotal DECIMAL(12,2),
     FOREIGN KEY (pedido_id) REFERENCES pedidos(pedido_id),
     FOREIGN KEY (producto_id) REFERENCES productos(producto_id)
-);
+);cliente_id INT,
+    fecha_pedido DATE,
 
 INSERT INTO clientes (nombre, email, telefono, fecha_registro, direccion, categoria) VALUES
 ('Juan Pérez', 'juan.perez@email.com', '555-1234', '2022-01-15', 'Calle Primavera 123', 'regular'),
@@ -452,27 +453,89 @@ CALL cambiarEstadoPedido(1, 'procesando');
 PROCEDURE 04-Procedimiento para obtener información básica de un cliente pasando el id del Cliente
 
 DROP PROCEDURE IF EXISTS obtenerInfoCliente;
-DLEIMITER //
-CREATE PROCEDURE 
+DELIMITER //
+CREATE PROCEDURE obtenerInfoCliente(IN entradaId INT)
+BEGIN
+	SELECT nombre, email, telefono FROM clientes WHERE cliente_id = entradaId;
+END//
+DELIMITER ;
+
+CALL obtenerInfoCliente(1);
 
 PROCEDURE 05-Procedimiento para listar productos por categoría
+DROP PROCEDURE IF EXISTS listarProductosCategoria;
+DELIMITER //
+CREATE PROCEDURE listarProductosCategoria(IN categoriaProducto VARCHAR(20))
+BEGIN
+	SELECT * FROM productos WHERE categoria = categoriaProducto;
+END//
+DELIMITER ;
 
+CALL listarProductosCategoria("Accesorios");
 
 PROCEDURE 06-Procedimiento para listar productos con stock bajo pasando la cantidad, a la que por debajo de la cual, se considera bajo
 
+DROP PROCEDURE IF EXISTS productosStockBajo;
+DELIMITER //
+CREATE PROCEDURE productosStockBajo(IN cantidadMaxima INT)
+BEGIN
+	SELECT * FROM productos WHERE stock < cantidadMaxima;
+END//
+DELIMITER ;
 
+CALL productosStockBajo(30);
 
 PROCEDURE 07-Procedimiento Actualizar estado de pedidos antiguos, pasar los dias para que se considere antiguo y mostar mensaje con este formato, Pedido x cancelado por antigüedad
+DROP PROCEDURE IF EXISTS actualizarPedidoAntiguo;
+DELIMITER //
+CREATE PROCEDURE actualizarPedidoAntiguo(IN dias INT)
+BEGIN
+	UPDATE pedidos
+	SET estado = "cancelado"
+	WHERE DATEDIFF(NOW(), fecha_pedido) > dias;
+END//
+DELIMITER ;
 
+CALL actualizarPedidoAntiguo(30);
 
 PROCEDURE 08-Procedimiento Calcular ventas totales por cliente
 
+DROP PROCEDURE IF EXISTS calcularVentasCliente;
+DELIMITER //
+CREATE PROCEDURE calcularVentasCliente(IN idCliente INT)
+BEGIN
+	SELECT COUNT(*) AS 'Ventas totales' FROM pedidos WHERE cliente_id = idCliente;
+END//
+DELIMITER ;
+
+CALL calcularVentasCliente(1);
 
 PROCEDURE 09-Procedimiento Generar reporte de productos por categoría, mostrar categoría, cantidad productos y media del precio
+DROP PROCEDURE IF EXISTS reporteProductos;
+DELIMITER //
+CREATE PROCEDURE reporteProductos(IN categoriaProducto VARCHAR(20))
+BEGIN
+	SELECT categoria, COUNT(*) AS "Cantidad", AVG(precio) AS "Precio medio" FROM productos WHERE categoria = categoriaProducto GROUP BY categoria;
+END//
+DELIMITER ;
 
+CALL reporteProductos("Electrónicos");
 
 PROCEDURE 10-Procedimiento Aplicar descuento a productos seleccionados, pasar a que categoría y el porcentaje de descuento
+DROP PROCEDURE IF EXISTS aplicarDescuentosCategoria;
+DELIMITER //
+CREATE PROCEDURE aplicarDescuentosCategoria(
+		IN categoriaProductos VARCHAR(20),
+		IN porcentajeDescuento DECIMAL (3, 1)
+		)
+BEGIN
+	UPDATE productos
+	SET precio = precio - precio*(porcentajeDescuento/100)
+	WHERE categoria = categoriaProductos;
+END//
+DELIMITER ;
 
+CALL aplicarDescuentosCategoria("Electrónicos", 50);
 
 TRIGGERS
 TRIGGER 1-Trigger para actualizar stock después de un pedido

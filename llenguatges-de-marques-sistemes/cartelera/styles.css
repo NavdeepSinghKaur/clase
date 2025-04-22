@@ -6,6 +6,19 @@ body {
     padding: 20px;
 }
 
+.title {
+    line-height: 3.5rem;
+    vertical-align: middle;
+    background-color: #520000;
+    border-radius: 0.75rem;
+    text-align: center;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0px;
+}
+
 .container {
     width: 100%;
     display: flex;
@@ -13,23 +26,41 @@ body {
 }
 
 .container div {
+    font-weight: 700;
     align-items: center;
-    margin: 20px 0px;
-    padding: 0px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    width: 300px;
+    margin: 10px 10px;
+    padding: 10px;
+    border: 2px solid #3f3f3f;
+    border-radius: 1.25rem;
+    width: 33rem;
 }
 
-.title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-    margin: 0px;
+.data {
+    display: none;
+    width: 20rem;
 }
 
-.container img  {
+.container img {
+    margin-top: 1rem;
     width: 100%;
     height: auto;
     border-radius: 0.75rem;
+}
+.container img:hover {
+    filter: blur(5px);
+    transition: 0.3s;
+}
+
+.container div:hover .data {
+    display: block;
+    width: 30rem;
+}
+
+.clickable {
+    align-items: center;
+    margin-top: 1rem;
+    padding: 10px;
+    border: 2px solid #3f3f3f;
+    border-radius: 1.25rem;
+    width: 15rem;
 }

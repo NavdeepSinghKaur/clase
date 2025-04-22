@@ -1,0 +1,20 @@
+151: Valor no trobat
+135: Valor trobat a la posició: 26
+48: Valor no trobat
+62: Valor trobat a la posició: 9
+141: Valor no trobat
+14: Valor no trobat
+77: Valor trobat a la posició: 11
+26: Valor trobat a la posició: 3
+53: Valor no trobat
+43: Valor no trobat
+107: Valor trobat a la posició: 19
+5: Valor no trobat
+126: Valor trobat a la posició: 24
+44: Valor no trobat
+148: Valor no trobat
+59: Valor trobat a la posició: 8
+71: Valor no trobat
+29: Valor no trobat
+-1: Valor no trobat
+20: Valor trobat a la posició: 2

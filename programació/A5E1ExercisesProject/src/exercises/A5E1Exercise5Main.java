@@ -36,44 +36,53 @@ public class A5E1Exercise5Main {
                     BufferedReader br = new BufferedReader(fr);
                     String line = br.readLine();
 
-                    while (line != null) {
-                        String[] lineList = line.split(",");
-                        if (lineList[1].equals(name)) {
-                            System.out.println("Codi:" + lineList[0]);
-                            System.out.println("Quantitat:" + lineList[2]);
-                            userExists = true;
-                        }
-                        line = br.readLine();
-                    }
-
-                    if (!userExists) {
-                        System.out.println("Pendent!");
-                    }
-
-                    System.out.println("Prem una tecla per sortir: ");
-                    while (!scanner.hasNextLine()) {
-                        scanner.nextLine();
-                    }
-
-                    fr.close();
-                    br.close();
+                    checkMember(line, name, userExists, br, scanner, fr);
                     break;
                 case 2:
-                    System.out.println("Introdueïx el codi bancari, nom i el pagament separats per coma. Exemple (ES349, Joan, 90€): ");
-                    String inputText = scanner.nextLine().trim();
-                    FileWriter fw = new FileWriter(f, true);
+                    System.out.println("Introdueïx el codi bancari, nom i el pagament separats per coma, sense espai. Exemple: (ES349,Joan,90€): ");
+                    String inputText = "\n" + scanner.nextLine().trim();
 
-                    BufferedWriter bw = new BufferedWriter(fw);
-                    bw.append(inputText);
-                    bw.flush();
-
-                    fw.close();
-                    bw.close();
+                    addMember(f, inputText);
                     break;
                 default:
                     System.out.println("Has elecit una opció NO vàlida. Torna a intentar-ho.");
             }
 
         }
+    }
+
+    private static void checkMember(String line, String name, boolean userExists, BufferedReader br, Scanner scanner, FileReader fr) throws IOException {
+        while (line != null) {
+            String[] lineList = line.split(",");
+            if (lineList[1].equals(name)) {
+                System.out.println("Codi:" + lineList[0]);
+                System.out.println("Quantitat:" + lineList[2]);
+                userExists = true;
+            }
+            line = br.readLine();
+        }
+
+        if (!userExists) {
+            System.out.println("Pendent!");
+        }
+
+        System.out.println("Prem una tecla per sortir: ");
+        while (!scanner.hasNextLine()) {
+            scanner.nextLine();
+        }
+
+        fr.close();
+        br.close();
+    }
+
+    private static void addMember(File f, String inputText) throws IOException {
+        FileWriter fw = new FileWriter(f, true);
+
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.append(inputText);
+        bw.flush();
+
+        fw.close();
+        bw.close();
     }
 }
