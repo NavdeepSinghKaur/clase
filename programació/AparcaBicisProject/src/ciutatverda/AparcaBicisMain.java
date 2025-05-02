@@ -1,9 +1,7 @@
 package ciutatverda;
 
 import java.io.*;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.nio.charset.StandardCharsets;
 
@@ -20,16 +18,26 @@ public class AparcaBicisMain {
 
         switch (opcio) {
             case 1:
-                System.out.println(getBicis(aparcaBicis));
+                aparcaBicis.forEach(aparcaBici -> System.out.println(aparcaBici.toString()));
                 break;
             case 2:
                 System.out.println("Indica el carrer: ");
                 String carrer = scanner.nextLine();
-                String streets = getStreet(aparcaBicis, carrer);
-                System.out.println(streets);
+                aparcaBicis.stream()
+                        .filter(aparcabici -> aparcabici.getCarrer().equals(carrer))
+                        .forEach(aparcaBici -> System.out.println(aparcaBici));
                 break;
             case 3:
-                System.out.println(getProtected(aparcaBicis));
+                aparcaBicis.stream()
+                                .filter(aparcaBici -> aparcaBici.isProtegitambPilona())
+                                .forEach(aparcaBici -> System.out.println(aparcaBici));
+                break;
+            case 4:
+                Map<String, List<Integer>> numeroAparcaBicisPerBarri = convertAparcabicisToMap(aparcaBicis);
+
+                numeroAparcaBicisPerBarri.entrySet().stream()
+                    .sorted(Map.Entry.comparingByKey())
+                    .forEach(aparcaBici -> System.out.println("Carrer " + aparcaBici.getKey() + " " + aparcaBici.getValue()));
                 break;
             case 0:
                 scanner.close();
@@ -39,17 +47,21 @@ public class AparcaBicisMain {
         }
     }
 
-    private static String getStreet(List<AparcaBici> aparcaBicis, String carrer) {
-        String output = "";
-        output = aparcaBicis.stream().filter(aparcaBici -> aparcaBici.getCarrer().equals(carrer)).toList().toString();
-        return output;
-    }
 
-    private static String getProtected(List<AparcaBici> aparcaBicis) {
-        String output = "";
-        output = aparcaBicis.stream().filter(aparcaBici -> aparcaBici.isProtegitambPilona()).toList().toString();
-
-        return output;
+    private static Map<String, List<Integer>> convertAparcabicisToMap(List<AparcaBici> aparcaBicis) {
+            return aparcaBicis.stream()
+                    .collect(
+                            Collectors.groupingBy(
+                                    aparcabici -> aparcabici.getCarrer(),
+                                    Collectors.collectingAndThen(
+                                            Collectors.mapping(aparcaBici -> aparcaBici.getNum(), Collectors.toList()),
+                                            list -> {
+                                                Collections.sort(list);
+                                                return list;
+                                            }
+                                    )
+                            )
+                    );
     }
 
     private static List<AparcaBici> loadFile(List<AparcaBici> aparcaBicis) throws FileNotFoundException {
@@ -68,14 +80,6 @@ public class AparcaBicisMain {
        return aparcaBicis;
     }
 
-    private static String getBicis(List aparcaBicis) {
-        String output = "";
-        for (Object aparcaBici : aparcaBicis) {
-            output += aparcaBici + "\n";
-        }
-
-        return output;
-    }
 
     private static String getMenu() {
         return """

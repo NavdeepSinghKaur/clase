@@ -1,0 +1,9 @@
+I;Salari;1783.58€
+D;Llum;93.87€
+D;Aigua;33.45€
+I;Salari;2503.47€
+D;Assegurança;53.45€
+D;Farmàcia;26.24€
+D;Queviures;121.06€
+D;Queviures;157.58€
+D;Hipoteca;783.25€Ingressos totals: 4287.05Despesses totals: 1268.9Balanç final: 3018.15

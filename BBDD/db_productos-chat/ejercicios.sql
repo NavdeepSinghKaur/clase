@@ -45,8 +45,7 @@ CREATE TABLE detalle_pedidos (
     subtotal DECIMAL(12,2),
     FOREIGN KEY (pedido_id) REFERENCES pedidos(pedido_id),
     FOREIGN KEY (producto_id) REFERENCES productos(producto_id)
-);cliente_id INT,
-    fecha_pedido DATE,
+);
 
 INSERT INTO clientes (nombre, email, telefono, fecha_registro, direccion, categoria) VALUES
 ('Juan Pérez', 'juan.perez@email.com', '555-1234', '2022-01-15', 'Calle Primavera 123', 'regular'),
@@ -263,22 +262,18 @@ RETURNS VARCHAR(50)
 DETERMINISTIC
 READS SQL DATA
 BEGIN
-	DECLARE var_gama VARCHAR(50) DEFAULT "";
+	DECLARE var_gama VARCHAR(50) DEFAULT '';
 	DECLARE var_precio DECIMAL(10, 2);
 	SELECT precio INTO var_precio FROM productos WHERE producto_id = var_id_producto;
-
-	IF(var_precio < 51) THEN
-		SET var_gama = "Económico";
-	ELSEIF (var_precio > 50 AND var_precio < 201) THEN
-		SET var_gama = "Estandar";
-	ELSEIF (var_precio > 200 AND var_precio < 501) THEN
-		SET var_gama = "Premium";
-	ELSE
-		SET var_gama = "Lujo";
+	
+	SET var_gama = CASE 
+		WHEN var_precio < 51 THEN 'Económico'
+		WHEN var_precio BETWEEN 50 AND 200 THEN 'Estandar'
+		WHEN var_precio BETWEEN 201 AND 500 THEN 'Premium'
+		ELSE 'Lujo'
 	END IF;
 
-RETURN var_gama;
-
+	RETURN var_gama;
 END//
 DELIMITER ;
 
@@ -490,9 +485,17 @@ DROP PROCEDURE IF EXISTS actualizarPedidoAntiguo;
 DELIMITER //
 CREATE PROCEDURE actualizarPedidoAntiguo(IN dias INT)
 BEGIN
+
+	CREATE TABLE mostrarMensajeCancelado
+	SELECT pedido_id FROM pedidos
+	WHERE DATEDIFF(NOW(), fecha_pedido) > dias;
+	
 	UPDATE pedidos
 	SET estado = "cancelado"
 	WHERE DATEDIFF(NOW(), fecha_pedido) > dias;
+	
+	SELECT CONCAT('Pedido', pedido_id, ' cancelado por aniguedad') FROM mostrarMensajeCancelado;
+	DROP TABLE mostrarMensajeCancelado;
 END//
 DELIMITER ;
 
@@ -539,16 +542,75 @@ CALL aplicarDescuentosCategoria("Electrónicos", 50);
 
 TRIGGERS
 TRIGGER 1-Trigger para actualizar stock después de un pedido
-
+DROP TRIGGER IF EXISTS actualizarStock;
+DELIMITER //
+CREATE TRIGGER actualizarStock AFTER INSERT 
+ON detalle_pedidos
+FOR EACH ROW
+BEGIN
+    UPDATE productos
+    SET stock = stock - NEW.cantidad
+    WHERE productos.producto_id = NEW.producto_id;
+END//
+DELIMITER ;
 
 TRIGGER 2-Trigger para validar email de cliente
+DROP TRIGGER IF EXISTS validarMailCliente;
+DELIMITER //
+CREATE TRIGGER validarMailCliente 
+BEFORE INSERT ON clientes
+FOR EACH ROW
+BEGIN
+    DECLARE validMail INT DEFAULT 0;
+    
+    IF NEW.email LIKE '%@%.%' THEN
+        SET validMail = 1;
+    END IF;
+    
+    IF validMail = 0 THEN
+        SIGNAL SQLSTATE '45000' 
+        SET MESSAGE_TEXT = 'Mail no valido';
+    END IF;
+END //
 
+DELIMITER ;
 
 TRIGGER 3-Trigger para calcular automáticamente el total del pedido
+DROP TRIGGER IF EXISTS calcularCantidadPedido;
+DELIMITER //
+CREATE TRIGGER calcularCantidadPedido
+BEFORE INSERT ON detalle_pedidos
+FOR EACH ROW
+BEGIN
+	SET NEW.subtotal = NEW.cantidad * NEW.precio_unitario;
+END//
+DELIMITER ;
 
+DROP TRIGGER IF EXISTS calcularPedido;
+DELIMITER //
+CREATE TRIGGER calcularPedido 
+AFTER INSERT ON detalle_pedidos
+FOR EACH ROW
+BEGIN
+    UPDATE pedidos
+    SET total = (
+        SELECT SUM(subtotal)
+        FROM detalle_pedidos
+        WHERE pedido_id = NEW.pedido_id
+    )
+    WHERE pedido_id = NEW.pedido_id;
+END//
+DELIMITER ;
 
 TRIGGER 4-Trigger para actualizar automáticamente el stock al cancelar un pedido(Solo cuando el estado cambia a 'cancelado')
-
+DROP TRIGGER IF EXISTS stockPedidoCancelado;
+DELIMITER //
+CREATE TRIGGER stockPedidoCancelado
+BEFORE UPDATE ON pedidos
+FOR EACH ROW
+BEGIN
+	UPDATE productos
+	SET stock = stock + 
 
 TRIGGER 5-Trigger para evitar modificar pedidos ya completados
 
