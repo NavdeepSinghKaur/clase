@@ -1,0 +1,21 @@
+package exercises.linkedlist;
+
+import java.util.LinkedList;
+
+public class Exercici15 {
+    public static void main(String[] args) {
+        LinkedList<String> estudiants = new LinkedList<>();
+        estudiants.add("Estudiant 1 LinkedList");
+        estudiants.add("Estudiant 2 LinkedList");
+        estudiants.add("Estudiant 3 LinkedList");
+        estudiants.add("Estudiant 4 LinkedList");
+
+        LinkedList<String> estudiants1 = (LinkedList<String>) estudiants.clone();
+        estudiants1.set(0, "Estudiant 5");
+        System.out.println("Linkedlist original:");
+        estudiants.forEach(estudiant -> System.out.println(estudiant));
+
+        System.out.println("\nLinkedlist clonada:");
+        estudiants1.forEach(estudiant1 -> System.out.println(estudiant1));
+    }
+}

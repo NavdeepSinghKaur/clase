@@ -559,17 +559,96 @@ CALL ciclistasEquipo(1);
 Procedimiento para registrar los primeros en un puerto
 DROP PROCEDURE IF EXISTS primerosPuerto;
 DELIMITER //
+CREATE PROCEDURE primerosPuerto(IN v_id_puerto INT)
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM resultados_puertos WHERE id_puerto = v_id_puerto) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'ID NO VÁLIDO';
+    END IF;
 
+    SELECT * FROM resultados_puertos WHERE posicion = 1 AND id_puerto = v_id_puerto;
+END//
+DELIMITER ;
+
+CALL primerosPuerto(1);
 
 Procedimiento para obtener el podio de una etapa
+DROP PROCEDURE IF EXISTS podioEtapa;
+DELIMITER //
+CREATE PROCEDURE podioEtapa(IN v_id_etapa INT)
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM resultados_etapas WHERE v_id_etapa = id_etapa) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'ID DE ETAPA NO VÁLIDO';
+    END IF;
 
+    SELECT * FROM resultados_etapas WHERE id_etapa = v_id_etapa AND posicion BETWEEN 1 AND 3;
+END//
+DELIMITER ;
+
+CALL podioEtapa(2);
 
 PROCEDURES CON CURSOR
 Listar ciclistas con su equipo y especialidad
+DROP PROCEDURE IF EXISTS ciclistasEquipoEspecialidad;
+DELIMITER //
+CREATE PROCEDURE ciclistasEquipoEspecialidad()
+BEGIN
+    DECLARE v_ciclista_nombre VARCHAR(30);
+    DECLARE v_cilista_apellidos VARCHAR(30);
+    DECLARE v_nombre_equipo VARCHAR(30);
+    DECLARE v_especialidad VARCHAR(30);
+    DECLARE done INT DEFAULT FALSE;
+
+
+    DECLARE ciclista_cursor CURSOR FOR
+        SELECT c.nombre, c.apellidos, e.nombre, c.especialidad
+        FROM ciclistas c
+        INNER JOIN equipos e 
+            ON e.id_equipo = c.id_equipo
+        ORDER BY e.nombre;
+
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+
+    DROP TABLE IF EXISTS resultadosTemp;
+    CREATE TABLE resultadosTemp(
+        t_nombre_apellidos VARCHAR(60),
+        t_nombre_equipo VARCHAR(60),
+        t_especialidad VARCHAR(30)
+    );
+
+    OPEN ciclista_cursor;
+    
+    read_loop: LOOP
+        FETCH ciclista_cursor INTO v_ciclista_nombre, v_cilista_apellidos, v_nombre_equipo, v_especialidad;
+
+        IF done THEN
+            LEAVE read_loop;
+        END IF;
+
+        INSERT INTO resultadosTemp (t_nombre_apellidos, t_nombre_equipo, t_especialidad) VALUES
+        (CONCAT(v_ciclista_nombre, ' ', v_cilista_apellidos), v_nombre_equipo, v_especialidad);
+    END LOOP;
+    
+    CLOSE ciclista_cursor;
+    SELECT * FROM resultadosTemp;
+    DROP TABLE resultadosTemp;
+END//
+DELIMITER ;
+
+CALL ciclistasEquipoEspecialidad();
 
 
 Mostrar podios de todas las etapas
+DROP PROCEDURE IF EXISTS podiosEtapas;
+DELIMITER //
+CREATE PROCEDURE podiosEtapas()
+BEGIN
 
+END//
+DELIMITER ;
+    DECLARE v_nombre_ciclista VARCHAR(30);
+    DECLARE v_apellido_cilista VARCHAR(30);
+    
+CALL podioEtapa();
 
 Contar ciclistas por país
 
