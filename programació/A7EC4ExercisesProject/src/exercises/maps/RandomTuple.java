@@ -11,7 +11,7 @@ import java.util.Random;
  *
  * @author milana
  */
-public class RandomTuple {
+public class RandomTuple implements Comparable<RandomTuple>{
     
     private int number;
     private String str;
@@ -34,5 +34,17 @@ public class RandomTuple {
     
     public String toString() {
         return "<" + this.number + ", " + this.str + ">";
+    }
+
+    public int compareTo(RandomTuple o) {
+        int returnValue = 0;
+        if (this.str != o.str) {
+            returnValue = this.str.compareTo(o.str);
+        }
+        if (returnValue == 0) {
+            returnValue = this.number - o.number;
+        }
+
+        return returnValue;
     }
 }

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f038bc58-6f0c-4dd2-af64-01436e9e461e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../A7EC6StructuresComparisonProject/files/stickers_1000.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../A7EC6StructuresComparisonProject/files/stickers_500.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDD/db_productos-chat/ejercicios.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDD/db_productos-chat/ejercicios.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDD/la_vuelta-chat/la_vuelta.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDD/la_vuelta-chat/la_vuelta.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/maps/Exercici1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/maps/Exercici1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/maps/RandomTuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/maps/RandomTuple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A7EC6StructuresComparisonProject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A7EC6StructuresComparisonProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A7EC6StructuresComparisonProject/A7_EC6_timers_data_structures.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A7EC6StructuresComparisonProject/src/comparison/controller/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/../A7EC6StructuresComparisonProject/src/comparison/controller/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExercicisConjunts/ExercicisConjunts.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExercicisConjunts/ExercicisConjunts.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExercicisConjunts/src/Exercici7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ExercicisConjunts/src/Exercici7Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExercicisConjunts/src/Tuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ExercicisConjunts/src/Tuple.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2weEblWoqx7v3oLqiod2YQwmuZl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Exercici1.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/nsingh/clase/programació/ExamenCorrectorPracticar",
+    "onboarding.tips.debug.path": "/home/nsingh/clase/programació/A7EC4ExercisesProject/src/Main.java",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/files" />
+      <recent name="$PROJECT_DIR$/src/exercises/maps" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f038bc58-6f0c-4dd2-af64-01436e9e461e" name="Changes" comment="" />
+      <created>1746393715718</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746393715718</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -572,19 +572,18 @@ BEGIN
         SET MESSAGE_TEXT = 'Mail no valido';
     END IF;
 END //
-
 DELIMITER ;
 
 TRIGGER 3-Trigger para calcular automáticamente el total del pedido
-DROP TRIGGER IF EXISTS calcularCantidadPedido;
-DELIMITER //
-CREATE TRIGGER calcularCantidadPedido
-BEFORE INSERT ON detalle_pedidos
-FOR EACH ROW
-BEGIN
-	SET NEW.subtotal = NEW.cantidad * NEW.precio_unitario;
-END//
-DELIMITER ;
+-- DROP TRIGGER IF EXISTS calcularCantidadPedido;
+-- DELIMITER //
+-- CREATE TRIGGER calcularCantidadPedido
+-- BEFORE INSERT ON detalle_pedidos
+-- FOR EACH ROW
+-- BEGIN
+-- 	SET NEW.subtotal = NEW.cantidad * NEW.precio_unitario;
+-- END//
+-- DELIMITER ;
 
 DROP TRIGGER IF EXISTS calcularPedido;
 DELIMITER //
@@ -609,10 +608,26 @@ CREATE TRIGGER stockPedidoCancelado
 BEFORE UPDATE ON pedidos
 FOR EACH ROW
 BEGIN
-	UPDATE productos
-	SET stock = stock + 
+	IF NEW.estado_pedido = 'cancelado' THEN
+		UPDATE productos
+		INNER JOIN detalle_pedidos ON productos.producto_id = detalle_pedidos.producto_id
+		SET stock = stock + detalle_pedidos.cantidad
+		WHERE detalle_pedidos.pedido_id = NEW.pedido_id;
+	END IF;
+END//
+DELIMITER ;
 
 TRIGGER 5-Trigger para evitar modificar pedidos ya completados
-
+DROP TRIGGER IF EXISTS evitartModificarPedidosCompletados;
+DELIMITER //
+CREATE TRIGGER evitartModificarPedidosCompletados
+BEFORE UPDATE ON pedidos
+FOR EACH ROW
+BEGIN
+	IF NEW.estado_pedido = 'entregado' THEN
+		SIGNAL SQLSTATE SET MESSAGE_TEXT = 'El pedido ya está entregado. No se puede modificar';
+	END IF;
+END//
+DELIMITER ;
 
 TRIGGER 6-Trigger para actualizar automáticamente la fecha de pedido al cambiar el estado

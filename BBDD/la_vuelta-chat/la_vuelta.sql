@@ -642,19 +642,140 @@ DROP PROCEDURE IF EXISTS podiosEtapas;
 DELIMITER //
 CREATE PROCEDURE podiosEtapas()
 BEGIN
-
-END//
-DELIMITER ;
     DECLARE v_nombre_ciclista VARCHAR(30);
     DECLARE v_apellido_cilista VARCHAR(30);
-    
-CALL podioEtapa();
+    DECLARE v_posicion INT;
+    DECLARE v_etapa INT;
+    DECLARE done INT DEFAULT FALSE;
+
+    DECLARE cursor_podios CURSOR FOR
+        SELECT c.nombre, c.apellidos, re.posicion, re.id_etapa FROM ciclistas c
+        INNER JOIN resultados_etapas re ON re.id_ciclista = c.id_ciclista
+        WHERE Posicion < 4
+        ORDER BY re.posicion;
+        
+        DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+
+        DROP TABLE IF EXISTS resultadosPodios;
+        CREATE TABLE resultadosPodios(
+            t_nombre_completo VARCHAR(60),
+            t_posicion INT,
+            t_etapa INT
+        );
+
+        OPEN cursor_podios;
+
+        read_loop : LOOP
+            FETCH cursor_podios INTO v_nombre_ciclista, v_apellido_cilista, v_posicion, v_etapa;
+
+            IF done THEN
+                LEAVE read_loop;
+            END IF;
+
+            INSERT INTO resultadosPodios(t_nombre_completo, t_posicion, t_etapa) 
+            VALUES (CONCAT(v_nombre_ciclista, ' ', v_apellido_cilista), v_posicion, v_etapa);
+        END LOOP;
+    CLOSE cursor_podios;
+
+    SELECT * FROM resultadosPodios;
+    DROP TABLE resultadosPodios;
+END//
+DELIMITER ;
+
+CALL podiosEtapas();
 
 Contar ciclistas por país
+DROP PROCEDURE IF EXISTS contarCiclistasPais;
+DELIMITER //
+CREATE PROCEDURE contarCiclistasPais()
+BEGIN
+    DECLARE v_num_ciclistas INT DEFAULT 0;
+    DECLARE v_pais VARCHAR(60);
+    DECLARE done INT DEFAULT FALSE;
 
+    DECLARE cursor_paises CURSOR FOR
+        SELECT COUNT(nombre), pais FROM ciclistas GROUP BY pais;
+
+        DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+
+        DROP TABLE IF EXISTS paisesCiclistas;
+        CREATE TABLE paisesCiclistas(
+            t_numero INT DEFAULT 0,
+            t_pais VARCHAR(60)
+        );
+
+        OPEN cursor_paises;
+
+        read_loop: LOOP
+            FETCH cursor_paises INTO v_num_ciclistas, v_pais;
+
+            IF done THEN
+                LEAVE read_loop;
+            END IF;
+
+            INSERT INTO paisesCiclistas(t_numero, t_pais) VALUES (v_num_ciclistas, v_pais);
+        END LOOP;
+    CLOSE cursor_paises;
+
+    SELECT * FROM paisesCiclistas;
+    DROP TABLE paisesCiclistas;
+END//
+DELIMITER ;
+
+CALL contarCiclistasPais();
 
 Mostrar puertos de montaña por etapa
+DROP PROCEDURE IF EXISTS puertosPorEtapa;
+DELIMITER //
+CREATE PROCEDURE puertosPorEtapa()
+BEGIN
+    DECLARE v_id_etapa INT;
+    DECLARE v_numero INT;
+    DECLARE v_fecha DATE;
+    DECLARE v_inicio VARCHAR(60);
+    DECLARE v_fin VARCHAR(60);
+    DECLARE v_distancia DECIMAL(6,2);
+    DECLARE v_tipo VARCHAR(20);
+    DECLARE v_descripcion VARCHAR(150);
+    DECLARE done INT DEFAULT FALSE;
 
+    DECLARE cursor_etapa CURSOR FOR
+        SELECT * FROM etapas;
+
+        DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+
+        DROP TABLE IF EXISTS tablaEtapa;
+        CREATE TABLE tablaEtapa(
+            t_id_etapa INT,
+            t_numero INT,
+            t_fecha DATE,
+            t_inicio VARCHAR(60),
+            t_fin VARCHAR(60),
+            t_distancia DECIMAL(6,2),
+            t_tipo VARCHAR(20),
+            t_descripcion VARCHAR(150)
+        );
+
+        OPEN cursor_etapa;
+
+        read_loop: LOOP
+            FETCH cursor_etapa INTO v_id_etapa, v_numero, v_fecha, v_inicio, v_fin, v_distancia, v_tipo, v_descripcion;
+
+            IF done THEN
+                LEAVE read_loop;
+            END IF;
+
+            INSERT INTO tablaEtapa(t_id_etapa, t_numero, t_fecha, t_inicio, t_fin, t_distancia, t_tipo, t_descripcion)
+            VALUES (v_id_etapa, v_numero, v_fecha, v_inicio, v_fin, v_distancia, v_tipo, v_descripcion);
+        END LOOP;
+    CLOSE cursor_etapa;
+
+    SELECT * FROM tablaEtapa WHERE tipo LIKE '%ontaña%';
+    DROP tablaEtapa;
+END//
+DELIMITER ;
+
+CALL puertosPorEtapa();
 
 Calcular puntos de equipo en la clasificación general
 
@@ -667,7 +788,17 @@ Trigger para actualizar puntos de montaña
 
 
 Trigger para validar edad del ciclista(EDAD MINIMA 18 AÑOS)
-
+DROP TRIGGER IF EXISTS validadEdadCiclista;
+DELIMITER //
+CREATE TRIGGER validadEdadCiclista
+BEFORE INSERT ON ciclistas
+FOR EACH ROW
+BEGIN
+    IF TIMESTAMPDIFF(YEAR, CURDATE(), NEW.fecha_nacimiento) < 18 THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'EL CICLISTA ES MENOR DE EDAD';
+    END IF;
+END//
+DELIMITER ;
 
 Trigger para actualizar clasificación por puntos
 
