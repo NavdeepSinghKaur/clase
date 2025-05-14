@@ -624,10 +624,20 @@ CREATE TRIGGER evitartModificarPedidosCompletados
 BEFORE UPDATE ON pedidos
 FOR EACH ROW
 BEGIN
-	IF NEW.estado_pedido = 'entregado' THEN
-		SIGNAL SQLSTATE SET MESSAGE_TEXT = 'El pedido ya está entregado. No se puede modificar';
+	IF OLD.estado_pedido = 'entregado' THEN
+		SIGNAL SQLSTATE '45000' 
+		SET MESSAGE_TEXT = 'El pedido ya está entregado. No se puede modificar';
 	END IF;
 END//
 DELIMITER ;
 
 TRIGGER 6-Trigger para actualizar automáticamente la fecha de pedido al cambiar el estado
+DROP TRIGGER IF EXISTS acualizarFechaPedido;
+DELIMITER //
+CREATE TRIGGER acualizarFechaPedido
+BEFORE UPDATE ON pedidos
+FOR EACH ROW
+BEGIN
+	SET NEW.fecha_pedido = NOW();
+END//
+DELIMITER ;

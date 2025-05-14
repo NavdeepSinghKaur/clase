@@ -1,0 +1,9 @@
+4000k -> llum i la quantitat de llum
+espai treballador
+ergonomia treballador
+generador electric
+starlink
+humitat i temperatura ambiental (control automàtic amb sensors)
+evitar llum blava (ulleres o mode nocturn)
+
+

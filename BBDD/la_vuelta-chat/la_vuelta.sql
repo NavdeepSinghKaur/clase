@@ -735,12 +735,12 @@ BEGIN
     DECLARE v_inicio VARCHAR(60);
     DECLARE v_fin VARCHAR(60);
     DECLARE v_distancia DECIMAL(6,2);
-    DECLARE v_tipo VARCHAR(20);
+    DECLARE v_tipo VARCHAR(30);
     DECLARE v_descripcion VARCHAR(150);
     DECLARE done INT DEFAULT FALSE;
 
     DECLARE cursor_etapa CURSOR FOR
-        SELECT * FROM etapas;
+        SELECT id_etapa, numero, fecha, inicio, fin, distancia, tipo, descripcion FROM etapas;
 
         DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
 
@@ -752,7 +752,7 @@ BEGIN
             t_inicio VARCHAR(60),
             t_fin VARCHAR(60),
             t_distancia DECIMAL(6,2),
-            t_tipo VARCHAR(20),
+            t_tipo VARCHAR(30),
             t_descripcion VARCHAR(150)
         );
 
@@ -770,8 +770,9 @@ BEGIN
         END LOOP;
     CLOSE cursor_etapa;
 
-    SELECT * FROM tablaEtapa WHERE tipo LIKE '%ontaña%';
-    DROP tablaEtapa;
+    SELECT * FROM tablaEtapa WHERE t_tipo LIKE '%ontaña%';
+    DROP TABLE tablaEtapa;
+
 END//
 DELIMITER ;
 
@@ -782,7 +783,15 @@ Calcular puntos de equipo en la clasificación general
 
 TRIGGERS
 Trigger para actualizar clasificación general al insertar resultados
-
+DROP TRIGGER IF EXISTS actualizarClasificacionGeneral;
+DELIMITER //
+CREATE TRIGGER actualizarClasificacionGeneral
+AFTER UPDATE ON resultados_etapas
+FOR EACH ROW
+BEGIN
+    INSERT INTO clasificacion_general (id_clasificacion, id_ciclista, tiempo_total, posicion, diferencia) VALUES (id_resultado, id_ciclista, )
+END//
+DELIMITER ;
 
 Trigger para actualizar puntos de montaña
 

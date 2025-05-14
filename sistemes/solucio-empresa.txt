@@ -1,0 +1,105 @@
+empresa: disseny grafic
+objectiu: maximitzar treball i complir normes
+la empresa no té departaments, tampoc té organització (com slack, notion...)
+
+els treballadors no fitxen
+
+localitzacio: nau industrial (ubicació terra, porta arriba a una sala, paret de finestres una part) no té alarma
+
+server: petita sala petita de servers (te una finestra, s'obre de dins com la d'una casa) amb un vater al costat, treball part boerta) a l'hivern la finestra està tancada, i a l'estiu no. (tothom te la clau per la sala de servidors)
+
+treballadors: punta a punta, amb portatil, taules grans, 50 treballadors per taula (al limit de pressió de taules) (no miren a la finestra, treballen completament d'esquena a la finestra)
+no tenen retroacció els treballadors
+treballen de dilluns a dissabte 10h/dia de 8am a 6pm (paren només 30 mins afora no poden calentar el menjar) (dia festiu només diumenges)
+
+sou: aprox 700€ (un cobra 750€ pq s'ha queixat) 
+portàtil: no poden portar el portàtil a casa (el diexen a la estantería), política de contrasenya, contarsenya de tots els ordinadors 1234 (no està tancat amb clau) i tenen un ratolí del bazar (2,5€ per ratolí) (50 ratolins)
+
+instal·lació elèctrica: regleta 4-5 endolls enllaçats regleta a regleta per donar connectivitat
+internet: tot wifi i el servidor també
+
+només 1 lavabo (el que està al costat de la sala de servidor)
+
+cadires de fusta
+
+sala de treballadors no té regulació de temperatura ni humetat, només es regula amb la finestra
+
+té un despatx que no utilitza, i es queda amb els treballadors per vigilar-los
+
+els portatils son normals
+
+no hi ha alternativa per si cau el wifi (no parlen)
+
+no hi ha generador de emergencia
+
+il·luminació molt potenta, i molt blanca
+
+hi ha un extintor de pols, el camí d'emergència és la porta mateixa
+
+els portàtils no estàn controlats per ningún admin, els portàtils tenen etiquetes com a nom, i els usuaris són locals
+
+hi he llei de protecció de dades (però no ho gestiona el boss unicament)
+
+no es compren programes amb llicència
+
+no s'encripten les dades
+
+portàtils asus, amb preu de 400€ (s'utilitzen per disseny gràfic) i no s'ha canviat
+
+no s'ha configurat el servidor i només te un usuari (tot està en una carpeta per cada usuari)
+
+sistema operatiu: windows vista
+
+no es revisen les canonades d'aigua
+
+l'empresa té una pàgina web pero no ho gestiona
+
+hi ha una màquina de cafè on es té que pagar
+
+s'utilitza tota la suite adobe (per part dels treballadors)
+
+els treballadors només reben nómina, no res més (no tenen incentius)
+
+no tenen ulleres de protecció de llum blava
+
+per veure aigua només hi ha una aixeta per veure aigua (està al costat del vater)
+
+no es compleixen les normatives d'igualtats
+
+sistema de ventilació genèric
+
+si un treballador fa vaga el fan fora
+
+no hi han polítiques de sostenibilitat
+
+si l'ordinador es falla, fan una comanda nova a una tenda i tarda 10 dies en arribar el portàtil
+
+els equips de treball (portàtils) no tenen manteniment més que l'actualització dels ordinadors
+
+els treballadors s'organitzen com volen
+
+els portatils quan s'han de carregar s'enxufen a una regleta que està connectada a altres regletes (així sucesivament)
+
+els cables elèctrics no tenen organització
+
+el servidor està a terra
+
+la sala de servidors també es un magatzem de neteja
+
+no hi ha control de humetat
+
+només hi ha un router centrat (el que dona la operadora)
+
+es fan de copies de seguretat pero al mateix servidor, tot en una carpeta
+
+el servidor utilitza windwos nt
+
+el sistema de seguretat es només la clau, no hi ha més
+
+hi han radiadors (no a la sala de servidors), el radiador està sota de la finestra (de punta a punta) (en la part on estàn les finestres de punta a punta)
+
+el informe ha de contindre una valoració inicial de l'emprsa (tipo els treballadors estàn a la finestra, els hi dona llums a les pantalles del portatils, bàsicament dir el que està malament, tipo la llum es massa blanca i ha de ser més neutra)
+
+básicament buscar riscos i donar solucions
+
+

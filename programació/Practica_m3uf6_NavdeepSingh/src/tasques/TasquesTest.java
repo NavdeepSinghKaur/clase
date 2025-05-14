@@ -22,7 +22,7 @@ public class TasquesTest {
             do {
                 linia=entrada.readLine();
                 processar(linia);
-            } while ( !linia.equals(eof));
+            } while (!linia.equals(eof));
         }
         catch (Exception ex) {
             System.out.println("S’ha produït un error: " + ex + "\n");
