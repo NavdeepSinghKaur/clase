@@ -794,7 +794,38 @@ END//
 DELIMITER ;
 
 Trigger para actualizar puntos de montaña
+-- MADE WITH AI GATHER ALL R&D
+DELIMITER //
 
+CREATE TRIGGER actualizar_puntos_montana
+AFTER INSERT ON resultados_puertos
+FOR EACH ROW
+BEGIN
+    -- Check if the cyclist already exists in the classification
+    DECLARE cyclist_exists INT;
+    SELECT COUNT(*) INTO cyclist_exists FROM clasificacion_montana 
+    WHERE id_ciclista = NEW.id_ciclista;
+    
+    IF cyclist_exists > 0 THEN
+        -- Update existing record
+        UPDATE clasificacion_montana
+        SET puntos = puntos + NEW.puntos_obtenidos
+        WHERE id_ciclista = NEW.id_ciclista;
+    ELSE
+        -- Insert new record
+        INSERT INTO clasificacion_montana (id_ciclista, puntos, posicion)
+        VALUES (NEW.id_ciclista, NEW.puntos_obtenidos, 
+               (SELECT COUNT(*) + 1 FROM clasificacion_montana));
+    END IF;
+    
+    -- Reorder all positions based on points (highest first)
+    SET @pos := 0;
+    UPDATE clasificacion_montana
+    SET posicion = (@pos := @pos + 1)
+    ORDER BY puntos DESC;
+END //
+
+DELIMITER ;
 
 Trigger para validar edad del ciclista(EDAD MINIMA 18 AÑOS)
 DROP TRIGGER IF EXISTS validadEdadCiclista;

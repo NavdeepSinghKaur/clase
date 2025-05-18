@@ -67,7 +67,8 @@ INSERT INTO Entrenamientos (id_atleta, id_entrenador, fecha, tipo_entrenamiento,
 (2, 2, '2025-05-02', 'Fondo', 90),
 (3, 3, '2025-05-03', 'Salto de longitud', 75),
 (4, 1, '2025-05-04', 'Sprint', 60),
-(1, 1, '2025-05-05', 'Sprint', 30);
+(1, 1, '2025-05-05', 'Sprint', 30),
+(1, 1, '2025-05-25', 'Fondo', 50);
 
 -- Inserción de datos en Competencias
 INSERT INTO Competencias (id_atleta, nombre_competencia, fecha, resultado, posicion) VALUES
@@ -332,23 +333,139 @@ BEGIN
 END//
 DELIMITER ;
 
-CALL InsertarAtleta('a', 'b', 12-12-2000, 'a@a.com', 333333333);
+CALL InsertarAtleta('a', 'b', '2000-12-12', 'M', 'a@a.com', 333333333);
 
 --ActualizarTelefonoAtleta: Actualiza el teléfono de un atleta (básico).
+DROP PROCEDURE IF EXISTS actualizarTelefonoAtleta;
+DELIMITER //
+CREATE PROCEDURE actualizarTelefonoAtleta(v_id_aleta INT, v_telefono INT)
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM Atletas WHERE id_atleta = v_id_aleta) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'ATLETA NO EXISTE';
+    END IF;
+
+    UPDATE Atletas
+    SET telefono = v_telefono
+    WHERE id_atleta = v_id_aleta;
+END//
+DELIMITER ;
+
+CALL actualizarTelefonoAtleta(5, 111111111);
 
 --RegistrarEntrenamiento: Registra un nuevo entrenamiento (medio).
+DROP PROCEDURE IF EXISTS RegistrarEntrenamiento;
+DELIMITER //
+CREATE PROCEDURE RegistrarEntrenamiento(
+    v_id_atleta INT,
+    v_id_entrenador INT,
+    v_fecha DATE,
+    v_tipo_entrenamiento VARCHAR(50),
+    v_duracion_minutos INT
+)
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM Atletas WHERE id_atleta = v_id_aleta) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'ATLETA NO EXISTE';
+    ELSEIF NOT EXISTS(SELECT 1 FROM Entrenadores WHERE v_id_entrenador = id_entrenador) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'ENTRENADOR NO EXISTE';
+    END IF;
+
+    INSERT INTO Entrenamientos (id_atleta, id_entrenador, fecha, tipo_entrenamiento, duracion_minutos) 
+    VALUES (v_id_atleta, v_id_entrenador, v_fecha, v_tipo_entrenamiento, v_duracion_minutos);
+END//
+DELIMITER ;
+
+CALL RegistrarEntrenamiento(2, 2, '2025-05-15', 'Salto de Longitud', 80);
 
 --EliminarEntrenamientosAntiguos: Elimina entrenamientos anteriores a una fecha (medio).
+DROP PROCEDURE IF EXISTS EliminarEntrenamientosAntiguos;
+DELIMITER //
+CREATE PROCEDURE EliminarEntrenamientosAntiguos(v_fecha DATE)
+BEGIN
+    DELETE FROM Entrenamientos WHERE fecha < v_fecha;
+END//
+DELIMITER ;
+
+CALL EliminarEntrenamientosAntiguos('2025-05-02');
 
 --TransferirEntrenador: Cambia el entrenador de los entrenamientos futuros de un atleta (avanzado).
+DROP PROCEDURE IF EXISTS TransferirEntrenador;
+DELIMITER //
+CREATE PROCEDURE TransferirEntrenador(v_id_aleta INT, v_id_entrenador_nuevo INT)
+BEGIN
+
+    IF NOT EXISTS(SELECT 1 FROM Atletas WHERE id_atleta = v_id_aleta) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'ATLETA NO EXISTE';
+    END IF;
+    IF NOT EXISTS(SELECT 1 FROM Entrenadores WHERE id_entrenador = v_id_entrenador_nuevo) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'ENTRENADOR NO EXISTE';
+    END IF;
+    UPDATE Entrenamientos
+    SET id_entrenador = v_id_entrenador_nuevo
+    WHERE v_id_aleta = id_atleta AND fecha > CURDATE();
+END//
+DELIMITER ;
+
+CALL TransferirEntrenador(1, 3);
 
 --RegistrarResultadoCompetencia: Registra un resultado de competencia (básico).
+DROP PROCEDURE IF EXISTS RegistrarResultadoCompetencia;
+DELIMITER //
+CREATE PROCEDURE RegistrarResultadoCompetencia(
+    v_id_atleta INT,
+    v_nombre_competencia VARCHAR(1000),
+    v_fecha DATE,
+    v_resultado DECIMAL(10, 2),
+    v_posicion INT
+)
+BEGIN
+    INSERT INTO Competencias (id_atleta, nombre_competencia, fecha, resultado, posicion) 
+    VALUES (v_id_atleta, v_nombre_competencia, v_fecha, v_resultado, v_posicion);
+END//
+DELIMITER ;
 
+CALL RegistrarResultadoCompetencia(1, 'Copa Nacional', '2025-06-20', 12, 2);
 --ActualizarEspecialidadEntrenador: Actualiza la especialidad de un entrenador (medio).
+DROP PROCEDURE IF EXISTS ActualizarEspecialidadEntrenador;
+DELIMITER //
+CREATE PROCEDURE ActualizarEspecialidadEntrenador(v_id_entrenador INT, v_especialidad VARCHAR(50))
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM Entrenadores WHERE id_entrenador = v_id_entrenador) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'ENTRENADOR NO EXISTE';
+    END IF;
+
+    UPDATE Entrenadores
+    SET especialidad = v_especialidad
+    WHERE id_entrenador = v_id_entrenador;
+END//
+DELIMITER ;
+
+CALL ActualizarEspecialidadEntrenador(1, 'Velocidad');
 
 --ReporteEntrenamientosAtleta: Genera un reporte de entrenamientos de un atleta (avanzado).
+DROP PROCEDURE IF EXISTS ReporteEntrenamientosAtleta;
+DELIMITER //
+CREATE PROCEDURE ReporteEntrenamientosAtleta(v_id_atleta INT)
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM Atletas WHERE id_atleta = v_id_atleta) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'ATLETA NO EXISTE';
+    END IF;
+
+    SELECT * FROM Entrenamientos WHERE id_atleta = v_id_atleta;
+END//
+DELIMITER ;
+
+CALL ReporteEntrenamientosAtleta(1);
 
 --ListarAtletasPorGenero: Lista atletas por género (medio).
+DROP PROCEDURE IF EXISTS ListarAtletasPorGenero;
+DELIMITER //
+CREATE PROCEDURE ListarAtletasPorGenero(v_genero ENUM('M', 'F'))
+BEGIN
+    SELECT * FROM Atletas WHERE genero = v_genero;
+END//
+DELIMITER ;
+
+CALL ListarAtletasPorGenero('F');
 
 --ActualizarResultadosCompetencia: Ajusta los resultados de una competencia por un factor (avanzado).
 
@@ -357,21 +474,127 @@ CALL InsertarAtleta('a', 'b', 12-12-2000, 'a@a.com', 333333333);
 
 
 --InsertAtleta: Valida el formato del email antes de insertar un atleta (básico).
+DROP TRIGGER IF EXISTS InsertarAtleta;
+DELIMITER //
+CREATE TRIGGER InsertarAtleta
+BEFORE INSERT ON Atletas
+FOR EACH ROW
+BEGIN
+    IF NEW.email NOT LIKE '%@%.%' THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'EMAIL INVÁLIDO';
+    END IF;
+END//
+DELIMITER ;
 
 --InsertEntrenamiento: Establece la fecha actual si no se proporciona en un entrenamiento (básico).
+DROP TRIGGER IF EXISTS InsertEntrenamiento;
+DELIMITER //
+CREATE TRIGGER InsertEntrenador
+BEFORE INSERT ON Entrenamientos
+FOR EACH ROW
+BEGIN
+    IF (NEW.tipo_entrenamiento LIKE '' OR NEW.tipo_entrenamiento IS NULL) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'ENTRENAMIENO INVÁLIDO';
+    END IF;
+END//
+DELIMITER ;
 
 --InsertEntrenamientoDuracion: Verifica que la duración del entrenamiento esté entre 0 y 240 minutos (medio).
+DROP TRIGGER IF EXISTS InsertEntrenamientoDuracion;
+DELIMITER //
+CREATE TRIGGER InsertEntrenamientoDuracion
+BEFORE INSERT ON Entrenamientos
+FOR EACH ROW
+BEGIN
+    IF NEW.duracion_minutos NOT BETWEEN 0 AND 240 THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'DURACIÓN DE ENTRENAMIENTO INVÀLIDA';
+    END IF;
+END//
+DELIMITER ;
 
 --InsertEntrenador: Inicializa los años de experiencia a 0 si no se especifican (medio).
+DROP TRIGGER IF EXISTS InsertEntrenador;
+DELIMITER //
+CREATE TRIGGER InsertEntrenador
+BEFORE INSERT ON Entrenadores
+FOR EACH ROW
+BEGIN
+    IF (NEW.anos_experiencia IS NULL OR NEW.anos_experiencia < 0) THEN
+        SET NEW.anos_experiencia = 0;
+    END IF;
+END//
+DELIMITER ;
+
+
+id_competencia INT PRIMARY KEY AUTO_INCREMENT,
+id_atleta INT,
+nombre_competencia VARCHAR(100) NOT NULL,
+fecha DATE NOT NULL,
+resultado DECIMAL(10,2),
+posicion INT,
+FOREIGN KEY (id_atleta) REFERENCES Atletas(id_atleta)
 
 --UpdateCompetencia: Registra cambios en los resultados de competencias en una tabla de log (avanzado).
+DROP TABLE IF EXISTS tablaLog;
+CREATE TABLE tablaLog (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_atleta INT,
+    nombre_competencia VARCHAR(100),
+    fecha DATE,
+    resultado DECIMAL(10,2),
+    posicion INT
+)
+
+DROP TRIGGER IF EXISTS UpdateCompetencia
+DELIMITER //
+CREATE TRIGGER UpdateCompetencia
+AFTER UPDATE ON Competencias
+FOR EACH ROW
+BEGIN
+END//
+DELIMITER ;
+
 
 --DeleteAtleta: Impide eliminar atletas con entrenamientos registrados (básico).
+DROP TRIGGER IF EXISTS DeleteAtleta;
+DELIMITER //
+CREATE TRIGGER DeleteAtleta
+BEFORE DELETE ON Atletas
+FOR EACH ROW
+BEGIN
+    IF EXISTS(SELECT 1 FROM Entrenamientos e WHERE e.id_atleta = OLD.id_atleta) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'NO SE PUEDE ELIMINAR ESTE ATLETA';
+    END IF;
+END//
+DELIMITER ;
 
 --InsertCompetencia: Prohíbe registrar competencias futuras (medio).
+DROP TRIGGER IF EXISTS InsertCompetencia;
+DELIMITER //
+CREATE TRIGGER InsertCompetencia
+BEFORE INSERT ON Competencias
+FOR EACH ROW
+BEGIN
+    IF NEW.fecha > CURDATE() THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'FECHA INVÁLIDA. NO PUEDEN HABER COMPETENCIAS FUTURAS';
+    END IF;
+END//
+DELIMITER ;
 
 --InsertCompetencia: Actualiza el promedio de resultados de un atleta tras una nueva competencia (avanzado).
 
 --UpdateAtletaTelefono: Registra cambios en el teléfono de un atleta en una tabla de log (medio).
 
+
 --InsertEntrenamientoConsistencia: Verifica que el entrenador exista antes de registrar un entrenamiento (avanzado).
+DROP TRIGGER IF EXISTS InsertEntrenamientoConsistencia;
+DELIMITER //
+CREATE TRIGGER InsertEntrenamientoConsistencia
+BEFORE INSERT ON Entrenamientos
+FOR EACH ROW
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM Entrenadores e WHERE NEW.id_entrenador = e.id_entrenador) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'NO HAY ENTRENADOR CON DETERMINADO ID';
+    END IF;
+END//
+DELIMITER ;

@@ -618,9 +618,9 @@ END//
 DELIMITER ;
 
 TRIGGER 5-Trigger para evitar modificar pedidos ya completados
-DROP TRIGGER IF EXISTS evitartModificarPedidosCompletados;
+DROP TRIGGER IF EXISTS pedidoCompletado;
 DELIMITER //
-CREATE TRIGGER evitartModificarPedidosCompletados
+CREATE TRIGGER pedidoCompletado
 BEFORE UPDATE ON pedidos
 FOR EACH ROW
 BEGIN
@@ -638,6 +638,6 @@ CREATE TRIGGER acualizarFechaPedido
 BEFORE UPDATE ON pedidos
 FOR EACH ROW
 BEGIN
-	SET NEW.fecha_pedido = NOW();
+	SET NEW.fecha_pedido = CURRENT_DATE;
 END//
 DELIMITER ;
